@@ -1071,3 +1071,1035 @@ characters:
     - intermediary
     - observer
     - messenger
+- id: char_adelmar_holzweber
+
+  name:
+    full: "Adelmar Holzweber"
+    common: "Adelmar Holzweber"
+    nickname: null
+    titles:
+      - title: "Master of the Granaries (Lindenberg)"
+        from: null
+        to: null
+        notes: "Household logistics; food security; quiet political importance."
+
+  vitals:
+    born:
+      year: 970
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 55
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Granary rotation, drying, fumigation, pest signs, and how shortages begin as small lies."
+      - loc_kempten: "Knows which guild millers buy surplus and which ones ask too many questions."
+    believed_to_know:
+      - char_conrad_holzmann: "Seen as a quiet technician; actually influences tithe and surplus policy through forecasts."
+    actually_ignorant_of:
+      - char_adalmar: "Only dimly senses that some discrepancies are ‘crafted,’ not accidental; lacks the language to name documentary warfare."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Granary master; grain security, storage discipline, surplus advice"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Adelmar Holzweber is mid-fifties, thickset and stooped from decades of lifting sacks and crates, with ink-and-dust stained fingers and the
+      cautious manner of a man who has watched winters punish optimism. Mild-mannered and methodical, he speaks slowly and chooses words with care.
+      His harvest pessimism makes him reliable—he is rarely wrong, because he assumes the world will fail in the most common ways.
+
+      He oversees storage, drying, fumigation, and rotation across Lindenberg’s demesne, keeping meticulous tally-sticks and parchment accounts. He
+      detects spoilage early, advises the reeve on tithe handling and surplus management, and coordinates with orchard and vineyard stewards when a
+      shortage threatens to turn political.
+
+      He negotiates well with peasant elders because he understands their fear: hunger is not just pain, it is shame. A small emergency reserve
+      exists under his keys, known only to the Graf and Gräfin; he treats it like a sacrament—never touched lightly.
+    key_traits:
+      - "Cautious, methodical, mild-mannered"
+      - "Pessimistic forecaster (reliably so)"
+      - "Meticulous record-keeper"
+      - "Quiet negotiator with peasant elders"
+    motivations:
+      - "Carry Lindenberg through winter without hunger"
+      - "Protect the Graf from supply crises"
+      - "Maintain records that withstand ecclesiastical audit"
+    contradictions:
+      - "Hates unrest, yet hesitates to report wrongdoing that could prevent larger unrest later"
+
+  relationships:
+    - char_conrad_holzmann:
+        type: collaborator
+        nature: "Advises on tithes and surplus; both prefer stability over cleverness."
+        period: null
+        notes: "Their alliance is practical: forecasts and tallies become policy."
+    - char_ulrich_lindenberg:
+        type: ally
+        nature: "Trusted for bad news delivered early and accurately."
+        period: null
+        notes: "Ulrich listens because Adelmar frames problems as solvable logistics, not moral panic."
+    - char_irmengard_lindenberg:
+        type: ally
+        nature: "Keeper of the quiet reserve; she protects him if audits become political."
+        period: null
+        notes: "Mutual respect rooted in discretion."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_spring_walpurghausen_incident
+      role: "Indirect: treats any tithe disruption or ‘mysterious grain’ rumors as an early-warning pattern for hunger politics."
+
+  status: active
+
+  tags:
+    - administrator
+    - logistics
+    - food_security
+    - household_officer
+
+
+- id: char_sibrand_confessor
+
+  name:
+    full: "Brother Sibrand"
+    common: "Brother Sibrand"
+    nickname: null
+    titles:
+      - title: "Household confessor (Lindenberg)"
+        from: null
+        to: null
+        notes: "Spiritual advisor; household conscience; potential moral pivot."
+
+  vitals:
+    born:
+      year: 980
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 45
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - org_church_of_saints: "Penitential practice, ecclesiastical custom, and how scandal grows from unconfessed patterns."
+      - loc_falkenau_grafschaft: "Remembers the valley’s oppressive winters and a sense of spiritual ‘thinness’ from his youth."
+    believed_to_know:
+      - char_helena_lindenberg: "Assumed to be her subordinate; in practice he can restrain or sharpen the household’s moral stance."
+    actually_ignorant_of:
+      - org_arnulf_cell_network: "Senses inversion and ‘wrongness’ in speech, but cannot map the structure behind it."
+
+  affiliations:
+    - org_church_of_saints:
+        role: "Brother; confessor within a noble household"
+        from: null
+        to: null
+        status: current
+    - org_lindenberg_lordship:
+        role: "Household spiritual advisor; confessions for servants and retainers"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Brother Sibrand is thin and hollow-cheeked in his late forties, wearing undyed wool and a dark scapular, carrying a simple wooden cross.
+      Quiet and reflective, he is disarmingly calm in counsel and can become severe when pressed toward excuse-making.
+
+      He hears confessions from servants and lesser retainers, assists Sister Helena in liturgical duties, and keeps a small library of sermons and
+      devotional commentary. He listens like a man weighing a soul: keen-eyed, unsettlingly attentive, and skilled at noticing the half-truth
+      designed to test him.
+
+      In youth he served briefly in Falkenau and remembers not an incident but an atmosphere—winter pressure, authority carried too tightly, and a
+      thinning he could never name. He worries it has worsened and watches for signs that moral disorder is becoming spiritual disorder.
+    key_traits:
+      - "Quiet, reflective, calm"
+      - "Firm in counsel; can be severe"
+      - "Detects half-truths"
+      - "Treats scandal as a spiritual contagion"
+    motivations:
+      - "Guide the household toward right conduct"
+      - "Avoid scandal that weakens Church authority"
+      - "Keep Lindenberg morally reputable"
+      - "Understand whether the south is spiritually worsening"
+    contradictions:
+      - "Seeks truth in confession, yet fears that naming certain rumors can feed them"
+
+  relationships:
+    - char_helena_lindenberg:
+        type: collaborator
+        nature: "Assists in liturgy; supports her counsel with penitential rigor."
+        period: null
+        notes: "They differ in temperament: Helena mediates, Sibrand tests."
+    - char_ulrich_lindenberg:
+        type: complicated
+        nature: "Moral counterweight; speaks in duty-language Ulrich can accept."
+        period: null
+        notes: "Could become a pivot if he judges political restraint to be moral cowardice."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_spring_walpurghausen_incident
+      role: "Indirect: the incident’s sermon-pattern primes him to scrutinize ‘charity talk’ for inverted doctrine."
+
+  status: active
+
+  tags:
+    - clergy
+    - confessor
+    - moral_pivot
+    - household_chaplaincy
+
+
+- id: char_walpurga_steinmetz_clerk
+
+  name:
+    full: "Herrin Walpurga Steinmetz"
+    common: "Walpurga Steinmetz"
+    nickname: null
+    titles:
+      - title: "Castellan’s clerk (Lindenberg)"
+        from: null
+        to: null
+        notes: "Administrative support; household bureaucracy; keeper of inconvenient truths."
+
+  vitals:
+    born:
+      year: 988
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 37
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Repair logs, levy rosters, debts, and which ‘small’ omissions become big liabilities."
+      - loc_kempten: "Knows the lower scribes and the etiquette of requesting copies without showing hunger."
+    believed_to_know:
+      - char_dietrich_castellan_lindenberg: "Seen as the castellan’s pen; in practice she shapes what becomes ‘official memory.’"
+    actually_ignorant_of:
+      - org_second_devils_circle: "Has clues in letters but no interpretive framework to identify a heretical network."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Clerk to the castellan; inventories, orders, repair logs, levy rosters"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Walpurga Steinmetz is late thirties, sharp-featured and brisk, with ink-stained cuffs and hair pinned in a tight coil. Precise and quietly
+      judgmental, she hates disorder and lectures when given an opening, not from cruelty but from a belief that discipline prevents disaster.
+
+      She drafts letters and inventories for the castellan, maintains fortress repair logs and levy rosters, and remembers names, dates, and debts
+      with unnerving ease. Fluent in Kirchlatein, she sometimes liaises with Kempten’s clerical scribes, and she keeps a chest of archived
+      correspondence dating back two decades.
+
+      Among those archives are letters from a now-deceased Lindenberg knight who served in the valleys, hinting at strange occurrences near
+      Tiefenbrunn. She has never shared them—partly from caution, partly because she does not yet know what to do with a truth that cannot be
+      filed cleanly.
+    key_traits:
+      - "Precise, detached, discipline-minded"
+      - "Quietly judgmental"
+      - "Extraordinary memory for dates and names"
+      - "Treats documents as reality"
+    motivations:
+      - "Keep the household efficient"
+      - "Protect the castellan from administrative missteps"
+      - "Maintain order as a defensive weapon"
+    contradictions:
+      - "Serves ‘order,’ yet hoards letters that could destabilize it"
+
+  relationships:
+    - char_dietrich_castellan_lindenberg:
+        type: ally
+        nature: "Trusted clerk; provides administrative certainty and shields him from errors."
+        period: null
+        notes: "He trusts her because she is severe with facts."
+    - char_irmengard_lindenberg:
+        type: complicated
+        nature: "Respectful but wary; both understand archives are power."
+        period: null
+        notes: "Either could become the other’s check."
+
+  timeline:
+    - year: 1028
+      event: evt_1028_00_adalmar_pivot_year
+      role: "Indirect: her archive becomes more valuable as paper-wars intensify, though she does not know why."
+
+  status: active
+
+  tags:
+    - administrator
+    - clerk
+    - archive_keeper
+    - bureaucrat
+
+
+- id: char_giselbrecht_marrer
+
+  name:
+    full: "Giselbrecht"
+    common: "Giselbrecht “the Marrer”"
+    nickname: "the Marrer"
+    titles:
+      - title: "Orchard reeve (Lindenberg)"
+        from: null
+        to: null
+        notes: "Agricultural steward; rural mediator; quiet political actor."
+
+  vitals:
+    born:
+      year: 983
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 42
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Orchard cycles, grafting, cider-making, and how rural disputes actually ignite."
+    believed_to_know:
+      - loc_iller_march: "Others think he repeats rumors; he filters them to protect livelihoods."
+    actually_ignorant_of:
+      - concept_consent_doctrine: "Would recognize ‘duress voids oaths’ as prudence, not theology."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Orchard reeve; fruit tithe, labor coordination, rural mediation"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Giselbrecht is tall, wiry, and weathered, with a beard streaked red and grey and pruning tools hanging from a wide belt. Blunt, practical,
+      and humorless, he speaks slowly in a thick rural accent and guards peasant livelihoods as fiercely as he guards the Graf’s interests—because
+      he understands they are the same thing in a bad year.
+
+      He oversees pruning, grafting, cider-making, and seasonal labor, and he carries influence among rural elders because he solves problems
+      without theatrical cruelty. He reads soil and weather by instinct and keeps several hidden apple varieties known only to his family.
+
+      He fears a blight creeping down from the south resembles one seen in his grandfather’s time—a “black year” tied to stories he refuses to
+      repeat. He will act on it, but he will not dignify it with words.
+    key_traits:
+      - "Blunt, practical, humorless"
+      - "Protective of peasant livelihoods"
+      - "Instinctive weather/soil reader"
+      - "Holds rural influence"
+    motivations:
+      - "Keep orchard yields steady"
+      - "Prevent disputes between peasants and tax officials"
+      - "Contain any southern blight before panic spreads"
+    contradictions:
+      - "Dismisses ominous stories while being quietly guided by them"
+
+  relationships:
+    - char_conrad_holzmann:
+        type: collaborator
+        nature: "Coordinates rural labor and tithe realities; both prioritize stability."
+        period: null
+        notes: "They disagree only over how much fear to let villagers carry."
+    - char_adelmar_holzweber:
+        type: collaborator
+        nature: "Crisis coordination during shortages; fruit and grain policy overlap in lean seasons."
+        period: null
+        notes: "Mutual respect rooted in accuracy."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_spring_walpurghausen_incident
+      role: "Indirect: any tithe disruption or ‘grain politics’ to the east sharpens his concern about southward blight and unrest."
+
+  status: active
+
+  tags:
+    - administrator
+    - rural_authority
+    - agriculture
+    - orchard_reeve
+
+
+- id: char_kunza_ramlingen
+
+  name:
+    full: "Dame Kunza von Ramlingen"
+    common: "Dame Kunza"
+    nickname: null
+    titles:
+      - title: "Tutor to the Graf’s children (Lindenberg)"
+        from: null
+        to: null
+        notes: "Educator; moral shaper; latent political influencer."
+
+  vitals:
+    born:
+      year: 984
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 41
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_kempten: "Abbey-school pedagogy and the politics that hide inside ‘proper instruction.’"
+    believed_to_know:
+      - char_marlene_eichenbach: "Suspects Marlene has overheard politics and fears her discretion may falter."
+    actually_ignorant_of:
+      - evt_1026_10_siege_falkenau: "Holds doubts about ecclesiastical accounts of the convent disaster, but lacks evidence."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Tutor; instruction in literacy, arithmetic, piety, history, court custom"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Dame Kunza is early forties, warm but disciplined, speaking with a soft Swabian lilt and carrying a walking-stick carved with geometric
+      designs. She educates the Graf’s children in reading, arithmetic, piety, history, and court customs, and she uses stories as moral tools:
+      lessons that lodge in the mind because they arrive disguised as tales.
+
+      Fluent in Kirchlatein and High German, she keeps small instructional manuscripts and several prized books copied in Kempten. She avoids
+      needless conflict but is clever in argument when pressed, and her influence is slow-burn: what the heirs learn to call “right” becomes policy
+      later.
+
+      She worries about what servants overhear, especially Marlene’s proximity to political talk, and she carries a quiet doubt about the tidy
+      ecclesiastical telling of Falkenau’s convent disaster. Doubt does not make her reckless; it makes her watchful.
+    key_traits:
+      - "Warm but disciplined"
+      - "Clever in argument; avoids needless conflict"
+      - "Storyteller-teacher"
+      - "Slow-burn influencer"
+    motivations:
+      - "Raise capable heirs"
+      - "Maintain household harmony"
+      - "Shape moral and intellectual habits that endure"
+    contradictions:
+      - "Teaches obedience and piety while privately doubting official narratives"
+
+  relationships:
+    - char_irmengard_lindenberg:
+        type: collaborator
+        nature: "Educational policy aligned with Irmengard’s long-term marriage-and-dignity strategy."
+        period: null
+        notes: "Irmengard values her because she teaches restraint without making children timid."
+    - char_marlene_eichenbach:
+        type: complicated
+        nature: "Protective concern; fears Marlene’s discretion may fail under pressure or ambition."
+        period: null
+        notes: "May ‘assign’ Marlene tasks to keep her away from overheard politics."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Peripheral: registers cultural shifts in ‘lordship language’ as material for teaching, not as ideology."
+
+  status: active
+
+  tags:
+    - educator
+    - household_officer
+    - clergy_adjacent
+    - moral_shaper
+
+
+- id: char_berthold_eisenknecht
+
+  name:
+    full: "Berthold Eisenknecht"
+    common: "Berthold Eisenknecht"
+    nickname: null
+    titles:
+      - title: "Forge-master (Lindenberg)"
+        from: null
+        to: null
+        notes: "Armourer; craftsman; economic anchor."
+
+  vitals:
+    born:
+      year: 985
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 40
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Tool-making, repair cycles, charcoal realities, and the difference between honest wear and deliberate damage."
+    believed_to_know:
+      - char_dietrich_castellan_lindenberg: "Trusted for rapid repairs; perceived as ‘just a craftsman’ rather than an economic anchor."
+    actually_ignorant_of:
+      - char_adalmar: "Would recognize forged marks on tools, not forged lineages on parchment."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Forge-master; blacksmithing, farriery, tool-making, minor armour repairs"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Berthold is broad and heavily muscled, beard thick and ash-streaked, wearing burn-scarred leather and an iron ring on his thumb. Gruff but
+      fair, he values honesty and grows suspicious of outsiders until they prove reliable.
+
+      He oversees the manor’s forge, supervises apprentices and charcoal deliveries, and negotiates with local miners for ore and bars. Trusted by
+      the castellan for rapid repairs, he keeps the household functioning in ways nobles seldom notice until something breaks.
+
+      Once, at dusk near the quarry, he saw a strange pale figure—poacher, vagrant, or something else. He said nothing, but the memory unsettles
+      him, and he watches the quarry edge more carefully now.
+    key_traits:
+      - "Gruff but fair"
+      - "Craft-proud; values honest work"
+      - "Suspicious until proven"
+      - "Observant of tool-marks and damage"
+    motivations:
+      - "Keep production high-quality"
+      - "Train apprentices properly"
+      - "Keep household outfitted and repaired"
+    contradictions:
+      - "Dismisses tales, yet is troubled by one he cannot explain"
+
+  relationships:
+    - char_dietrich_castellan_lindenberg:
+        type: ally
+        nature: "Rapid repairs and readiness; mutual respect rooted in competence."
+        period: null
+        notes: "Dietrich trusts his work because it is honest and timely."
+    - char_gerwin_tall_groom:
+        type: collaborator
+        nature: "Forge and stable interdependence: shoes, tack, fittings, repairs."
+        period: null
+        notes: "They argue like craftsmen, then fix the problem."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_spring_walpurghausen_incident
+      role: "None directly; becomes relevant if unusual tool-marks or forced-entry signs appear in related investigations."
+
+  status: active
+
+  tags:
+    - craftsman
+    - armourer
+    - blacksmith
+    - economic_anchor
+
+
+- id: char_ida_rottlerin
+
+  name:
+    full: "Ida Rottlerin"
+    common: "Ida Rottlerin"
+    nickname: null
+    titles:
+      - title: "Chief laundress (Lindenberg)"
+        from: null
+        to: null
+        notes: "Servant matriarch; household morale anchor; information node."
+
+  vitals:
+    born:
+      year: 989
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 36
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Servant tensions, comings-and-goings, and which ‘small’ rumors indicate real trouble."
+    believed_to_know:
+      - char_bertrade_household_steward: "Others assume she only launders; Bertrade knows she is an information node."
+    actually_ignorant_of:
+      - org_second_devils_circle: "Knows rumors, not structures; repeats carefully by instinct."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Chief laundress; cloth maintenance and servant-hall stability"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Ida is short, stout, and late thirties, with thick arms from lifting wet linen and a smell of lye and herbs that never quite leaves her. She
+      is friendly, talkative, and gregarious, but she repeats rumors carefully—more as weather-reporting than malice. Her loyalty to Lady Bertrade is
+      fierce, because Bertrade protects the servant world from noble carelessness.
+
+      She manages washing, drying, and cloth maintenance, and she senses household tension long before nobles notice. Her real power is that people
+      tell her things because they are tired and half-dressed when they do.
+
+      She overheard a heated argument between the castellan and a visiting reeve from Rettenberg about a “cairn marker shifted without cause.” She
+      does not know what it means, only that voices went tight when it was said aloud.
+    key_traits:
+      - "Friendly, talkative, socially skilled"
+      - "Rumor-aware but careful"
+      - "Morale anchor among servants"
+      - "Early detector of tension"
+    motivations:
+      - "Keep servants orderly and protected"
+      - "Maintain domestic harmony"
+      - "Avoid scandal that punishes the wrong people"
+    contradictions:
+      - "Talkative by nature, discreet by survival"
+
+  relationships:
+    - char_bertrade_household_steward:
+        type: ally
+        nature: "Fierce loyalty; Ida serves as informal eyes-and-ears without being a declared spy."
+        period: null
+        notes: "Bertrade shields her; Ida returns value in stability and early warning."
+    - char_marlene_eichenbach:
+        type: complicated
+        nature: "Servant-world view of a quiet courtier: useful, but risky if ambition outruns caution."
+        period: null
+        notes: "Ida will help Marlene—while also reporting patterns to Bertrade."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Peripheral: tracks which rumors from the east become ‘safe to say’ and which make people whisper."
+
+  status: active
+
+  tags:
+    - servant
+    - information_node
+    - morale_anchor
+    - domestic_world
+
+
+- id: char_ulman_redder
+
+  name:
+    full: "Ulman Redder"
+    common: "Ulman Redder"
+    nickname: null
+    titles:
+      - title: "Hunt-master (Lindenberg)"
+        from: null
+        to: null
+        notes: "Keeper of the forests; danger-scout; wilderness expert."
+
+  vitals:
+    born:
+      year: 989
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 36
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Hidden forest paths, poacher habits, predator patterns, and the health of game stocks."
+    believed_to_know:
+      - loc_western_woods_lindenberg: "Seen as the keeper of ‘safe passage’ in the woods."
+    actually_ignorant_of:
+      - evt_1029_spring_walpurghausen_incident: "Treats valley politics as noise unless it changes road and forest traffic."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Hunt-master; forest stewardship, predator control, household prestige hunts"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Ulman is lean and sun-tanned, wearing rough leather and carrying a longbow, with a wolfish intensity that makes soft words feel unsafe. He
+      speaks sparingly and respects skill above rank. He leads hunts, tracks poachers and predators, trains dogs and keeps falcons, and reads the
+      forest’s health by signs most people never notice.
+
+      He sees the woods as a ledger: migration, weather, grazing pressure, disease. When something does not fit, he becomes quiet.
+
+      He has found unusual hoofprints in the western woods—too deep for local deer, too narrow for cattle. He keeps this to himself until he knows
+      whether it is an animal, a trick, or a doorway.
+    key_traits:
+      - "Direct, confident, sparing with words"
+      - "Skill-respecting, rank-indifferent"
+      - "Excellent tracker and forest reader"
+      - "Suspicious of ‘soft talk’"
+    motivations:
+      - "Maintain forest balance and game stocks"
+      - "Protect household prestige through proper hunting"
+      - "Suppress poaching before it becomes banditry"
+    contradictions:
+      - "Dismisses tales while guarding a sign he cannot explain"
+
+  relationships:
+    - char_albrecht_melzau:
+        type: collaborator
+        nature: "Shares practical security intelligence: forest paths and ambush risks."
+        period: null
+        notes: "Mutual respect; both value competence and restraint."
+    - char_conrad_holzmann:
+        type: collaborator
+        nature: "Coordinates rural safety: predators, poachers, and road spillover."
+        period: null
+        notes: "Holzmann wants stability; Ulman wants clarity."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Peripheral: watches for eastward instability to push dangerous men into his woods."
+
+  status: active
+
+  tags:
+    - hunter
+    - wilderness_expert
+    - security_scout
+    - forest_steward
+
+
+- id: char_wendel_staubmacher
+
+  name:
+    full: "Wendel Staubmacher"
+    common: "Wendel Staubmacher"
+    nickname: null
+    titles:
+      - title: "Keeper of the cellars (Lindenberg)"
+        from: null
+        to: null
+        notes: "Beverage steward; custodian of stores; trade conduit."
+
+  vitals:
+    born:
+      year: 985
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 40
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Stocks, blends, festival demands, and which merchants speak with two tongues."
+    believed_to_know:
+      - char_irmengard_lindenberg: "Trusted at feasts; seen as jovial, but he is cautious and counts everything."
+    actually_ignorant_of:
+      - char_adalmar: "Understands smuggling and concealment, not genealogical sabotage."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Cellar keeper; wine/ale/vinegar/preserves management; merchant interface"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Wendel is broad-shouldered and middle-aged, balding, smelling of must and damp stone, with keys always close. Jovial in manner but cautious in
+      judgment, he is proud of good casks and becomes trustworthy once befriended.
+
+      He manages wine, ale, vinegar, and preserved fruits, blends household wines from Lindenberg’s terraces, and keeps detailed stock lists. He
+      negotiates with vintners and brewers and hears the sort of merchant gossip that never reaches the dais because it sounds too petty to matter.
+
+      One cask—gifted by a merchant near [NEW NAMES FOR REVIEW] Obersee—contains something other than wine. He has avoided opening it, because once
+      opened, it becomes his responsibility in a way a closed cask can pretend not to be.
+    key_traits:
+      - "Jovial but cautious"
+      - "Proud of craft; good judge of character"
+      - "Merchant-facing; rumor-adjacent"
+      - "Counts and records reliably"
+    motivations:
+      - "Maintain cellar quality and avoid losses"
+      - "Uphold noble hospitality"
+      - "Keep trade relationships smooth"
+    contradictions:
+      - "Enjoys conviviality while carrying a secret cask that could ruin it"
+
+  relationships:
+    - char_irmengard_lindenberg:
+        type: ally
+        nature: "Trusted at festivals; she values his discretion with merchants."
+        period: null
+        notes: "He is careful what he repeats to her—only what is useful."
+    - char_bertrade_household_steward:
+        type: collaborator
+        nature: "Provisioning coordination: feasts, stores, and reputational hospitality."
+        period: null
+        notes: "They share a dislike of waste."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_spring_walpurghausen_incident
+      role: "Indirect: merchant gossip about ‘mysterious redistribution’ or tithe disruptions may surface in his dealings."
+
+  status: active
+
+  tags:
+    - household_officer
+    - logistics
+    - cellar_keeper
+    - trade_conduit
+
+
+- id: char_ragenfrid_klett
+
+  name:
+    full: "Ragenfrid Klett"
+    common: "Ragenfrid Klett"
+    nickname: null
+    titles:
+      - title: "Chief porter (Lindenberg)"
+        from: null
+        to: null
+        notes: "Security gatekeeper; travel manager; household sentinel."
+
+  vitals:
+    born:
+      year: 983
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 42
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Gate discipline, visiting patterns, and which ‘ordinary’ travelers are actually risks."
+    believed_to_know:
+      - org_lindenberg_lordship: "Seen as a simple sentinel; in practice he is the household’s first filter for intrusion and rumor."
+    actually_ignorant_of:
+      - org_second_devils_circle: "Would catch a sloppy agent; might miss a disciplined ‘ordinary’ pilgrim."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Chief porter; gate control, visitor logs, goods inspection, messenger roster"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Ragenfrid is tall and heavily built in his early forties, stern and vigilant, wearing a padded gambeson and keeping a staff within reach. He
+      values clear instructions and order: polite to nobility, curt with strangers, and allergic to improvisation at the gate.
+
+      He controls passage through the manor, inspects incoming goods and visiting parties, maintains visitor logs and lodging arrangements, and
+      commands a handful of younger porters. He hears notices from Kempten about bandits and smugglers and trusts paper more than stories—until a
+      face makes him uneasy.
+
+      Recently he turned away a pilgrim who claimed to have fled something “unseen” on the Pilgrim’s Path. He regrets it, but he fears speaking of
+      it, because admitting fear at the gate feels like inviting the thing in.
+    key_traits:
+      - "Stern, orderly, vigilant"
+      - "Paper-and-procedure minded"
+      - "Polite upward, curt outward"
+      - "Feels responsibility as weight"
+    motivations:
+      - "Maintain order and prevent intrusion"
+      - "Preserve the Graf’s safety"
+      - "Keep messenger and visitor management reliable"
+    contradictions:
+      - "Procedure-first, yet haunted by one choice that felt wrong even if correct"
+
+  relationships:
+    - char_dietrich_castellan_lindenberg:
+        type: collaborator
+        nature: "Security chain: visitor discipline and gate readiness."
+        period: null
+        notes: "Dietrich trusts him when logs are clean and explanations spare."
+    - char_bertrade_household_steward:
+        type: collaborator
+        nature: "Coordinates lodging and controlled access; scandal prevention through gate discipline."
+        period: null
+        notes: "Bertrade respects him because he says ‘no’ without drama."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Peripheral: valley travelers and rumors change; he becomes the first point where ‘eastward trouble’ meets Lindenberg’s walls."
+
+  status: active
+
+  tags:
+    - security
+    - gatekeeper
+    - household_officer
+    - sentinel
