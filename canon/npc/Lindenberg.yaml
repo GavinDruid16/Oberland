@@ -1,0 +1,1073 @@
+characters:
+- id: char_ulrich_lindenberg
+
+  name:
+    full: "Graf Ulrich von Lindenberg"
+    common: "Graf Ulrich"
+    nickname: null
+    titles:
+      - title: "Graf of Lindenberg"
+        from: null
+        to: null
+        notes: "Western Allgäu noble; land-power peer of Eberhard; potential arbiter or antagonist."
+
+  vitals:
+    born:
+      year: 971
+      precision: approximate
+      location: loc_lindenberg
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 54
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse:
+      - char_irmengard_lindenberg:
+          married: null
+          status: current
+    children:
+      legitimate:
+        - char_otto_lindenberg: "Heir apparent."
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - char_adalmar: "Remembers the young monk as ambitious and sharp-tongued; assumes he remained merely useful."
+      - loc_kempten: "Knows more than he admits about internal squabbles and bargaining positions."
+    believed_to_know:
+      - evt_1026_10_siege_falkenau: "Others expect him to have a ‘Graf’s view’ of Falkenau events; he keeps his posture noncommittal."
+    actually_ignorant_of:
+      - evt_1028_00_adalmar_pivot_year: "Unaware how far Adalmar’s leverage-archive transformation has progressed."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Ruling Graf; secular patron of reeves, sergeants, and toll lines"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Graf Ulrich is a western Allgäu land-power who rules from a fortified hill-manor and prefers problems to remain small, local, and settled
+      before they become someone else’s pretext. Tall and lean in his late fifties, he carries the posture of a lifetime of riding and mountain
+      travel: straight-backed, controlled, never hurried. His mantle and brooch are modest by choice—dignity over display.
+
+      Calm, judicial, and reserved, he watches before he speaks and rarely raises his voice. Among intimates, a dry humor surfaces, but warmth is
+      not his currency. He is an experienced political operator used to balancing ecclesiastical pressure (Kempten, Ottobeuren) with secular
+      obligations to the Landgraf, and he understands the economics of orchards, cattle-levies, and toll lines as well as he understands faces.
+
+      He relies on disciplined reeves and sergeants for enforcement, and he avoids leading armed parties himself now—not from weakness, but from
+      a deliberate preference for stable machinery over personal heroics. He suspects several valley lordships (including Falkenau) are quietly
+      weakening, though he lacks proof and will not commit his dignity to rumor.
+    key_traits:
+      - "Calm, judicial, reserved"
+      - "Values dignity above warmth"
+      - "Dry humor among intimates"
+      - "Patient negotiator; avoids spectacle"
+      - "Sees stability as a craft, not a mood"
+    motivations:
+      - "Preserve stability in the western Allgäu"
+      - "Maintain good relations with Kempten without being dominated"
+      - "Secure a respected, untroubled inheritance for his heirs"
+      - "Keep the Landgraf’s attention pleasant and distant"
+    contradictions:
+      - "Wants distance from conflict, yet sits close enough to arbitrate it"
+      - "Dislikes rumor, yet trusts his ‘sense’ of weakening authority"
+
+  relationships:
+    - char_irmengard_lindenberg:
+        type: familial
+        nature: "Marriage of governance: mutual respect, shared caution, and a preference for quiet leverage."
+        period: null
+        notes: "They confer privately; she supplies correspondence-net insight, he supplies the posture of judgment."
+    - char_eberhard:
+        type: complicated
+        nature: "Views Eberhard as capable but overstretched; watches Falkenau as a bellwether of valley stability."
+        period: null
+        notes: "Potential peer-arbiter if asked—also potential boundary-setter if spillover threatens his roads."
+    - char_oswald:
+        type: complicated
+        nature: "Has not met Oswald; evaluates him through secondhand accounts and the ‘paper trail’ of others."
+        period: null
+        notes: "Refuses to commit publicly until he can price the risks."
+    - char_adalmar:
+        type: complicated
+        nature: "Remembers him young; assumes ambition, not the depth of corruption or leverage."
+        period: [1010, null]
+        notes: "If Ulrich ever realizes how weaponized Adalmar’s archive is, his posture will harden fast."
+
+  timeline:
+    - year: 1028
+      event: evt_1028_00_adalmar_pivot_year
+      role: "Peripheral observer: hears fragments of changing alignments in the valleys, without the private context."
+
+  status: active
+
+  tags:
+    - nobility
+    - western_allgaeu
+    - political_operator
+    - potential_arbiter
+    - land_power
+
+
+- id: char_irmengard_lindenberg
+
+  name:
+    full: "Gräfin Irmengard von Lindenberg"
+    common: "Gräfin Irmengard"
+    nickname: null
+    titles:
+      - title: "Gräfin of Lindenberg"
+        from: null
+        to: null
+        notes: "Matriarch; political strategist; diplomatic pivot."
+
+  vitals:
+    born:
+      year: 977
+      precision: approximate
+      location: loc_lindenberg
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 48
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse:
+      - char_ulrich_lindenberg:
+          married: null
+          status: current
+    children:
+      legitimate:
+        - char_otto_lindenberg: "Heir apparent."
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - char_adalmar: "Understands that forged genealogies are a battlefield; keeps independent reference material."
+      - concept_oswald_legitimacy_doctrine: "Recognizes the shape of ‘peace-as-truth’ politics, even when not named as such."
+    believed_to_know:
+      - loc_kempten: "Seen as unusually well-informed through correspondence networks."
+    actually_ignorant_of:
+      - org_arnulf_cell_network: "Underestimates how operationally distributed the heretical networks can be."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "House matriarch; correspondence and alliance maintenance"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Irmengard is the house’s long-memory and silent pressure: a matriarch who dominates conversations by asking careful questions and then
+      letting the silence do its work. In her early fifties, she dresses plainly but elegantly—olive wool, dark hems, and a silver-thread girdle—
+      and carries the unflappable calm of someone who has watched alliances fray and learned to pull the right thread first.
+
+      Skilled in high-born correspondence, heraldry, and ecclesiastical etiquette, she maintains letter-friend networks across Kempten, Ottobeuren,
+      Kaufbeuren, and Lindau. She reads rural vassal alliances with a cold accuracy that can feel like prophecy, and she keeps a small library of
+      devotional works alongside older land charters and inherited tables.
+
+      Her private strength is a very old vellum genealogical table that references peripheral houses—including Falkenau, Lindenberg, Rohrdorf, and
+      the obscure von Kimratshofen. If compared against weaponized forgeries, it could ruin a career—or topple a claim.
+    key_traits:
+      - "Perceptive, candid, unflappable"
+      - "Uses silence as leverage"
+      - "Letter-network builder"
+      - "Charter-minded; remembers details"
+      - "Protective without sentimentality"
+    motivations:
+      - "Protect her children’s future marriages"
+      - "Maintain Lindenberg dignity and bargaining strength"
+      - "Prevent valley instability from rippling west"
+      - "Keep leverage quiet until needed"
+    contradictions:
+      - "Prefers restraint, yet keeps documents capable of devastation"
+      - "Values orthodoxy, yet hoards tools that can break reputations"
+
+  relationships:
+    - char_ulrich_lindenberg:
+        type: familial
+        nature: "Partnership of governance: she supplies information and pressure, he supplies posture and judgment."
+        period: null
+        notes: "She can push him toward intervention when instability becomes too costly to ignore."
+    - char_adalmar:
+        type: enemy
+        nature: "Not personal hatred—documentary opposition. She is positioned to expose discrepancies that would devastate him."
+        period: [1028, null]
+        notes: "She will not strike unless the strike can be made to ‘stick’ politically."
+    - char_eberhard:
+        type: complicated
+        nature: "Treats Falkenau’s disasters as warning signs of valley fragility and lax oversight."
+        period: null
+        notes: "Names and papers matter more to her than battlefield stories."
+
+  timeline:
+    - year: 1028
+      event: evt_1028_00_adalmar_pivot_year
+      role: "Quietly shifts from social intelligence to documentary vigilance; begins viewing records as the real battlefield."
+
+  status: active
+
+  tags:
+    - nobility
+    - matriarch
+    - strategist
+    - correspondence_network
+    - document_leverage
+
+
+- id: char_dietrich_castellan_lindenberg
+
+  name:
+    full: "Dietrich"
+    common: "Dietrich"
+    nickname: null
+    titles:
+      - title: "Castellan of Lindenberg"
+        from: null
+        to: null
+        notes: "Household officer; castle commander; honest enforcer."
+
+  vitals:
+    born:
+      year: 981
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 44
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Knows where stone fails in frost and where stores vanish if not watched."
+    believed_to_know:
+      - org_lindenberg_lordship: "Assumed to know everything about the household; he knows logistics, not secrets."
+    actually_ignorant_of:
+      - char_adalmar: "Does not understand the documentary war; sees ‘papers’ as a lord’s concern."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Castellan; arms, stores, readiness, guard discipline"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Dietrich is the castle’s spine: barrel-chested, broad-shouldered, late forties, and built for cold service. He wears an old hauberk over
+      quilted linen when duty demands and walks with the stiff gait of a man who has known too many winters on stone. He speaks little, but he
+      remembers everything that matters: who was on watch, what was counted, what was missing.
+
+      He oversees the keep’s arms, granaries, and stores, trains levy leaders in winter and spring, and plans defense with a craftsman’s eye for
+      where frost eats stone. Lightly educated but numerate, he keeps the armoury tallies himself because he trusts his own hand more than any
+      clerk’s cleverness.
+
+      His one private shame is older than his office: he lost two men in a blizzard south of the pass decades ago and believes their spirits linger
+      near the Silbergrat. He avoids that travel when he can, and when he cannot, he over-prepares.
+    key_traits:
+      - "Loyal, blunt, practical"
+      - "Pride in readiness"
+      - "Low tolerance for court shadows"
+      - "Accurate memory; careful tallies"
+      - "Superstition rooted in guilt"
+    motivations:
+      - "Keep Lindenberg defensible"
+      - "Protect the Graf’s household"
+      - "Prevent avoidable losses under his watch"
+    contradictions:
+      - "Distrusts shadows, yet is haunted by one of his own making"
+
+  relationships:
+    - char_ulrich_lindenberg:
+        type: ally
+        nature: "Serves Ulrich with blunt honesty; expects clear orders and gives clear reports."
+        period: null
+        notes: "Ulrich values his reliability precisely because he is not subtle."
+    - char_albrecht_melzau:
+        type: collaborator
+        nature: "Works closely on patrol readiness and escort security."
+        period: null
+        notes: "Mutual respect; few words needed."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Indirect impact only: hears rumors of shifting ‘law habits’ in the valleys; treats them as mountain tales unless they threaten roads."
+
+  status: active
+
+  tags:
+    - officer
+    - military
+    - castellan
+    - honest_enforcer
+    - logistics
+
+
+- id: char_helena_lindenberg
+
+  name:
+    full: "Sister Helena von Lindenberg"
+    common: "Sister Helena"
+    nickname: null
+    titles:
+      - title: "House chaplain (Lindenberg)"
+        from: null
+        to: null
+        notes: "Noble-born cleric; spiritual counterweight to secular politics."
+
+  vitals:
+    born:
+      year: 991
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 34
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - org_church_of_saints: "Canon custom, Kirchlatein, and how ecclesiastical households actually behave under pressure."
+      - loc_hohenegg: "Has received troubling word of ‘quieting bells in troubled nights’ (unverified)."
+    believed_to_know:
+      - loc_kempten: "Assumed to have clean channels into Kempten’s religious circles."
+    actually_ignorant_of:
+      - org_first_devils_circle: "Knows only outlines and rumors; lacks the internal vocabulary to map it accurately."
+
+  affiliations:
+    - org_church_of_saints:
+        role: "Noble-born cleric; chaplain and confessor within the household"
+        from: null
+        to: null
+        status: current
+    - org_lindenberg_lordship:
+        role: "House chaplain; counsel on canon and church relations"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Sister Helena is a quiet counterweight inside Lindenberg: late thirties, plain black veil and undyed wool, ink-stained hands from copying
+      homilies. Serious and contemplative, she speaks softly but precisely, and she does not bend moral language to comfort powerful ears.
+
+      She advises the Graf on canon law and church relations, maintains a small scriptorium for devotional copying, and hears confessions from
+      household retainers who fear their own tongues more than their sins. Her influence is not theatrical; it is persistent.
+
+      She has received a troubling letter from a priest in Hohenegg about “the quieting of bells in troubled nights,” and she has not yet shown it
+      to the Graf—part caution, part fear that naming a thing gives it weight.
+    key_traits:
+      - "Gentle but morally unyielding"
+      - "Precise speech; low tolerance for cruelty"
+      - "Comfortable in ecclesiastical etiquette"
+      - "Patient mediator"
+    motivations:
+      - "Keep Lindenberg in good standing with the Church"
+      - "Prevent corruption from taking root in household practice"
+      - "Discern whether ‘spiritual thinning’ rumors are real"
+    contradictions:
+      - "Values truth-telling, yet delays sharing a troubling letter to avoid panic or missteps"
+
+  relationships:
+    - char_ulrich_lindenberg:
+        type: collaborator
+        nature: "Provides canon and church counsel; he listens when it is framed as duty rather than rebuke."
+        period: null
+        notes: "Her moral firmness restrains his temptation to solve problems ‘quietly’ at any cost."
+    - char_irmengard_lindenberg:
+        type: ally
+        nature: "Mutual respect: Helena sees Irmengard’s restraint as useful; Irmengard sees Helena’s integrity as protective."
+        period: null
+        notes: "They can coordinate without appearing coordinated."
+    - char_eberhard:
+        type: complicated
+        nature: "Knows only outlines of Falkenau’s convent disaster; disturbed by conflicting accounts."
+        period: null
+        notes: "Treats it as a spiritual warning sign rather than gossip."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_spring_walpurghausen_incident
+      role: "Not a participant; the incident’s ‘sermon-warfare’ logic heightens her sensitivity to doctrinal inversion rumors."
+
+  status: active
+
+  tags:
+    - clergy
+    - household_chaplain
+    - mediator
+    - moral_counterweight
+
+
+- id: char_otto_lindenberg
+
+  name:
+    full: "Otto von Lindenberg"
+    common: "Otto"
+    nickname: null
+    titles:
+      - title: "Heir apparent of Lindenberg"
+        from: null
+        to: null
+        notes: "Heir; knight-in-training; future political pivot."
+
+  vitals:
+    born:
+      year: 1007
+      precision: approximate
+      location: loc_lindenberg
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 18
+
+  family:
+    parents:
+      father: char_ulrich_lindenberg
+      mother: char_irmengard_lindenberg
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Household expectations, estate management basics, and the shape of court etiquette."
+    believed_to_know:
+      - loc_kempten: "Others assume he understands Kempten politics more than he does."
+    actually_ignorant_of:
+      - evt_1028_00_adalmar_pivot_year: "Does not grasp how dangerous archives can be."
+      - evt_1026_10_siege_falkenau: "Knows only romanticized rumor-layer versions."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Heir; diplomatic and martial trainee"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Otto is the house’s future weight: early twenties, wiry and athletic, earnest in public and impulsive in private. He reads and writes better
+      than many nobles of his age and has a good singing voice that makes him feel older than he is. He wants to be worthy of inheritance and
+      dreams of proving himself on campaign or in arbitration.
+
+      He romanticizes frontier danger and treats rumor as invitation. That hunger for significance makes him easy to steer—by flatterers, by older
+      officers who want a symbol, or by anyone who frames a risk as a chance for honorable action.
+
+      Privately, he keeps a journal of ambitions far grander than his station and fears disappointing his father. His greatest vulnerability is
+      that he wants to be seen as decisive before he knows what decisiveness costs.
+    key_traits:
+      - "Earnest, respectful, status-aware"
+      - "Impulsive in private; formal in public"
+      - "Eager to prove himself"
+      - "Romanticizes danger"
+    motivations:
+      - "Demonstrate worthiness to inherit"
+      - "Gain a reputation through ‘useful heroism’"
+      - "Be taken seriously by older nobles and officers"
+    contradictions:
+      - "Wants dignity, yet chases stories that can make him look foolish"
+      - "Craves independence, yet seeks approval constantly"
+
+  relationships:
+    - char_ulrich_lindenberg:
+        type: familial
+        nature: "Father and judge; Otto seeks approval and fears falling short."
+        period: null
+        notes: "Ulrich’s restraint frustrates Otto’s desire for dramatic action."
+    - char_irmengard_lindenberg:
+        type: familial
+        nature: "Mother and strategist; she shields him from traps while quietly testing his judgment."
+        period: null
+        notes: "She uses questions to teach him, not commands."
+    - char_albrecht_melzau:
+        type: ally
+        nature: "Martial mentor and escort commander; teaches caution as a form of honor."
+        period: null
+        notes: "Otto listens better in the saddle than at table."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Indirect: hears of new ‘consultation’ habits to the east and imagines himself riding to witness them."
+
+  status: active
+
+  tags:
+    - nobility
+    - heir
+    - knight_in_training
+    - future_pivot
+
+
+- id: char_bertrade_household_steward
+
+  name:
+    full: "Lady Bertrade"
+    common: "Lady Bertrade"
+    nickname: null
+    titles:
+      - title: "Steward of the household (Lindenberg)"
+        from: null
+        to: null
+        notes: "Domestic authority; gatekeeper of internal affairs."
+
+  vitals:
+    born:
+      year: 984
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 41
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Who owes whom, who embarrassed whom, and which ‘small’ incidents are actually structural risks."
+    believed_to_know:
+      - char_ulrich_lindenberg: "Assumed to be merely domestic; in practice she is a reputational firewall."
+    actually_ignorant_of:
+      - concept_governance_colonization: "Would recognize it as ‘habit management,’ but not by name."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Household steward; keys, budgets, servants, provisioning, internal reputation"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Lady Bertrade is the household’s internal law: mid-forties, stern, immaculate, and always carrying keys on a braided cord. She supervises
+      servants, cooks, laundresses, and chambermaids, controls internal budgets, and keeps provisioning orderly enough that outsiders assume peace
+      is natural rather than manufactured.
+
+      Efficient and commanding, she protects the house’s dignity the way a castellan protects stone—by noticing stress fractures early. She keeps
+      a near-photographic memory for who said what, when, and which visitors left debts or caused embarrassment.
+
+      She could ruin reputations if she chose. The fact that she usually does not is why she is trusted.
+    key_traits:
+      - "Efficient, commanding, stability-minded"
+      - "Key-keeper; logistical authority"
+      - "Scolding tongue when needed"
+      - "Excellent memory for social liabilities"
+    motivations:
+      - "Maintain house dignity and order"
+      - "Prevent internal scandal"
+      - "Keep provisioning stable through winter and lean seasons"
+    contradictions:
+      - "Protects reputations while holding the means to destroy them"
+
+  relationships:
+    - char_irmengard_lindenberg:
+        type: collaborator
+        nature: "Domestic execution of Irmengard’s quiet strategy; Bertrade keeps the house unembarrassable."
+        period: null
+        notes: "They share a preference for silence over spectacle."
+    - char_marlene_eichenbach:
+        type: complicated
+        nature: "Sees Marlene as useful but potentially dangerous due to her access and observational skill."
+        period: null
+        notes: "Keeps her ‘properly occupied’ on purpose."
+
+  timeline:
+    - year: 1028
+      event: evt_1028_00_adalmar_pivot_year
+      role: "Indirect: tightens household discipline when external politics feel unstable—without knowing why they are unstable."
+
+  status: active
+
+  tags:
+    - household_officer
+    - domestic_authority
+    - gatekeeper
+    - logistics
+    - key_keeper
+
+
+- id: char_conrad_holzmann
+
+  name:
+    full: "Reeve Conrad Holzmann"
+    common: "Reeve Holzmann"
+    nickname: null
+    titles:
+      - title: "Reeve of Lindenberg estates"
+        from: null
+        to: null
+        notes: "Estate administrator; tax and land manager; rural authority figure."
+
+  vitals:
+    born:
+      year: 975
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 50
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Seasonal labor realities; which boundary disputes will turn ugly; how quickly peasants flee when pressed."
+    believed_to_know:
+      - loc_kempten: "Toll-keeper cordiality, but not city politics."
+    actually_ignorant_of:
+      - char_adalmar: "Does not suspect documentary warfare behind many ‘rights disputes.’"
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Estate reeve; rents, tithes, labor, rural disputes, road safety coordination"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Conrad Holzmann is rural governance made human: weathered, lean, and in his fifties, with tally-sticks and account pouches that seem to
+      weigh nothing in his hands. He inspects orchards and vineyards personally, handles disputes between peasants with practiced gruffness, and
+      measures success in harvest stability and lack of flight.
+
+      He is trustworthy rather than warm, and he prefers facts to speeches. When roads feel unsafe, he does not moralize; he assigns watchers and
+      reroutes carts.
+
+      He is quietly pressured by a minor noble from [NEW NAMES FOR REVIEW] Steingaden to divert a portion of vineyard tithe; he has refused so far,
+      knowing that one small bend in the books can become a permanent hinge for blackmail.
+    key_traits:
+      - "Practical, experienced, sometimes gruff"
+      - "Detail-oriented with tallies"
+      - "Road-safety minded"
+      - "Resists petty corruption (so far)"
+    motivations:
+      - "Stability of harvests and rents"
+      - "Prevent peasant flight"
+      - "Keep roads safe for drovers and peddlers"
+    contradictions:
+      - "Must squeeze tenants for survival while trying not to break them"
+
+  relationships:
+    - char_ulrich_lindenberg:
+        type: ally
+        nature: "Provides the Graf with reality, not flattery."
+        period: null
+        notes: "Ulrich trusts him because he reports ugly truths early."
+    - char_bertrade_household_steward:
+        type: collaborator
+        nature: "Estate provisioning meets household provisioning; they coordinate quietly and efficiently."
+        period: null
+        notes: "Friction arises only when budgets tighten."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_spring_walpurghausen_incident
+      role: "Indirect: treats grain irregularities and road theft rumors as a practical threat, not a theological one."
+
+  status: active
+
+  tags:
+    - administrator
+    - reeve
+    - rural_authority
+    - estates
+
+
+- id: char_albrecht_melzau
+
+  name:
+    full: "Sir Albrecht von Melzau"
+    common: "Sir Albrecht"
+    nickname: null
+    titles:
+      - title: "Household knight (Lindenberg)"
+        from: null
+        to: null
+        notes: "Martial support; escort commander; seasoned veteran."
+
+  vitals:
+    born:
+      year: 984
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 41
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_immenstadt: "Old campaign contacts and the practical habits of soldiers."
+    believed_to_know:
+      - loc_falkenau_grafschaft: "Others assume he ‘knows the east’ because he once escorted a caravan past Frostmark Pass."
+    actually_ignorant_of:
+      - concept_consent_doctrine: "Sees politics as policy and steel; misses doctrinal machinery unless it changes patrol patterns."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Escort commander; patrol leader; martial advisor"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Sir Albrecht is a veteran made cautious: broad-shouldered, scarred, mid-forties, wearing worn but well-repaired mail and keeping his helmet
+      strapped at the saddle when traveling. He leads escorts on dangerous roads and reads terrain like a ledger—where an ambush would sit, where a
+      retreat can breathe, where winter turns bravery into stupidity.
+
+      Stoic and bluntly honest, he prefers discipline over glory and avoids unnecessary bloodshed. He suffers sleeplessness when winter winds howl
+      across the ridge, a reminder of old losses he refuses to dress up as heroism.
+
+      He is the sort of man Otto will imitate if Otto learns anything real.
+    key_traits:
+      - "Stoic, dutiful, bluntly honest"
+      - "Terrain-reader; ambush-minded"
+      - "Discipline-first; avoids needless blood"
+      - "Haunted by past losses"
+    motivations:
+      - "Protect the Graf’s family"
+      - "Keep escorts disciplined and alive"
+      - "Prevent border trouble from becoming war"
+    contradictions:
+      - "Trained for violence, personally committed to restraint"
+
+  relationships:
+    - char_dietrich_castellan_lindenberg:
+        type: collaborator
+        nature: "Readiness and patrol security coordination."
+        period: null
+        notes: "Mutual respect rooted in competence."
+    - char_otto_lindenberg:
+        type: ally
+        nature: "Mentor-by-example; teaches Otto caution as honor."
+        period: null
+        notes: "Will risk himself for Otto, but not indulge Otto’s fantasies."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Peripheral: evaluates eastward shifts only by whether they increase road danger."
+
+  status: active
+
+  tags:
+    - knight
+    - military
+    - escort_commander
+    - veteran
+
+
+- id: char_gerwin_tall_groom
+
+  name:
+    full: "Gerwin the Tall"
+    common: "Gerwin the Tall"
+    nickname: null
+    titles:
+      - title: "Chief groom (Lindenberg)"
+        from: null
+        to: null
+        notes: "Master of horse; handler of riders and mounts."
+
+  vitals:
+    born:
+      year: 987
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 38
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - loc_lindenberg: "Stable routines, fodder realities, and which riders treat horses like tools."
+    believed_to_know:
+      - loc_silbergrat: "Others treat his superstitions as peasant talk; he treats them as animal-sense."
+    actually_ignorant_of:
+      - evt_1029_spring_walpurghausen_incident: "Would only notice it if it changes fodder flows or makes beasts nervous."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Chief groom; breeding, training, stables, transport readiness"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Gerwin is thin as a willow and very tall, smelling of hay and leather, quick-footed despite his gangly frame. Cheerful and plain-spoken, he
+      loves horses more than people and reads temperament at a glance with the confidence of a man who has kept too many mounts alive through thin
+      winters.
+
+      He manages breeding, feeding, and training, keeps meticulous breeding notes, and diagnoses minor ailments before they become stable-wide
+      problems. He is superstitious in a rural way: he believes one ridge above the Silbergrat is unlucky for beasts and avoids grazing there.
+
+      He dismisses wyvern rumors as lammergeier talk—until a horse refuses a trail it has never refused before.
+    key_traits:
+      - "Cheerful, plain-spoken, craft-proud"
+      - "Reads horses well; patient trainer"
+      - "Superstitious but observant"
+      - "Meticulous notes"
+    motivations:
+      - "Healthy stables and reliable transport"
+      - "Adequate fodder stores through winter"
+      - "Recognition of his craft"
+    contradictions:
+      - "Dismisses ‘stories’ while trusting animal fear as truth"
+
+  relationships:
+    - char_bertrade_household_steward:
+        type: collaborator
+        nature: "Provisioning negotiations: fodder, tack, stable supplies."
+        period: null
+        notes: "He wins by being indispensable and right."
+    - char_albrecht_melzau:
+        type: collaborator
+        nature: "Coordinates mounts for escorts; trusts Albrecht’s restraint."
+        period: null
+        notes: "He judges knights by how their horses behave after a ride."
+
+  timeline:
+    - year: 1028
+      event: evt_1028_00_adalmar_pivot_year
+      role: "None directly; becomes relevant if courier patterns increase and mounts are requisitioned."
+
+  status: active
+
+  tags:
+    - servant
+    - stablemaster
+    - logistics
+    - animal_handler
+
+
+- id: char_marlene_eichenbach
+
+  name:
+    full: "Marlene of Eichenbach"
+    common: "Marlene"
+    nickname: null
+    titles:
+      - title: "Lady-in-waiting to Gräfin Irmengard"
+        from: null
+        to: null
+        notes: "Court intermediary; quiet observer; social connector."
+
+  vitals:
+    born:
+      year: 1007
+      precision: approximate
+      location: null
+    died:
+      year: null
+      precision: unknown
+      location: null
+      cause: null
+    status:
+      vital: alive
+      location: loc_lindenberg
+      activity: active
+      canonical_resolution: pending
+    age_in_1025: 18
+
+  family:
+    parents:
+      father: null
+      mother: null
+    spouse: []
+    children:
+      legitimate: []
+      illegitimate: []
+
+  knowledge_state:
+    knows:
+      - char_irmengard_lindenberg: "Her rhythms, preferences, and what ‘silence’ means in negotiation."
+    believed_to_know:
+      - loc_kempten: "Has a cousin in a guildhouse; others underestimate what that gossip can reveal."
+    actually_ignorant_of:
+      - char_adalmar: "Does not know who he truly is—only that certain names make voices tighten."
+
+  affiliations:
+    - org_lindenberg_lordship:
+        role: "Lady-in-waiting; messenger within household; discreet social interface"
+        from: null
+        to: null
+        status: current
+
+  biography:
+    summary: |
+      Marlene is young (early twenties), slender, and carefully muted in dress, with hands folded when not occupied. She rarely speaks without
+      purpose and has a practiced ability to drift at the edges of important conversations without appearing to listen.
+
+      Skilled in needlework and court etiquette, she carries messages discreetly within the household and outward through Irmengard’s channels. She
+      memorizes faces, voices, and small details with ease, and she can reproduce a scene’s social geometry later without seeming remarkable.
+
+      She is loyal to Irmengard and privately ambitious: she wants to marry into minor nobility and knows that being trusted with delicate errands is
+      the first rung. She once overheard a tense conversation between the Graf and Prior Matthias in which Falkenau was mentioned; she has told no one.
+    key_traits:
+      - "Attentive, observant, polite"
+      - "Speaks only with purpose"
+      - "Uncanny edge-of-room presence"
+      - "Excellent memory for social detail"
+    motivations:
+      - "Serve Irmengard with absolute loyalty"
+      - "Build a future through careful usefulness"
+      - "Marry well into minor nobility"
+    contradictions:
+      - "Lives on discretion, yet carries secrets that could matter if mis-timed"
+
+  relationships:
+    - char_irmengard_lindenberg:
+        type: ally
+        nature: "Trusted attendant; carries messages and preserves conversational detail."
+        period: null
+        notes: "Irmengard uses her as a quiet sensor without turning her into a visible agent."
+    - char_bertrade_household_steward:
+        type: complicated
+        nature: "Bertrade polices her access and keeps her ‘properly occupied.’"
+        period: null
+        notes: "Mutual respect with a sharp edge: one controls rooms, the other moves through them."
+
+  timeline:
+    - year: 1029
+      event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      role: "Peripheral: hears Falkenau named in tense talk; becomes a social conduit for ‘eastward instability’ gossip."
+
+  status: active
+
+  tags:
+    - courtier
+    - lady_in_waiting
+    - intermediary
+    - observer
+    - messenger
