@@ -1,0 +1,85 @@
+organizations:
+  - id: org_church_of_saints
+
+    name: "Church of Saints"
+    abbreviation: null
+
+    founding:
+      year: null
+      founders: []
+      location: null
+      circumstances: "Institutional church; founding treated as traditional/immemorial within the setting timeframe."
+
+    active_period:
+      public: [null, null]
+      underground: null
+      notes: "Operates publicly and continuously as the dominant ecclesiastical institution."
+
+    archetype: establishment
+
+    operational_security:
+      cover_story: "The orthodox Church: sacraments, parish order, pastoral care, and the maintenance of moral and social law."
+      actual_function: "Spiritual authority and institutional governance; enforcement of doctrine; leverage through legitimacy, oaths, and discipline."
+      exposure_level: known
+      compartmentalization: "High—layfolk know practices and parish rules; clergy know doctrine; inner mechanisms (discipline, politics, visitation aims) are not transparent."
+
+    doctrine:
+      core_claim: "Divine order is mediated through the Church; lawful authority is sustained by oath, sacrament, and obedience within right teaching."
+
+      formulations:
+        recruitment: "The Church keeps peace with God and neighbor through sacraments and right living."
+        discipline: "Obedience, confession, and penance preserve the soul and the community."
+        inner_circle: "Orthodoxy must be guarded; irregular teachings threaten souls and political stability alike."
+
+      key_concepts: []
+
+    structure:
+      type: "Parish-and-monastery network with higher oversight (bishops/visitation), varying by region."
+      components:
+        - name: "Parishes"
+          function: "Local worship, sacraments, burial, moral discipline."
+          leader_title: "Parish Priest"
+          current_holder: null
+        - name: "Monasteries & Abbeys"
+          function: "Prayer, scholarship, landholding, hospitality, ecclesiastical influence."
+          leader_title: "Abbot/Abbess"
+          current_holder: null
+        - name: "Visitations"
+          function: "Oversight, investigation of irregularities, correction and discipline."
+          leader_title: "Visitor / Ecclesiastical Delegate"
+          current_holder: null
+      hierarchy: tiered
+
+    methods:
+      - "Sacraments and parish discipline (confession, penance, communion)"
+      - "Visitations and inquiries"
+      - "Control of legitimate oaths/charters through spiritual sanction"
+      - "Public preaching and doctrinal instruction"
+      - "Ecclesiastical courts (where applicable)"
+
+    key_figures: []
+
+    geography:
+      primary: null
+      influence: []
+      reach: international
+
+    evolution:
+      - year: null
+        phase: "Regional Orthodoxy Under Strain"
+        description: "In the Falkenau sphere, legitimacy contests and heretical/irregular movements create pressure for discipline and investigation."
+
+    related_organizations:
+      derivative: []
+      allied: []
+      opposed:
+        - org_first_devils_circle
+      syncretized: []
+
+    status: active
+
+    tags:
+      - establishment_faction
+      - orthodox
+      - ecclesiastical_authority
+      - legitimacy_leverage
