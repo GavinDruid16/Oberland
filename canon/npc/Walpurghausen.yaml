@@ -1,0 +1,128 @@
+characters:
+  - id: char_luitgarde_candle_quiet
+
+    name:
+      full: "Luitgarde"
+      common: "Luitgarde"
+      nickname: "Candle-Quiet"
+      titles:
+        - title: "Walpurghausen yard-girl (vogtei service)"
+          from: null
+          to: null
+          notes: "Assigned to chapel lamps and guest-bedding; runs errands between barns, hall, and shrine."
+
+    vitals:
+      born:
+        year: 1012
+        precision: approximate
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: null
+        activity: active
+        canonical_resolution: pending
+
+      age_in_1025: 13
+
+    family:
+      parents:
+        father: null
+        mother: null
+
+      spouse: []
+
+      children:
+        legitimate: []
+        illegitimate: []
+
+    knowledge_state:
+      knows:
+        - char_arnulf: "Receives occasional counsel framed as guidance for a troubled girl; believes he is her only true patron."
+        - evt_1029_spring_walpurghausen_incident: "Can confirm patterns: who arrived, who spoke privately, and who moved oddly—without knowing the full plan."
+
+      believed_to_know:
+        - evt_1029_spring_walpurghausen_incident: "Most assume she knows nothing beyond bedding and lamps; her usefulness is underestimated."
+
+      actually_ignorant_of:
+        - org_arnulf_cell_network: "Does not suspect a broader network exists."
+        - org_2dc_cell_walpurghausen: "Does not understand the cell as a named structure; experiences it as personal patronage and ‘necessary’ tasks."
+
+    affiliations:
+      - org_graf_administration:
+          role: "Servant assigned to vogtei chapel lamps, guest-bedding, and errands"
+          from: null
+          to: null
+          status: current
+
+      - org_arnulf_cell_network:
+          role: "Promising initiate / deniable helper (patronage-based, not doctrinal)"
+          from: 1028
+          to: null
+          status: secret
+
+    biography:
+      summary: |
+        Luitgarde is a steady-handed servant in Walpurghausen vogtei service: the girl who trims lamp-wicks, shakes out guest-bedding,
+        and runs errands between barns, hall, and shrine without drawing comment. Small, plain, and tidy, she keeps her eyes down until
+        she is sure she is unobserved—then watches with an unsettling patience. Indoors, her hands are always clean, as if cleanliness
+        itself were part of her cover.
+
+        Patient and obedient on the surface, she is quietly intent beneath it. She remembers details without seeming to listen, learns
+        routines until she can predict who will be where, and places herself where she can hear what matters. She never pushes for secrets;
+        she waits for them to fall out. She wants responsibility beyond errands—proof she can be relied upon when the household is stressed
+        or ashamed.
+
+        Her fear is not sin but mis-speech: confession frightens her because saying the wrong thing to the wrong ear can ruin more than a soul.
+        She receives occasional counsel from Arnulf “Schwarzpriester,” framed as guidance for a troubled girl. She believes he is her only true
+        patron, which makes her loyalty personal rather than ideological—useful, and volatile if that bond is threatened. Three-Axis Alignment:
+        Neutral / Solitude / Neutral.
+      key_traits:
+        - "Small, plain, tidy; practiced invisibility"
+        - "Patient and quietly intent"
+        - "Excellent routine memory; notices patterns"
+        - "Obedient in surface; difficult to dislodge once decided"
+        - "Neither cruel nor soft; necessity-driven"
+      motivations:
+        - "To be trusted with responsibility beyond errands"
+        - "To prove reliability under stress and shame"
+        - "To keep herself ‘forgettable’ while staying useful"
+      contradictions:
+        - "Craves trust, but fears being seen as clever"
+        - "Avoids confession to prevent mis-speaking, while serving a patron who thrives on careful words"
+        - "Loyal to a person more than a doctrine, yet drawn into doctrine-shaped operations"
+
+    relationships:
+      - char_arnulf:
+          type: collaborator
+          nature: "Sees him as sole patron and counselor; loyalty is personal and intense, not abstract."
+          period: [1028, null]
+          notes: "If she believes he is threatened or lying to her, she may act unpredictably to ‘protect’ the bond."
+      - char_konrad:
+          type: complicated
+          nature: "Indirect employer within the vogtei; she serves the household order that supports his office while staying socially invisible."
+          period: [1029, null]
+          notes: "Useful as an unnoticed witness; dangerous if pressed into formal testimony."
+
+    timeline:
+      - year: 1029
+        event: evt_1029_spring_walpurghausen_incident
+        role: "Unnoticed witness and pattern-confirmation node; observes movements and conversations around barns, hall, and shrine."
+
+    status: active
+
+    tags:
+      - peasant
+      - servant
+      - hidden_agent
+      - promising_initiate
+      - innocent_face
+      - errand_runner
+      - witness
+      - secret_affiliation
