@@ -1,0 +1,455 @@
+characters:
+  - id: char_oswald
+
+    name:
+      full: "Oswald von Langenrein"
+      common: "Oswald"
+      nickname: null
+      titles:
+        - title: "Ritter von Langenrein"
+          from: 1020
+          to: null
+          notes: "Holds this title continuously, but after 1026 its precedence is lower than his Graf title."
+        - title: "Graf von Falkenau-Langenrein"
+          from: 1026
+          to: null
+          notes: "Stylized form; supersedes 'Ritter von Langenrein' in precedence once he holds Falkenau in practice."
+
+    vitals:
+      born:
+        year: 995
+        precision: year
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: loc_falkenau_grafschaft
+        activity: active
+        canonical_resolution: pending
+
+      age_in_1025: 30
+
+    family:
+      parents:
+        father: char_dietrich_langenrein
+        mother: null
+
+      spouse:
+        - character: char_sibilla
+          married: 1024
+          status: current
+
+      children:
+        legitimate:
+          - character: char_otto
+            notes: "Treated as heir-line; legitimacy must remain unquestionable for regime stability."
+        illegitimate:
+          - character: char_leopold
+            notes: "Status and parentage politically sensitive; the regime suppresses the category of doubt."
+
+    knowledge_state:
+      knows:
+        - evt_1030_spring_breach: "Receives Adalmar’s risk report; responds with the sovereign line: 'There will be no talk.'"
+      believed_to_know:
+        - evt_1030_spring_breach: "Household believes he has settled the matter by force of will and discipline."
+      actually_ignorant_of: []
+
+    affiliations:
+      - organization: org_church_of_saints
+        role: "Political co-operator and occasional antagonist (relationship mediated through priests and legitimacy needs)"
+        from: null
+        to: null
+        status: complicated
+
+      - organization: org_first_devils_circle
+        role: "Beneficiary of 1DC infrastructure during revolt; later an uneasy overlord to its autonomy"
+        from: 1025
+        to: null
+        status: complicated
+
+    biography:
+      summary: |
+        Oswald is defined by an insistence that political reality is not negotiated but imposed. In moments
+        where evidence could fracture authority, he refuses argument and instead abolishes the category of
+        permissible doubt. His governance style treats rumor, speculation, and “maybe” as actionable threats.
+
+        In spring 1030, when Brother Adalmar warns that Leopold’s birth creates a legitimacy vulnerability,
+        Oswald’s response—“There will be no talk.”—exemplifies his core method: not refutation, but social
+        criminalization of the premise. For Oswald, legitimacy is an enforced condition that must remain
+        absolute to keep oaths, charters, and succession from becoming provisional.
+      key_traits:
+        - "Sovereign certainty (asserts reality rather than arguing it)"
+        - "Low tolerance for ambiguity; treats doubt as subversion"
+        - "Strategic about legitimacy and institutional leverage"
+        - "Capable of pragmatic alliance when it serves power"
+      motivations:
+        - "Preserve the unbroken legitimacy of his house and heirs"
+        - "Prevent Church leverage and rival-lord narratives from reopening civil war"
+        - "Make future governance instruments (oaths/charters) feel final"
+      contradictions:
+        - "Requires institutions (Church, scribes, oaths) while fearing their leverage"
+        - "Benefits from revolutionary infrastructure while policing destabilizing speech"
+
+    relationships:
+      - character: char_sibilla
+        type: familial
+        nature: "Spouse; political union with shared legitimacy interests and potential internal tensions."
+        period: [1024, null]
+        notes: "Marriage is both alliance and anchor; public unity is strategically necessary."
+
+      - character: char_adalmar
+        type: collaborator
+        nature: "Household chaplain and clerk; provides counsel, paperwork, and administrative intelligence."
+        period: [1024, 1030]
+        notes: "Adalmar’s chaplaincy spans fall 1024 through spring 1030; culminates in the Breach risk report."
+
+      - character: char_adalmar
+        type: enemy
+        nature: "Non-speaking terms; cooperation effectively ends."
+        period: [1030, null]
+        notes: "After spring 1030, they avoid direct contact; messages (if any) route through intermediaries."
+
+      - character: char_otto
+        type: familial
+        nature: "Heir-line proximity; Otto’s legitimacy must be protected from any adjacent doubt."
+        period: [null, null]
+        notes: "Otto’s position is strengthened by making 'maybe illegitimate' socially impossible."
+
+    timeline:
+      - year: 1030
+        event: evt_1030_spring_breach
+        role: "Receives legitimacy risk report; imposes total prohibition on rumor."
+
+    status: active
+
+    tags:
+      - nobility
+      - ruler
+      - legitimacy_enforcer
+      - establishment
+
+
+  - id: char_adalmar
+
+    name:
+      full: "Brother Adalmar"
+      common: "Brother Adalmar"
+      nickname: null
+      titles:
+        - title: "Household Chaplain to Oswald"
+          from: 1024
+          to: 1030
+          notes: "Chaplaincy begins in fall 1024 and ends in spring 1030; afterward he and Oswald are effectively on non-speaking terms."
+        - title: "Household clerk and scribe"
+          from: null
+          to: null
+          notes: "Acts as scribe with privileged access to household timing, travel chatter, and administrative flow."
+
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: loc_falkenau_grafschaft
+        activity: active
+        canonical_resolution: pending
+
+      age_in_1025: null
+
+    family:
+      parents:
+        father: null
+        mother: null
+
+      spouse: []
+
+      children:
+        legitimate: []
+        illegitimate: []
+
+    knowledge_state:
+      knows:
+        - evt_1030_spring_breach: "Identifies weak points that could generate legitimacy rumor; delivers a private risk report to Oswald."
+      believed_to_know:
+        - evt_1030_spring_breach: "Some may suspect he knows more than he says; others treat him as merely diligent."
+      actually_ignorant_of: []
+
+    affiliations:
+      - organization: org_church_of_saints
+        role: "Cleric in good standing (publicly), with entanglements in secular legitimacy-work"
+        from: null
+        to: null
+        status: complicated
+
+    biography:
+      summary: |
+        Adalmar operates where administration becomes power: household schedules, travel chatter, ledger-timings,
+        and the “small certainties” that accumulate around births, absences, and proximity. He understands that
+        rumor is not born from ideology but from patterns people can point to.
+
+        From fall 1024 through spring 1030 he serves as Oswald’s household chaplain, a position that grants him
+        intimate access without formal political authority. In spring 1030 he approaches Oswald with a risk report
+        rather than accusation, explicitly declining to name Sibilla as culprit and treating the danger as narrative
+        vulnerability: “There will be talk… enemies will weaponize it… here are the weak points.” After this breach,
+        his relationship with Oswald collapses into silence: they remain in the same political world, but not in
+        conversation.
+      key_traits:
+        - "Attentive to timing and pattern (administrative intelligence)"
+        - "Cautious phrasing; frames threats as management problems"
+        - "Understands how narratives become weapons"
+        - "Able to compartmentalize what is said vs. what is known"
+      motivations:
+        - "Preserve household stability (or his place within it)"
+        - "Prevent enemies from gaining leverage through rumor"
+        - "Maintain access and usefulness without becoming scapegoat"
+      contradictions:
+        - "Serves legitimacy while personally accumulating knowledge that undermines it"
+        - "Warns against rumor while inevitably becoming a source of dangerous awareness"
+
+    relationships:
+      - character: char_oswald
+        type: collaborator
+        nature: "Household chaplain and clerk; counsel and intelligence provided under a veil of piety."
+        period: [1024, 1030]
+        notes: "Functional relationship; ends abruptly after the Breach."
+
+      - character: char_oswald
+        type: enemy
+        nature: "Non-speaking terms; presence becomes tolerated but unwanted."
+        period: [1030, null]
+        notes: "If Adalmar remains nearby, it is as a dangerous knower rather than trusted servant."
+
+      - character: char_sibilla
+        type: complicated
+        nature: "Not accused in the approach; nevertheless adjacent to the vulnerability he flags."
+        period: [null, null]
+        notes: "Whether Sibilla learns of Adalmar’s warning is unresolved."
+
+    timeline:
+      - year: 1030
+        event: evt_1030_spring_breach
+        role: "Delivers private legitimacy risk report; triggers Oswald’s sovereign prohibition."
+
+    status: active
+
+    tags:
+      - clergy
+      - administrator
+      - scribe
+      - household_operator
+      - legitimacy_risk_analyst
+
+
+  - id: char_sibilla
+
+    name:
+      full: "Sibilla"
+      common: "Sibilla"
+      nickname: null
+      titles:
+        - title: "Keeper of the Moot"
+          from: 1025
+          to: null
+          notes: "Leadership role within 1DC’s practical governance structure."
+
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: loc_tiefenbrunn
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: loc_falkenau_grafschaft
+        activity: active
+        canonical_resolution: pending
+
+      age_in_1025: null
+
+    family:
+      parents:
+        father: null
+        mother: null
+
+      spouse:
+        - character: char_oswald
+          married: 1024
+          status: current
+
+      children:
+        legitimate:
+          - character: char_otto
+            notes: "Publicly secure heir-line; protected by the regime’s refusal to permit doubt."
+        illegitimate:
+          - character: char_leopold
+            notes: "Public status suppressed; parentage and implications intentionally kept unarticulated."
+
+    knowledge_state:
+      knows:
+        - org_first_devils_circle: "Full internal understanding of Moot governance (as Keeper)."
+      believed_to_know:
+        - evt_1030_spring_breach: "Others may assume she knows; this is unconfirmed."
+      actually_ignorant_of:
+        - evt_1030_spring_breach: "Whether she knows the details of Adalmar’s approach is unresolved."
+
+    affiliations:
+      - organization: org_first_devils_circle
+        role: "Keeper of the Moot (co-leader in practice)"
+        from: 1023
+        to: null
+        status: current
+
+      - organization: org_church_of_saints
+        role: "Publicly Christian; relationship to Church authority contested via 1DC doctrine"
+        from: null
+        to: null
+        status: complicated
+
+    biography:
+      summary: |
+        Sibilla is a political organizer whose authority is grounded in communal practice and disciplined
+        consent structures. As Keeper of the Moot, she represents governance that is legible to peasants
+        and threatening to orthodox hierarchies.
+
+        In spring 1030 she becomes an axis around which others might try to form a scandal, but Adalmar’s
+        approach to Oswald explicitly avoids accusing her. Oswald’s response—abolishing the premise of talk—
+        functions as a public shield, whatever Sibilla’s private awareness or involvement may be.
+      key_traits:
+        - "Organizational authority rooted in communal practice"
+        - "Disciplined, strategic, and politically literate"
+        - "Understands leverage and narrative control"
+        - "Capable of maintaining public unity under pressure"
+      motivations:
+        - "Preserve and expand the Moot’s practical power"
+        - "Protect her community and its autonomy"
+        - "Prevent outside institutions from converting scandal into domination"
+      contradictions:
+        - "Exercises real authority while living inside institutions that deny it (lordship, Church)"
+        - "Needs stability for governance while aligned with doctrines that legitimize refusal"
+
+    relationships:
+      - character: char_oswald
+        type: familial
+        nature: "Spouse; alliance that binds revolutionary infrastructure to sovereign rule."
+        period: [1024, null]
+        notes: "Public unity is strategically mandatory; private dynamics are not fully resolved."
+
+      - character: char_adalmar
+        type: complicated
+        nature: "Adjacent to a legitimacy vulnerability flagged by Adalmar; not directly accused."
+        period: [1030, null]
+        notes: "Whether she learns of the Breach’s internal exchange is unresolved."
+
+      - character: char_otto
+        type: familial
+        nature: "Mother (in practice/canon usage), with Otto’s legitimacy treated as regime-critical."
+        period: [null, null]
+        notes: "Otto benefits from the enforced impossibility of 'maybe' as a category."
+
+    timeline:
+      - year: 1030
+        event: evt_1030_spring_breach
+        role: "Central figure in the suppressed rumor vector; publicly protected by prohibition."
+
+    status: active
+
+    tags:
+      - peasant_leader
+      - organizer
+      - rebel_archetype
+      - legitimacy_target
+      - 1dc
+
+
+  - id: char_dietrich_langenrein
+
+    name:
+      full: "Dietrich von Langenrein"
+      common: "Dietrich von Langenrein"
+      nickname: null
+      titles: []
+
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: unknown
+        location: null
+        activity: unknown
+        canonical_resolution: pending
+
+      age_in_1025: null
+
+    family:
+      parents:
+        father: null
+        mother: null
+
+      spouse: []
+
+      children:
+        legitimate:
+          - character: char_oswald
+            notes: "Father of Oswald."
+        illegitimate: []
+
+    knowledge_state:
+      knows: []
+      believed_to_know: []
+      actually_ignorant_of: []
+
+    affiliations: []
+
+    biography:
+      summary: |
+        Dietrich von Langenrein is established in canon as Oswald’s father. Further details—rank, holdings,
+        relationship to Falkenau politics, and life dates—are not yet fixed in this registry.
+      key_traits: []
+      motivations: []
+      contradictions: []
+
+    relationships:
+      - character: char_oswald
+        type: familial
+        nature: "Father."
+        period: [null, null]
+        notes: null
+
+    timeline: []
+
+    status: unresolved
+
+    tags:
+      - nobility
+      - parent
+      - unresolved
