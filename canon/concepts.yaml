@@ -1,0 +1,173 @@
+concepts:
+  - id: concept_dual_authority_model
+    name: "Dual Authority Model"
+    category: political
+
+    origin:
+      source: char_sibilla
+      year: 1028
+      context: "A governance arrangement where a publicly orthodox charitable office masks (and empowers) a private consent-based authority."
+
+    definition: |
+      A model of rule in which one person holds two interlocking forms of authority:
+      a public, legally defensible role (e.g., charitable confraternity leadership)
+      and a hidden governing role (Keeper of the Night Moot). The public face
+      grants legitimacy, access, and resource control; the hidden face provides
+      discipline, admission control, dispute resolution, and interpretation of
+      what the community ‘consented to.’
+
+      The model is resilient because removing the public authority looks like
+      attacking charity, while removing the hidden authority destabilizes the
+      settlement’s internal peace.
+
+    formulations:
+      - level: public
+        text: "The confraternity keeps the poor from being shamed and the village from tearing itself apart."
+        audience: "Neighbors, church visitors, outsiders"
+      - level: discipline
+        text: "Keys decide doors; doors decide meetings; meetings decide consent; consent decides obedience."
+        audience: "Trusted participants"
+      - level: inner_circle
+        text: "Let them see the lamp and not the lock. Let them praise mercy and not notice judgment."
+        audience: "Initiates"
+
+    practical_application:
+      - "Public confraternity manages burial aid, grain loans, sick care, widows’ support."
+      - "Keeper of the Night Moot convenes the circle, sets discipline, controls admission to rites, resolves disputes."
+      - "Authority framed as ‘women’s work’ (keys, bedding, household justice) to appear non-threatening."
+
+    theological_basis:
+      - "Approved tradition of charitable confraternities as orthodox Christian work."
+      - "Charity language as defensible surface for deeper consent mechanics."
+
+    related_concepts:
+      - concept_consent_doctrine
+      - concept_the_moot
+      - concept_governance_colonization
+
+    examples:
+      - event: evt_1028_00_sibilla_dual_authority_structure
+        description: "Sibilla consolidates public confraternity leadership and hidden Night Moot gatekeeping into a stable power base."
+
+    status: active
+
+    tags:
+      - governance
+      - cover_structure
+      - gendered_power
+      - stability_through_duality
+
+  - id: concept_governance_colonization
+    name: "Governance Colonization"
+    category: political
+
+    origin:
+      source: char_sibilla
+      year: 1027
+      context: "A strategy to spread consent mechanics by persuading rulers to adopt practices for effectiveness rather than belief."
+
+    definition: |
+      A practice-first conversion strategy: rather than persuading a lord to
+      accept a doctrine, the strategist induces the lord to adopt governance
+      mechanisms that embody the doctrine because they reduce revolt risk and
+      improve stability.
+
+      Over time, these practices become ‘how legitimate rule is done,’ at which
+      point the theology can be offered as retrospective justification: effective
+      becomes right, right becomes sacred.
+
+    formulations:
+      - level: recruitment
+        text: "If you want peace, let burdens be witnessed and agreed."
+        audience: "Pragmatists, stewards, moderates"
+      - level: discipline
+        text: "Make them behave as if they believe. Belief can come later—or never."
+        audience: "Active organizers"
+      - level: inner_circle
+        text: "Law is habit. Habit is holiness. We will rewrite holiness by rewriting habit."
+        audience: "Initiates"
+
+    practical_application:
+      - "Charters, fixed dues, moot-days framed as statecraft."
+      - "Public hearings and ritualized oath-days."
+      - "Hostage policy and amnesty shaped by ‘oaths under duress are void’ without naming it."
+      - "Normalization until DC-adjacent practices are indistinguishable from ‘legitimate rule.’"
+
+    theological_basis:
+      - "Implicit: consent doctrine (without naming it)."
+      - "Public: ‘good lordship’ framed as consultation, witnessed authority, and peacekeeping."
+
+    related_concepts:
+      - concept_consent_doctrine
+      - concept_dual_authority_model
+      - concept_grammatical_inversion
+
+    examples:
+      - event: evt_1027_00_oswald_governance_colonization_begins
+        description: "Sibilla begins embedding consent mechanics into Oswald’s governance as ‘practical statecraft.’"
+      - event: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+        description: "Oath-days, hearings, duress-void framing, and careful hostage policy become standard without explicit DC naming."
+
+    status: active
+
+    tags:
+      - strategy
+      - practice_first
+      - legitimacy_engineering
+      - slow_conversion
+
+  - id: concept_oswald_legitimacy_doctrine
+    name: "Oswald’s Legitimacy Doctrine"
+    category: political
+
+    origin:
+      source: char_oswald
+      year: 1030
+      context: "Codifies socially: ‘questioning legitimacy is attacking the peace,’ triggered by Adalmar’s risk-report regarding Leopold’s parentage talk."
+
+    definition: |
+      A doctrine-by-practice and public posture: what is ‘legitimate’ is what the
+      Graf publicly names as his. The category “maybe illegitimate” is treated as
+      socially criminal because it destabilizes peace, reopens civil war narratives,
+      and invites church leverage.
+
+      Under this doctrine, truth and proof are subordinate to political stickiness:
+      the decisive question is not ‘is it true?’ but ‘can you force the Graf to respond?’
+
+    formulations:
+      - level: public
+        text: "To question the house is to attack the peace."
+        audience: "Realm at large"
+      - level: discipline
+        text: "Deny the category. Do not argue evidence. Make the question itself shameful."
+        audience: "Household, officers"
+      - level: inner_circle
+        text: "Reality is sovereignty. I name what is true because peace requires it."
+        audience: "Oswald’s private counsel (if any)"
+
+    practical_application:
+      - "Legitimacy ‘overkill’: elaborate namings, high-status sponsors, endowments, written records."
+      - "Household tightening: travel constraints, servant dismissals, controlled access—architecture of suspicion without accusation."
+      - "Defensive-offensive reframing: not ‘he is mine’ but ‘your doubt is treasonous.’"
+
+    theological_basis:
+      - "Surface: peacekeeping rhetoric and public order."
+      - "Implicit tension with Church moral truth claims (left unresolved)."
+
+    related_concepts:
+      - concept_governance_colonization
+      - concept_consent_doctrine
+
+    examples:
+      - event: evt_1030_03_adalmar_risk_report_leopold_parentage
+        description: "Adalmar frames ‘there will be talk’ as a risk; Oswald responds by criminalizing the premise socially."
+      - event: evt_1030_00_oswald_legitimacy_saturation_campaign
+        description: "Oswald invests political capital to saturate the realm with ‘legitimacy as fact.’"
+
+    status: active
+
+    tags:
+      - legitimacy
+      - sovereignty
+      - propaganda
+      - crisis_response
