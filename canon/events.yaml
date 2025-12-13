@@ -161,3 +161,183 @@ unresolved:
     priority: high
     needs_decision_by: "Before any play or canon thread treats the household as either ‘tight-lipped’ or ‘leaky’ in 1030"
     notes: "This choice determines whether the Breach becomes a quiet administrative maneuver or the start of visible repression."
+
+    canon_event:
+  id: OBER-INC-WALP-1029-01
+  name: "The Walpurghausen Incident"
+  type: incident
+  date:
+    year: 1029
+    season: spring
+    precision: approx
+  location:
+    primary: Walpurghausen (tenant cluster; barn complex)
+    key_sites:
+      - "Road between tithe collection points and Walpurghausen barns"
+      - "Walpurghausen barns (receiving/counting point)"
+      - "Multiple tenant villages (overnight doorstep drops)"
+  factions:
+    - "Arnulf’s Second Circle (cell network; Walpurghausen tenants)"
+    - "Abbey interests (charter negotiations; tithe administration)"
+    - "Graf’s administration (reeve + patrol apparatus)"
+  participants:
+    - name: "Arnulf’s cells"
+      role: "Primary operators; coordinated interception + redistribution + message spread"
+      constraints:
+        - "No violence (Oak-Fist code; restraint-only)"
+        - "Deniability prioritized (no single-point authorship)"
+    - name: "Father Ruodprecht"
+      role: "Unwitting cover via confession; later moral choke-point"
+      knowledge_state: "Unaware during operation; forced into partial complicity afterward"
+    - name: "Bruder Anshelm"
+      role: "Institutional pressure; frames incident as economic crime and security failure"
+      distraction: "Charter negotiations with Konrad"
+    - name: "Hasso"
+      role: "Patrol investigator; evaluates the ‘banditry’ story; notes organization"
+      knowledge_state: "Recognizes pattern; relieved no bloodshed; urges careful handling"
+    - name: "Gerhild"
+      role: "Barn-side accountant/warden; records shortfall; triggers formal response chain"
+      conflict: "System-loyalty vs. visible village hunger relief"
+    - name: "Konrad (vogtei authority)"
+      role: "Jurisdictional handler; performs arrests + paper trail; manages narratives to Graf/Abbey"
+      risk: "Road-jurisdiction ambiguity makes this ‘his problem’ regardless of ownership"
+  setup:
+    timing_factors:
+      - "Spring tithe collection (predictable schedule)"
+      - "Charter renewal negotiations ongoing (Konrad/Anshelm attention split)"
+      - "Immediate pre-planting hunger window (grain scarcity sharpens receptivity)"
+    conditions:
+      jurisdictional_chaos:
+        - "Incident occurs off estate grounds (outside Hasso’s routine patrol emphasis)"
+        - "Within Konrad’s vogtei jurisdiction (accountability lands on him)"
+        - "Ambiguous whether route is abbey land or Graf’s road (competing claims)"
+  action:
+    stages:
+      - stage: 1
+        name: "The Interception"
+        location: "Road segment between collection points and Walpurghausen barns"
+        method:
+          cover_story: "Wagon ‘breaks down’ at a pre-selected point"
+          planted_roles:
+            - "Cell member embedded as driver and/or wagon guard"
+          transfer_procedure:
+            - "‘Repair’ delay creates time window"
+            - "Grain shifted to waiting carts staged nearby"
+            - "Departure staggered to avoid a single conspicuous convoy"
+          guard_handling:
+            options_presented:
+              - "Join (quietly assist and walk away clean)"
+              - "Leave (go and say nothing, or say ‘bandits’)"
+              - "Be tied (restrained, not harmed)"
+            rule: "No intentional injury; resistance met with restraint only"
+      - stage: 2
+        name: "The Redistribution"
+        scope: "Multiple tenant villages simultaneously"
+        delivery_pattern:
+          - "Grain appears at doors overnight (deniable, ‘mysterious’)"
+          - "Each drop includes a charcoal mark: inverted cross"
+          - "Each drop accompanied by a whispered, memorizable sermon"
+        sermon_text: |-
+          The Christ fed five thousand with five loaves.
+          He did not ask if they had paid their tithe.
+          He did not record their debt.
+          He broke bread and gave it freely.
+          This is the true tithe—to God’s poor, not princes’ barns.
+          Blessed are they who hunger for righteousness.
+        why_it_works:
+          - "Orthodox surface (biblical charity framing) masks the inversion"
+          - "Memetic design (short, repeatable, emotionally apt during hunger)"
+          - "Deniability (no single origin; ‘everyone heard it’ by morning)"
+          - "Symbol ambiguity (inverted cross can be read as piety or provocation)"
+      - stage: 3
+        name: "The Discovery"
+        morning_sequence:
+          - "Wagon reaches barns light by 14 sacks"
+          - "Gerhild counts and records discrepancy; reports to Konrad"
+          - "Konrad interviews wagon personnel/guards; story fragments (breakdown/bandits/unknown)"
+          - "Villages already have grain; sermon is already circulating"
+  responses:
+    - actor: "Konrad"
+      public_actions:
+        - "Arrests wagon guards/personnel (visible action)"
+        - "Documents chain of custody, statements, and counts (self-protective paper trail)"
+      reports:
+        to_graf: "‘Banditry on abbey road; investigating’"
+        to_anshelm: "‘Tithe delayed by theft; perpetrators sought’"
+      private_assessment:
+        - "Suspects organization beyond random banditry"
+        - "Avoids digging deep enough to expose jurisdictional negligence or spark wider unrest"
+    - actor: "Father Ruodprecht"
+      trigger: "Confessions from peasants who received ‘stolen’ grain"
+      crisis:
+        - "Recognizes biblical language; senses doctrinal distortion without overt heresy markers"
+        - "Must choose denunciation (risking peasant backlash) vs. accommodation (risking moral compromise)"
+      decision:
+        - "Frames it as misguided charity rather than naming ‘heresy’"
+        - "Assigns light penance"
+        - "Orders restitution to barns where feasible (knowing much is already consumed)"
+      consequence:
+        - "Carries increasing anxiety: he now knows more than he has said"
+    - actor: "Bruder Anshelm"
+      framing: "Economic crime + security failure"
+      actions:
+        - "Demands full investigation (abbey grain stolen)"
+        - "Blames Konrad’s road security"
+        - "Uses incident as leverage in charter negotiations (‘Graf cannot protect church property’)"
+      blind_spot:
+        - "Misses theological/memetic dimension; treats sermon spread as noise"
+    - actor: "Hasso"
+      investigative_findings:
+        - "Guard story inconsistencies"
+        - "Operational cleanliness suggests coordination"
+        - "No violence is atypical for true banditry"
+      guidance_to_konrad:
+        - "Not random crime; handle carefully (avoid sparks, avoid martyrdom narratives)"
+      private_reaction:
+        - "Relieved no blood was shed (keeps response options wider)"
+    - actor: "Gerhild"
+      observations:
+        - "Records prove the shortfall (undeniable)"
+        - "Villages appear better-fed immediately after"
+      tension:
+        - "Demands accountability"
+        - "Watches quietly for recurrence/patterns rather than making a moral spectacle"
+  outcome:
+    short_term:
+      timeframe: "weeks after"
+      results:
+        - "Limited arrests (wagon personnel/scapegoats)"
+        - "Most grain not recovered (consumed; restitution partial at best)"
+        - "Sermon persists and spreads (cannot be ‘un-said’)"
+        - "Authorities claim resolution within their existing frameworks (crime/road security/charter leverage)"
+    medium_term:
+      timeframe: "months after"
+      results:
+        - "Second Circle cells remain intact; operation judged a success"
+        - "Father Ruodprecht becomes increasingly strained and cautious in confession"
+        - "Anshelm escalates political pressure using the incident as proof of disorder"
+        - "Hasso increases scrutiny of gatherings without a clear legal pretext"
+        - "Gerhild keeps a private ledger of anomalies and ‘impossible surpluses’ in villages"
+    long_term:
+      timeframe: "leading into summer 1029"
+      results:
+        - "Template established for future nonviolent, coordinated operations"
+        - "Network proves it can synchronize action across villages"
+        - "Authorities demonstrate interpretive inertia (they will default to familiar categories)"
+        - "Sets conditions for Arnulf’s escalation into a legitimacy-theft campaign"
+  signatures_and_artifacts:
+    - artifact: "Charcoal mark"
+      form: "Inverted cross (simple, quick stroke)"
+      purpose:
+        - "Operator recognition (cell-to-recipient signaling)"
+        - "Plausible piety cover (symbol can be rationalized)"
+        - "Psychological edge (quiet provocation without overt blasphemy)"
+    - artifact: "The sermon"
+      purpose:
+        - "Justifies redistribution as ‘true tithe’"
+        - "Reframes barns as princely hoards rather than communal store"
+        - "Creates a repeatable, portable grievance theology"
+  uncertainties_locked_for_now:
+    - item: "Exact sack weight/composition"
+      note: "Recorded locally by Gerhild; canon fixes shortfall as 14 sacks, but grain mix varies by route."
+
