@@ -84,8 +84,6 @@ organizations:
       - ecclesiastical_authority
       - legitimacy_leverage
 
-
-organizations:
   - id: org_arnulf_cell_network
     name: "Arnulf’s cell network (Second Devil’s Circle)"
     abbreviation: "2DC (network)"
@@ -226,3 +224,111 @@ organizations:
       - tithe_interception
       - grain_redistribution
       - nonviolent_restraint
+
+
+  - id: org_tiefenbrunn_charitable_confraternity
+    name: "Tiefenbrunn Charitable Confraternity"
+    abbreviation: null
+
+    founding:
+      year: 1028
+      founders:
+        - char_sibilla
+      location: loc_tiefenbrunn
+      circumstances: "Established (or formalized) as a legally defensible charitable body to pool resources and provide care, while granting Sibilla public authority outside household structures."
+
+    active_period:
+      public: [1028, null]
+      underground: [1028, null]
+      notes: "Publicly orthodox charity; simultaneously functions as cover infrastructure for Night Moot governance."
+
+    archetype: gnostic
+
+    operational_security:
+      cover_story: "Charitable confraternity: burial aid, grain loans, sick care, widows’ support."
+      actual_function: "Resource pooling, legitimacy cover, and an administrative shell that protects (and finances) Sibilla’s Night Moot discipline."
+      exposure_level: "known (as charity); hidden (as governance cover)"
+      compartmentalization: "Medium: many know the charity work; only trusted participants understand its connection to Night Moot authority."
+
+    doctrine:
+      core_claim: "Care for the poor is holy duty; burdens are borne best when witnessed and agreed."
+      formulations:
+        recruitment: "Help the widow, bury the dead, feed the hungry; keep accounts so no one is shamed."
+        discipline: "Mutual aid is not alms—it's obligation we choose together; refusal has consequences."
+        inner_circle: "Charity is the mask; consent is the blade. The community binds itself and may unbind what was forced."
+      key_concepts:
+        - concept_dual_authority_model
+        - concept_governance_colonization
+
+    structure:
+      type: "Public confraternity with a private link to Night Moot governance."
+      components:
+        - name: "Burial aid"
+          function: "Burial support, mourning assistance, reputational stability for the poor."
+          leader_title: null
+          current_holder: null
+        - name: "Grain loans"
+          function: "Loaning grain through hard seasons; stabilizes hunger volatility."
+          leader_title: null
+          current_holder: null
+        - name: "Sick care and widows’ support"
+          function: "Household relief; socially legitimate reasons for visits and deliveries."
+          leader_title: null
+          current_holder: null
+        - name: "Gatekeeping interface"
+          function: "Provides lawful reasons for Sibilla’s meetings, keys, and decisions outside male office."
+          leader_title: "Keeper (publicly: steward of charity)"
+          current_holder: char_sibilla
+      hierarchy: "tiered (public) / distributed (private link)"
+
+    methods:
+      - "Legally defensible charity as cover for resource pooling."
+      - "Public-facing authority for Sibilla that neither Albrecht nor Oswald can easily attack without destabilizing Tiefenbrunn."
+      - "Soft governance: routines, moot-days, fixed dues, and witnessed decisions framed as practical statecraft."
+
+    key_figures:
+      - char_sibilla:
+          role: "Founder and public steward; hidden gatekeeper for Night Moot admission"
+          period: [1028, null]
+          importance: central
+      - char_albrecht:
+          role: "Tolerates/depends on stability effects"
+          period: [1028, null]
+          importance: major
+      - char_oswald:
+          role: "Depends on stability effects; later adopts adjacent practices as ‘enlightened lordship’"
+          period: [1028, null]
+          importance: major
+
+    geography:
+      primary: loc_tiefenbrunn
+      influence:
+        - loc_falkenau_grafschaft
+      reach: local
+
+    evolution:
+      - year: 1028
+        phase: "Legal Face"
+        description: "Charity framed in orthodox terms; provides defensible institutional footing for Sibilla."
+      - year: 1029
+        phase: "Authority Mirror"
+        description: "Sibilla’s public role begins to mirror the private ‘Keeper of the Moot’ function: keys, admissions, discipline, household justice."
+      - year: 1030
+        phase: "Governance Export"
+        description: "Practices normalized beyond Tiefenbrunn through Oswald’s adoption of witnessed authority mechanics."
+
+    related_organizations:
+      derivative: []
+      allied:
+        - org_church_of_saints
+      opposed: []
+      syncretized: []
+
+    status: active
+
+    tags:
+      - confraternity
+      - charity_cover
+      - dual_authority
+      - sibilla_power_base
+      - gnostic_structure
