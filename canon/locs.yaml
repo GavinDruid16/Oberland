@@ -1,0 +1,75 @@
+locations:
+  - id: loc_tiefenbrunn
+
+    name: "Tiefenbrunn"
+    type: village
+
+    geography:
+      region: "Falkenau Grafschaft"
+      coordinates:
+        hex: null
+        latitude: null
+        longitude: null
+      elevation: null
+      terrain: null
+
+      distances: []
+
+    political:
+      sovereignty: "Falkenau Grafschaft"
+      actual_governance: "Local communal governance through the Moot (associated with org_first_devils_circle)."
+      lord: []
+
+    economic:
+      primary: "Mixed peasant agriculture (grain-forward)"
+      secondary:
+        - "Small-scale milling and seasonal labor exchange"
+        - "Mutual-aid grain and work networks (linked to local governance)"
+      trade_goods:
+        - "Grain (rye/wheat mix depending on year)"
+        - "Flour"
+        - "Eggs and dairy (household-level surplus)"
+
+    population:
+      estimate: 200
+      composition: "Primarily peasant households; a small number of household retainers and clergy-adjacent workers."
+      growth: stable
+
+    significance:
+      historical:
+        - "A known center of irregular consent-governance teaching and practice (1DC-linked)."
+      current:
+        - "Power base for Sibilla’s authority as Keeper of the Moot."
+        - "A persistent irritant to org_church_of_saints oversight due to heterodox reputation."
+      folkloric: []
+
+    folklore:
+      legends: []
+      spirits: []
+      sacred_sites: []
+
+    affiliated_characters:
+      - char_sibilla:
+          relationship: "Native/primary local authority figure (Keeper of the Moot)."
+          period: [null, null]
+      - char_oswald:
+          relationship: "Overlord by marriage; political presence felt through household and charters more than daily village life."
+          period: [1024, null]
+
+    affiliated_organizations:
+      - org_first_devils_circle:
+          relationship: "Primary locus of influence and local governance mechanism."
+          period: [null, null]
+      - org_church_of_saints:
+          relationship: "Parish presence and oversight pressure; relationship strained by irregular teachings."
+          period: [null, null]
+
+    events: []
+
+    status: active
+
+    tags:
+      - village
+      - commune
+      - politically_autonomous
+      - heretical_reputation
