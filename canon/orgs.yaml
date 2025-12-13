@@ -83,3 +83,114 @@ organizations:
       - orthodox
       - ecclesiastical_authority
       - legitimacy_leverage
+
+
+      organizations:
+  - id: org_arnulf_cell_network
+    name: "Arnulf’s cell network (Second Devil’s Circle)"
+    abbreviation: "2DC (network)"
+    founding:
+      year: 1028
+      founders:
+        - char_arnulf
+      location: null
+      circumstances: "Formed after Arnulf’s exile as a distributed successor to 1DC, optimized for deniable, synchronized action."
+    active_period:
+      public: [null, null]
+      underground: [1028, null]
+      notes: "Operates as rumor and ‘banditry’ in public narratives; functions as a compartmentalized tenant network in practice."
+    archetype: rebel
+    operational_security:
+      cover_story: "No formal body; ‘hunger, charity, and trouble on the roads.’"
+      actual_function: "Distributed cell network for coordinated theft/redistribution, propaganda-by-sermon, and legitimacy erosion campaigns."
+      exposure_level: "hidden"
+      compartmentalization: "High: cells do not know other cells; operators often know only their immediate task."
+    doctrine:
+      core_claim: "The true tithe is to God’s poor; coerced dues to barns are not holy obligation."
+      formulations:
+        recruitment: "Charity is holier than record-keeping; the hungry come first."
+        discipline: "No blood. No boasting. No names. Act together, disappear alone."
+        inner_circle: "Authority that feeds on hunger is void; we will unmake it without giving it martyr-blood."
+      key_concepts: []
+    structure:
+      type: "Distributed cell network with embedded roles and short-lived operational assemblies."
+      components:
+        - name: "Local cells"
+          function: "Execute compartmentalized operations in a bounded area."
+          leader_title: null
+          current_holder: null
+        - name: "Embedded roles"
+          function: "Drivers, guards, counters, messengers, listeners—placed where grain and rumor move."
+          leader_title: null
+          current_holder: null
+      hierarchy: "distributed"
+    methods:
+      - "Nonviolent restraint-only operations (‘Oak-Fist’ code)."
+      - "Mechanical cover stories (breakdowns, miscounts, wrong turns)."
+      - "Simultaneous micro-actions across villages to erase origin."
+      - "Memetic sermons: short, orthodox-sounding lines with inverted meaning."
+      - "Minimal symbolic marking (charcoal signs) used inconsistently to avoid habit-patterns."
+    key_figures:
+      - char_arnulf:
+          role: "Founder and ideological architect"
+          period: [1028, null]
+          importance: central
+    geography:
+      primary: null
+      influence: []
+      reach: regional
+    evolution:
+      - year: 1028
+        phase: "Distributed Founding"
+        description: "Shift from commune governance to cells; emphasis on deniability and survivability under scrutiny."
+      - year: 1029
+        phase: "Proof of Coordination"
+        description: "Successful synchronized action demonstrates operational maturity (Walpurghausen Incident)."
+    related_organizations:
+      derivative: []
+      allied: []
+      opposed: []
+      syncretized: []
+    status: active
+    tags:
+      - rebel_movement
+      - distributed_cells
+      - operational_security
+      - nonviolent_doctrine
+      - memetic_sermons
+  - id: org_2dc_cell_walpurghausen
+    name: "Walpurghausen Second Circle cell"
+    abbreviation: "2DC-WALP"
+    founding:
+      year: 1028
+      founders:
+        - char_arnulf
+      location: null
+      circumstances: "A local cell seeded into Walpurghausen tenants and road/barn interfaces as part of the wider network."
+    active_period:
+      public: [null, null]
+      underground: [1028, null]
+      notes: "Publicly nonexistent; functionally present via embedded roles around collection, carting, and counting."
+    archetype: rebel
+    operational_security:
+      cover_story: "Ordinary tenants, wagon hands, and barn-workers."
+      actual_function: "Local execution cell for nonviolent interception/redistribution plays and message seeding."
+      exposure_level: "hidden"
+      compartmentalization: "Very high: members may not know they are ‘members’ beyond a single operation."
+    doctrine:
+      core_claim: "Take without blood; feed without credit; speak without authorship."
+      formulations:
+        recruitment: "If a neighbor starves, the barn has already sinned."
+        discipline: "Restrain, don’t strike. Offer choices. Leave no witness of cruelty."
+        inner_circle: "Make the authorities explain hunger in their own words until their words rot."
+      key_concepts: []
+    structure:
+      type: "Local cell with ad hoc operational ring and embedded roles."
+      components:
+        - name: "Road ring"
+          function: "Interception logistics, timing, diversion, cart transfer."
+          leader_title: null
+          current_holder: null
+        - name: "Village whisperers"
+          function: "Doorstep drops and sermon deli
+
