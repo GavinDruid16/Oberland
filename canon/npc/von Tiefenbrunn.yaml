@@ -1,0 +1,126 @@
+
+  - id: char_sibilla
+
+    name:
+      full: "Sibilla"
+      common: "Sibilla"
+      nickname: null
+      titles:
+        - title: "Keeper of the Moot"
+          from: 1025
+          to: null
+          notes: "Leadership role within 1DC’s practical governance structure."
+
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: loc_tiefenbrunn
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: loc_falkenau_grafschaft
+        activity: active
+        canonical_resolution: pending
+
+      age_in_1025: null
+
+    family:
+      parents:
+        father: null
+        mother: null
+
+      spouse:
+        - character: char_oswald
+          married: 1024
+          status: current
+
+      children:
+        legitimate:
+          - character: char_otto
+            notes: "Publicly secure heir-line; protected by the regime’s refusal to permit doubt."
+        illegitimate:
+          - character: char_leopold
+            notes: "Public status suppressed; parentage and implications intentionally kept unarticulated."
+
+    knowledge_state:
+      knows:
+        - org_first_devils_circle: "Full internal understanding of Moot governance (as Keeper)."
+      believed_to_know:
+        - evt_1030_spring_breach: "Others may assume she knows; this is unconfirmed."
+      actually_ignorant_of:
+        - evt_1030_spring_breach: "Whether she knows the details of Adalmar’s approach is unresolved."
+
+    affiliations:
+      - organization: org_first_devils_circle
+        role: "Keeper of the Moot (co-leader in practice)"
+        from: 1023
+        to: null
+        status: current
+
+      - organization: org_church_of_saints
+        role: "Publicly Christian; relationship to Church authority contested via 1DC doctrine"
+        from: null
+        to: null
+        status: complicated
+
+    biography:
+      summary: |
+        Sibilla is a political organizer whose authority is grounded in communal practice and disciplined
+        consent structures. As Keeper of the Moot, she represents governance that is legible to peasants
+        and threatening to orthodox hierarchies.
+
+        In spring 1030 she becomes an axis around which others might try to form a scandal, but Adalmar’s
+        approach to Oswald explicitly avoids accusing her. Oswald’s response—abolishing the premise of talk—
+        functions as a public shield, whatever Sibilla’s private awareness or involvement may be.
+      key_traits:
+        - "Organizational authority rooted in communal practice"
+        - "Disciplined, strategic, and politically literate"
+        - "Understands leverage and narrative control"
+        - "Capable of maintaining public unity under pressure"
+      motivations:
+        - "Preserve and expand the Moot’s practical power"
+        - "Protect her community and its autonomy"
+        - "Prevent outside institutions from converting scandal into domination"
+      contradictions:
+        - "Exercises real authority while living inside institutions that deny it (lordship, Church)"
+        - "Needs stability for governance while aligned with doctrines that legitimize refusal"
+
+    relationships:
+      - character: char_oswald
+        type: familial
+        nature: "Spouse; alliance that binds revolutionary infrastructure to sovereign rule."
+        period: [1024, null]
+        notes: "Public unity is strategically mandatory; private dynamics are not fully resolved."
+
+      - character: char_adalmar
+        type: complicated
+        nature: "Adjacent to a legitimacy vulnerability flagged by Adalmar; not directly accused."
+        period: [1030, null]
+        notes: "Whether she learns of the Breach’s internal exchange is unresolved."
+
+      - character: char_otto
+        type: familial
+        nature: "Mother (in practice/canon usage), with Otto’s legitimacy treated as regime-critical."
+        period: [null, null]
+        notes: "Otto benefits from the enforced impossibility of 'maybe' as a category."
+
+    timeline:
+      - year: 1030
+        event: evt_1030_spring_breach
+        role: "Central figure in the suppressed rumor vector; publicly protected by prohibition."
+
+    status: active
+
+    tags:
+      - peasant_leader
+      - organizer
+      - rebel_archetype
+      - legitimacy_target
+      - 1dc
