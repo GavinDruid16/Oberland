@@ -1,0 +1,163 @@
+events:
+  - name: "The Breach"
+    id: evt_1030_spring_breach
+
+    date:
+      year: 1030
+      month: null
+      day: null
+      season: spring
+      liturgical: null
+      precision: season
+
+    location:
+      primary: loc_falkenau_grafschaft
+      secondary: []
+      region: "Falkenau Grafschaft (Oswald’s household sphere)"
+
+    summary:
+      public: |
+        Nothing official. If questioned, household men deny any rumor and treat the subject as insolence.
+        In common talk, “there was no talk”—only a sudden tightening of tongues.
+      actual: |
+        Leopold’s birth (March 1030) creates a predictable vulnerability: servants, travelers, and scribes
+        accumulate “small certainties” about timing, absence, and proximity. Brother Adalmar leverages his
+        access to household schedules and road-chatter to predict how rumor could form.
+
+        Adalmar approaches Oswald privately and frames the matter as risk management rather than accusation:
+        “There will be talk.” “If it spreads, enemies will weaponize it.” “Here are the weak points in the story.”
+
+        Oswald’s response is not evidentiary. It is sovereign: “There will be no talk.”
+        He does not rebut; he abolishes the premise socially.
+      hidden: |
+        The meaning of “no talk” is operational as well as rhetorical: the household’s social reality is
+        enforced until “maybe” cannot safely be spoken. The first punishments (if any) are made exemplary
+        enough to teach the rule without leaving a clean legal record.
+
+        Adalmar understands he has crossed from useful clerkship into existential legitimacy-work.
+        Whether Oswald marks him as indispensable, dangerous, or both is not openly visible afterward.
+
+    participants:
+      - character: char_oswald
+        role: "Lord of the household; final arbiter of legitimacy in practice"
+        outcome: "Issues an absolute social prohibition: rumor itself becomes punishable"
+        knowledge: "Treats legitimacy as an enforced condition, not a debated fact"
+
+      - character: char_adalmar
+        role: "Risk messenger; scribe with access to household timing and travel chatter"
+        outcome: "Successfully places the threat on Oswald’s desk; also exposes his own awareness"
+        knowledge: "Knows which ‘weak points’ would generate rumor; presents them as a containment problem"
+
+      - character: char_leopold
+        role: "Infant; catalytic precondition for rumor formation"
+        outcome: "Becomes a latent legitimacy vulnerability (publicly denied as such)"
+        knowledge: "N/A"
+
+      - character: char_sibilla
+        role: "Not accused in the approach; implicated only as a possible axis of rumor in others’ mouths"
+        outcome: "Protected publicly by refusal to permit the category of doubt"
+        knowledge: "Unknown whether she is aware of Adalmar’s approach or Oswald’s inner reasoning"
+
+      - character: char_otto
+        role: "Heir-line proximity; the threatened beneficiary of ‘no maybe’"
+        outcome: "Legitimacy insulated by making ‘maybe illegitimate’ socially impossible"
+        knowledge: "N/A"
+
+    organizations: []
+
+    consequences:
+      immediate:
+        - "Household speech tightens: questions about timing, absence, and ‘who was where’ become taboo"
+        - "Rumor is reframed as hostility; social penalties replace debate"
+        - "Adalmar becomes newly legible to Oswald as a legitimacy operator (asset and/or risk)"
+      long_term:
+        - "Oswald’s regime establishes a pattern: contested legitimacy is not argued; it is criminalized"
+        - "Church leverage is blunted in the short term by the absence of an admissible rumor-channel"
+        - "Future oaths/charters gain ‘sovereign certainty’ at the cost of brittle repression"
+      unintended:
+        - "Suppressed talk concentrates into private confessional channels and enemy intelligence networks"
+        - "Any later breach (proof, scandal, witness) hits harder because ‘maybe’ had no tolerated outlet"
+        - "Those who enforce the silence accrue quiet power (and quiet guilt)"
+
+    related_events:
+      preceded_by:
+        - evt_1030_03_leopold_birth
+      followed_by: []
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Household rumor (not written; enforced denial)"
+        - "Servant-corridor testimony (fragmentary; dangerous to repeat)"
+      out_of_world:
+        - "Canon note: ‘The Breach (spring 1030)’—core exchange Adalmar→Oswald and Oswald’s line ‘There will be no talk.’"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Where, specifically, the private approach occurred (hall, chapel, scriptorium, road-stop)"
+      - "What enforcement mechanism followed (exemplary punishment, expulsions, threats, bribes, confessional discipline)"
+      - "Whether Sibilla ever learns the details of Adalmar’s approach"
+      - "Whether any named witness hears Oswald’s line directly (creating a dangerous ‘living quote’)"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment]
+      scale: grafschaft_wide
+      turning_point: false
+      themes:
+        - sovereign_reality
+        - rumor_control
+        - legitimacy_as_enforcement
+        - church_leverage_prevention
+        - brittle_stability
+
+unresolved:
+  - id: unresolved_evt_1030_spring_breach_enforcement
+    category: event_details
+    subject: evt_1030_spring_breach
+
+    question: "How did Oswald operationalize ‘There will be no talk’ in the days/weeks after Adalmar’s warning?"
+
+    last_confirmed:
+      date: 1030
+      event: evt_1030_spring_breach
+      status: "Adalmar warned; Oswald issued the sovereign prohibition; aftermath method not fixed."
+
+    options:
+      - option: "Exemplary punishment with plausible deniability (a dismissal, a beating framed as ‘insolence’, a public penance)"
+        likelihood: high
+        implications:
+          - "Silence spreads quickly without creating a clean legal paper trail"
+          - "Household fear rises; loyalty becomes performative"
+        dependencies:
+          - "Who is chosen as the example (servant, guard, clerk, outsider)"
+
+      - option: "Quiet containment (bribes, reassignment, escorting chatterers out, controlled narratives to key gossip nodes)"
+        likelihood: medium
+        implications:
+          - "Less overt terror, more stable long-term governance"
+          - "Requires competent managers and money"
+        dependencies:
+          - "Who runs Oswald’s household discipline and purse"
+
+      - option: "Clerical channeling (confessors instructed to treat rumor as sin; spiritual threat substitutes for secular threat)"
+        likelihood: medium
+        implications:
+          - "Shifts enforcement onto the Church’s moral machinery"
+          - "Creates a future vulnerability if clergy turn hostile"
+        dependencies:
+          - "Which priests have access to the household and how cooperative they are"
+
+      - option: "Counter-rumor offensive (‘enemies will say anything’) paired with selective intimidation"
+        likelihood: low
+        implications:
+          - "Makes the topic speakable only as slander, not inquiry"
+          - "Harder to sustain if evidence ever emerges"
+        dependencies:
+          - "Availability of scapegoats/enemies to blame"
+
+    priority: high
+    needs_decision_by: "Before any play or canon thread treats the household as either ‘tight-lipped’ or ‘leaky’ in 1030"
+    notes: "This choice determines whether the Breach becomes a quiet administrative maneuver or the start of visible repression."
