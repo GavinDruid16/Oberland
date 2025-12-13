@@ -340,4 +340,770 @@ unresolved:
   uncertainties_locked_for_now:
     - item: "Exact sack weight/composition"
       note: "Recorded locally by Gerhild; canon fixes shortfall as 14 sacks, but grain mix varies by route."
+      
+  - name: "Otto’s Double Ritual"
+    id: evt_1025_12_otto_double_ritual
 
+    date:
+      year: 1025
+      month: 12
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: []
+      region: "Falkenau Grafschaft (Tiefenbrunn)"
+
+    summary:
+      public: |
+        Otto is baptized properly with politically chosen sponsors. The ceremony
+        is orthodox and visible, establishing his legitimacy within the Church’s
+        framework and publicly acknowledging him as heir.
+      actual: |
+        Alongside the public baptism, a private Devil’s Circle “Naming” binds Otto
+        to the commune: mutual protection vows, obedience to Moot judgment, and an
+        expectation of horizontal obligations alongside dynastic ones.
+      hidden: |
+        The private Naming is designed as a long-term combustible core: Otto is
+        raised with two sets of obligations—lordship and commune—that will someday
+        conflict. The ritual is a deliberate institutional hedge against purely
+        hereditary authority.
+
+    participants:
+      - char_otto:
+          role: "Child subject of public baptism and private Naming"
+          outcome: "Receives dual legitimacy: Church-recognized and commune-bound"
+          knowledge: "Grows up with nested obligations (understanding matures over time)"
+      - char_sibilla:
+          role: "Architect of private binding; ensures communal claim on Otto"
+          outcome: "Strengthens commune leverage over the future Graf"
+          knowledge: "Understands the dual obligation as an intentional lever"
+      - char_oswald:
+          role: "Benefits from public legitimacy of heir; tolerates or is complicit in private Naming"
+          outcome: "Gains public dynastic stability; inherits a future loyalty conflict"
+          knowledge: "May treat private rite as ‘custom’ rather than theology (belief unclear)"
+      - char_arnulf:
+          role: "Ideological precedent-setter (if present/consulted), shaping the rite’s meaning"
+          outcome: "Doctrine gains a dynastic anchor"
+          knowledge: "Understands the rite as governance engineering"
+
+    organizations:
+      - org_church_of_saints:
+          role: "Provides orthodox baptismal legitimacy"
+          outcome: "Public legitimacy reinforced"
+      - org_first_devils_circle:
+          role: "Conducts or sanctions private Naming logic"
+          outcome: "Commune claim strengthened through ritual"
+
+    consequences:
+      immediate:
+        - "Otto’s legitimacy established publicly via orthodox baptism."
+        - "Commune claim established privately via Naming and vows."
+      long_term:
+        - "Otto grows up with two obligation systems: dynastic/hierarchical vs. communal/consensual."
+        - "Future conflicts can be framed as ‘which obligation is truer?’ rather than mere politics."
+      unintended:
+        - "Creates a future crisis vector: enemies can weaponize obligation conflict without attacking Otto directly."
+
+    related_events:
+      preceded_by: []
+      followed_by: []
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Baptismal register entry (orthodox record, sponsors named)"
+        - "Household recollections (who attended, what gifts were given)"
+        - "Folk phrasing about ‘two namings’ (rumor-level, inconsistent)"
+      out_of_world:
+        - "Campaign Bible (Otto legitimacy / DC binding notes)"
+        - "GM notes: ‘Double Ritual’ as long-term lever"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Did Oswald explicitly understand the private Naming’s political function in 1025, or treat it as harmless custom?"
+      - "Who witnessed the private Naming besides core commune figures?"
+
+    tags:
+      category:
+        - religious
+        - political
+        - social
+      archetype:
+        - gnostic
+        - rebel
+      scale: local
+      turning_point: true
+      themes:
+        - dual_legitimacy
+        - child_as_lever
+        - ritual_as_governance
+        - future_crisis_seed
+
+  - name: "Sibilla Consolidates the Dual Authority Structure"
+    id: evt_1028_00_sibilla_dual_authority_structure
+
+    date:
+      year: 1028
+      month: null
+      day: null
+      season: null
+      liturgical: null
+      precision: year
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: []
+      region: "Falkenau Grafschaft (Tiefenbrunn)"
+
+    summary:
+      public: |
+        A charitable confraternity becomes the visible mechanism for burial aid,
+        grain loans, sick care, and widows’ support. Sibilla gains legitimate,
+        non-clerical authority through approved forms of charity.
+      actual: |
+        The confraternity functions as a public face for Sibilla’s existing role
+        as Keeper of the Night Moot: admission control, discipline, dispute
+        resolution, and interpretation of what the community ‘consented to.’
+      hidden: |
+        The structure is designed to be unremovable: Albrecht needs stability,
+        Oswald needs Tiefenbrunn quiet, and attacking charity would appear impious.
+        Sibilla’s authority mirrors traditional women’s key-keeping and household
+        justice—hiding power inside custom.
+
+    participants:
+      - char_sibilla:
+          role: "Designer and holder of dual authority"
+          outcome: "Consolidates stable power base that is hard to dislodge"
+          knowledge: "Understands the model as governance engineering, not mere piety"
+      - char_albrecht:
+          role: "Dependent stakeholder"
+          outcome: "Stability maintained; loss of leverage to remove Sibilla"
+          knowledge: "Knows her function keeps revolt risk low"
+      - char_oswald:
+          role: "Dependent stakeholder"
+          outcome: "Benefits from stability; becomes a candidate for practice-first conversion"
+          knowledge: "May accept mechanisms as statecraft without belief"
+
+    organizations:
+      - org_tiefenbrunn_charitable_confraternity:
+          role: "Public face and administrative shell"
+          outcome: "Legitimizes Sibilla’s public authority"
+      - org_first_devils_circle:
+          role: "Hidden governance substrate (Night Moot)"
+          outcome: "Gatekeeping and discipline reinforced under legal cover"
+
+    consequences:
+      immediate:
+        - "Sibilla gains durable authority outside household hierarchy."
+        - "Resource pooling becomes legally defensible."
+      long_term:
+        - "Creates a model for exporting consent mechanics under orthodox cover."
+      unintended:
+        - "Makes Sibilla a single point of stability; threats to her become threats to peace."
+
+    related_events:
+      preceded_by:
+        - evt_1027_11_arnulf_exile
+      followed_by:
+        - evt_1027_00_oswald_governance_colonization_begins
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Confraternity accounts and burial notices"
+        - "Widows’ and sick-care witness testimony"
+        - "Church visitor approval language (generic confraternity endorsement)"
+      out_of_world:
+        - "Campaign Bible (Sibilla dual authority model notes)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact confraternity name and any written rule text (if any)."
+
+    tags:
+      category:
+        - political
+        - religious
+        - social
+        - economic
+      archetype:
+        - gnostic
+        - rebel
+      scale: local
+      turning_point: false
+      themes:
+        - power_without_office
+        - charity_as_cover
+        - women_and_keys
+        - stability_as_leverage
+
+  - name: "Oswald’s Governance Colonization Begins"
+    id: evt_1027_00_oswald_governance_colonization_begins
+
+    date:
+      year: 1027
+      month: null
+      day: null
+      season: null
+      liturgical: null
+      precision: year
+
+    location:
+      primary: loc_falkenau_grafschaft
+      secondary:
+        - loc_tiefenbrunn
+      region: "Falkenau Grafschaft"
+
+    summary:
+      public: |
+        Oswald’s rule develops a reputation for consultation and practical
+        measures aimed at keeping peace after upheaval.
+      actual: |
+        Sibilla begins embedding consent mechanics into Oswald’s governance:
+        charters, fixed dues, moot-days, and witnessed authority framed as
+        practical statecraft that reduces revolt risk.
+      hidden: |
+        The intent is practice-first conversion: Oswald need not believe the
+        doctrine to behave as if he does. Once the habit is normalized, theology
+        can be offered as retrospective justification.
+
+    participants:
+      - char_oswald:
+          role: "Ruler adopting mechanisms"
+          outcome: "Stability increases; doctrine-aligned practice becomes default"
+          knowledge: "May view changes as effectiveness rather than faith"
+      - char_sibilla:
+          role: "Strategist exporting consent mechanics"
+          outcome: "Extends DC-adjacent practice into the realm’s governance"
+          knowledge: "Understands the slow conversion arc"
+
+    organizations:
+      - org_first_devils_circle:
+          role: "Source of consent mechanics (exported via Sibilla)"
+          outcome: "Influence expands without public naming"
+      - org_tiefenbrunn_charitable_confraternity:
+          role: "Legitimacy cover and administrative support"
+          outcome: "Strengthens Sibilla’s public platform"
+
+    consequences:
+      immediate:
+        - "Witnessed decision-making becomes more common in Oswald’s administration."
+      long_term:
+        - "DC principles become indistinguishable from ‘good lordship’ in practice."
+      unintended:
+        - "Opponents may later claim Oswald’s legitimacy rests on rebel theology whether or not he believes it."
+
+    related_events:
+      preceded_by:
+        - evt_1027_11_arnulf_exile
+      followed_by:
+        - evt_1029_00_oswald_normalizes_dc_adjacent_practices
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Charters and fixed-dues statements"
+        - "Public hearing recollections"
+        - "Officer talk about ‘consultation days’"
+      out_of_world:
+        - "Campaign Bible (Oswald conversion strategy notes)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which specific charter texts first encode ‘witnessed authority’ language?"
+
+    tags:
+      category:
+        - political
+      archetype:
+        - rebel
+        - gnostic
+      scale: regional
+      turning_point: false
+      themes:
+        - practice_over_belief
+        - stability_as_argument
+        - slow_conversion
+
+  - name: "Oswald Normalizes DC-Adjacent Practices"
+    id: evt_1029_00_oswald_normalizes_dc_adjacent_practices
+
+    date:
+      year: 1029
+      month: null
+      day: null
+      season: null
+      liturgical: null
+      precision: year
+
+    location:
+      primary: loc_falkenau_grafschaft
+      secondary: []
+      region: "Falkenau Grafschaft"
+
+    summary:
+      public: |
+        Oswald’s governance is increasingly described as measured and orderly,
+        with public hearings and ritualized oath-days presented as wise lordship.
+      actual: |
+        DC-adjacent practices become normal without being named as DC theology:
+        duress-void oaths inform amnesties and hostage policy; public hearings and
+        oath-days become ‘how Oswald governs.’
+      hidden: |
+        The unspoken shift is underway: Oswald is operating within DC principles
+        in practice, even if he never explicitly ‘converts’ in belief.
+
+    participants:
+      - char_oswald:
+          role: "Normalizer of practice"
+          outcome: "Rule gains legitimacy-through-habit"
+          knowledge: "May not acknowledge the doctrine-source"
+      - char_sibilla:
+          role: "Architect and stabilizer"
+          outcome: "DC framework entrenched as routine"
+          knowledge: "Sees theology becoming retrospective"
+
+    organizations:
+      - org_first_devils_circle:
+          role: "Doctrine-source (unnamed)"
+          outcome: "Influence embedded in realm habit"
+      - org_church_of_saints:
+          role: "Observes/benefits from order; may later contest theological implications"
+          outcome: "Tension deferred"
+
+    consequences:
+      immediate:
+        - "Consultative rituals gain momentum and legitimacy."
+      long_term:
+        - "DC principles become hard to uproot because they look like legitimate rule."
+      unintended:
+        - "Creates a future battleground: whether these practices are sacred right or mere technique."
+
+    related_events:
+      preceded_by:
+        - evt_1027_00_oswald_governance_colonization_begins
+      followed_by: []
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Oath-day witness lists (partial)"
+        - "Hearing notices and public recollection"
+      out_of_world:
+        - "Campaign Bible (normalization phase notes)"
+
+    status: likely
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which officers championed these practices (and which resisted) in 1029?"
+
+    tags:
+      category:
+        - political
+        - social
+      archetype:
+        - rebel
+        - gnostic
+      scale: regional
+      turning_point: false
+      themes:
+        - habit_as_legitimacy
+        - governance_as_ritual
+        - theology_by_stealth
+
+  - name: "Adalmar’s Pivot Year"
+    id: evt_1028_00_adalmar_pivot_year
+
+    date:
+      year: 1028
+      month: null
+      day: null
+      season: null
+      liturgical: null
+      precision: year
+
+    location:
+      primary: loc_falkenau_grafschaft
+      secondary:
+        - loc_pineclad_ridge
+      region: "Falkenau Grafschaft → Pineclad Ridge orbit"
+
+    summary:
+      public: |
+        Bruder Adalmar is regarded as a useful, minor clerical functionary: a
+        letter-drafter, optics-keeper, and record-hand.
+      actual: |
+        In 1028 he stops thinking of himself as a fixer and begins to think of
+        himself as a chronicler-with-leverage. He accumulates copies, witness-lists,
+        pardons, and genealogies—some accurate, some weaponized—building an arsenal.
+      hidden: |
+        Rudolf’s camp becomes the first place he feels genuinely seen as more than
+        a tool. This emotional recognition stabilizes his willingness to reposition
+        permanently toward Pineclad Ridge when the valley becomes too tight.
+
+    participants:
+      - char_adalmar:
+          role: "Record-keeper transforming into leverage archive"
+          outcome: "Becomes dangerous to everyone as his self-story changes"
+          knowledge: "Understands that control of record is power"
+      - char_rudolf:
+          role: "Social anchor and protector"
+          outcome: "Gains an institution-builder; inherits a liability"
+          knowledge: "Knows Adalmar is corrupt and necessary"
+      - char_lene:
+          role: "Clear-eyed observer at camp"
+          outcome: "Treats Adalmar as what he is: brilliant, compromised, useful"
+          knowledge: "Sees leverage value and risks"
+
+    organizations:
+      - org_church_of_saints:
+          role: "Public identity frame (chaplain/clerk)"
+          outcome: "Provides cover for Adalmar’s movement and ‘retreat’ story later"
+      - org_fae_court_rudolf:
+          role: "Emergent sanctuary/institution needing paperwork"
+          outcome: "Begins to gain coherence via Adalmar’s documentation"
+
+    consequences:
+      immediate:
+        - "Adalmar begins duplicating and caching key papers."
+      long_term:
+        - "Sets up the 1030 breach moment (parentage talk risk-report) and later retreat."
+      unintended:
+        - "Emotional need for recognition becomes a strategic vulnerability and motivator."
+
+    related_events:
+      preceded_by: []
+      followed_by:
+        - evt_1030_03_adalmar_risk_report_leopold_parentage
+        - evt_1030_00_oswald_legitimacy_saturation_campaign
+        - evt_1030_10_adalmar_exit_to_pineclad_ridge
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Copy-cache rumors (‘Adalmar keeps doubles’)"
+        - "Witness-lists appearing unexpectedly"
+        - "Camp letters with unusually clean phrasing"
+      out_of_world:
+        - "Campaign Bible (Adalmar pivot arc notes)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact month Adalmar begins spending sustained time at Rudolf’s camp."
+
+    tags:
+      category:
+        - political
+        - social
+      archetype:
+        - gnostic
+      scale: regional
+      turning_point: true
+      themes:
+        - archives_as_weapons
+        - recognition_hunger
+        - corruption_as_skill
+
+  - name: "Adalmar Delivers the Leopold Parentage Risk-Report"
+    id: evt_1030_03_adalmar_risk_report_leopold_parentage
+
+    date:
+      year: 1030
+      month: 3
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_grafschaft
+      secondary: []
+      region: "Falkenau Grafschaft (Oswald’s household orbit)"
+
+    summary:
+      public: |
+        In spring 1030, Oswald’s household tightens discipline and makes unusually
+        strong public gestures of legitimacy for Leopold, framed as prudent lordship.
+      actual: |
+        Adalmar approaches Oswald not with an accusation but a risk-report: “there
+        will be talk,” and enemies will weaponize weak points. He does not have proof;
+        he has pattern—timing, midwife talk, travel records, small certainties.
+      hidden: |
+        Oswald refuses to dignify the category: “There will be no talk.” He does not
+        argue evidence or explain; he criminalizes the premise socially as an attack
+        on peace. This makes Adalmar intolerable not because he lied, but because he
+        knew and spoke it aloud.
+
+    participants:
+      - char_adalmar:
+          role: "Risk-report messenger; leverage demonstrator"
+          outcome: "Becomes intolerable to Oswald; prepares exit under clerical cover"
+          knowledge: "Knows pattern, not proof; understands the threat-value of speaking"
+      - char_oswald:
+          role: "Sovereign definer of ‘what may be true’"
+          outcome: "Adopts legitimacy-overkill posture; escalates containment"
+          knowledge: "Understands the stakes: Otto’s legitimacy proximity, Church leverage, civil war narrative"
+      - char_sibilla:
+          role: "Downstream target of suspicion architecture"
+          outcome: "Learns Oswald knows (or suspects) through policy tightening, not confession"
+          knowledge: "Perceives the shape of accusation without it being spoken to her"
+
+    organizations:
+      - org_church_of_saints:
+          role: "Potential leverage-holder if accusation sticks"
+          outcome: "Becomes an implicit threat vector in Oswald’s calculus"
+      - org_first_devils_circle:
+          role: "Indirectly pressured via Sibilla’s constrained movement"
+          outcome: "Circle access and travel tighten under household suspicion"
+
+    consequences:
+      immediate:
+        - "Adalmar becomes ‘too dangerous to keep close.’"
+        - "Oswald begins legitimacy saturation gestures for Leopold."
+        - "Household control tightens: access, travel, servants."
+      long_term:
+        - "Oswald’s legitimacy doctrine hardens: questioning becomes ‘attacking the peace.’"
+        - "Adalmar exits to Pineclad Ridge under clerical excuse by late 1030."
+      unintended:
+        - "The denial posture makes accusations politically potent: opponents only need to make doubt stick, not prove truth."
+
+    related_events:
+      preceded_by:
+        - evt_1028_00_adalmar_pivot_year
+      followed_by:
+        - evt_1030_00_oswald_legitimacy_saturation_campaign
+        - evt_1030_10_adalmar_exit_to_pineclad_ridge
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Household travel constraints remembered by servants"
+        - "Sponsor lists and endowment notices for Leopold"
+        - "Court whisper that ‘talk itself is treason’"
+      out_of_world:
+        - "Campaign Bible (Leopold parentage leverage arc)"
+        - "GM timeline notes (Breach trigger and consequences)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "How much of Sibilla’s inner circle understands the tightening as suspicion rather than mere security?"
+      - "Whether Adalmar’s approach was witnessed by anyone besides Oswald."
+
+    tags:
+      category:
+        - political
+        - social
+      archetype:
+        - gnostic
+      scale: regional
+      turning_point: true
+      themes:
+        - legitimacy_by_naming
+        - denial_as_policy
+        - proof_irrelevance
+        - archives_as_threat
+
+  - name: "Oswald’s Legitimacy Saturation Campaign"
+    id: evt_1030_00_oswald_legitimacy_saturation_campaign
+
+    date:
+      year: 1030
+      month: null
+      day: null
+      season: null
+      liturgical: null
+      precision: year
+
+    location:
+      primary: loc_falkenau_grafschaft
+      secondary: []
+      region: "Falkenau Grafschaft"
+
+    summary:
+      public: |
+        Oswald invests unusual attention in public legitimacy gestures around
+        Leopold: elaborate naming, high-status sponsors, gifts, written records,
+        and endowments presented as pious and prudent.
+      actual: |
+        The campaign is “proof by saturation”: the realm remembers legitimacy as
+        fact rather than question. The goal is not to persuade doubters with
+        evidence, but to make doubt socially untenable and politically treasonous.
+      hidden: |
+        The gestures are overkill because Oswald is not defending a claim; he is
+        defending the category structure of reality in his realm. He needs the
+        accusation to fail not in truth, but in stickiness.
+
+    participants:
+      - char_oswald:
+          role: "Initiator and funder"
+          outcome: "Legitimacy doctrine strengthened; political capital spent"
+          knowledge: "Understands that response, not proof, is the battleground"
+      - char_leopold:
+          role: "Symbolic center"
+          outcome: "Public legitimacy embedded through ritual and record"
+          knowledge: "Child; meaning deferred"
+      - char_adalmar:
+          role: "Catalyst by speaking risk aloud"
+          outcome: "Forced to reposition out of valley"
+          knowledge: "Sees the overkill as confirmation of stakes"
+
+    organizations:
+      - org_church_of_saints:
+          role: "Provides ritual and sponsor legitimacy framework"
+          outcome: "Receives endowments/records; becomes entangled in the legitimacy narrative"
+      - org_graf_administration:
+          role: "Executes records, gifts, notices"
+          outcome: "Becomes machinery of saturation"
+
+    consequences:
+      immediate:
+        - "Legitimacy narrative reinforced across multiple channels."
+      long_term:
+        - "Future plots hinge on making accusation stick politically, not proving it."
+      unintended:
+        - "Overkill can signal insecurity to sophisticated observers."
+
+    related_events:
+      preceded_by:
+        - evt_1030_03_adalmar_risk_report_leopold_parentage
+      followed_by: []
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Sponsor lists"
+        - "Endowment records"
+        - "Public notices and feast talk"
+      out_of_world:
+        - "Campaign Bible (Oswald legitimacy doctrine notes)"
+
+    status: likely
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which named sponsors were used (and what political debts were incurred)?"
+
+    tags:
+      category:
+        - political
+        - religious
+      archetype:
+        - establishment
+      scale: regional
+      turning_point: false
+      themes:
+        - legitimacy_overkill
+        - memory_as_power
+        - public_record
+
+  - name: "Adalmar Exits to Pineclad Ridge Under Clerical Excuse"
+    id: evt_1030_10_adalmar_exit_to_pineclad_ridge
+
+    date:
+      year: 1030
+      month: null
+      day: null
+      season: null
+      liturgical: null
+      precision: year
+
+    location:
+      primary: loc_pineclad_ridge
+      secondary:
+        - loc_falkenau_grafschaft
+      region: "Pineclad Ridge (Rudolf’s camp) / Falkenau Grafschaft"
+
+    summary:
+      public: |
+        Bruder Adalmar departs on a penitential retreat, scholarship, or clerical
+        excuse that is treated as ordinary—even if a little sudden.
+      actual: |
+        The departure is a repositioning, not a flight: Adalmar duplicates key
+        papers, regularizes courier habits, and removes himself from Oswald’s
+        immediate reach while preserving channels back into the valley.
+      hidden: |
+        Everyone knows the stated reason is not the real reason. Everyone pretends
+        to believe it anyway. This mutual pretense stabilizes the triangle:
+        Oswald cannot kill him, Rudolf will shelter him, Adalmar will remain useful.
+
+    participants:
+      - char_adalmar:
+          role: "Repositioning archive-person"
+          outcome: "Becomes a ‘retired’ but dangerous leverage-holder"
+          knowledge: "Understands distance as defense; records as power"
+      - char_rudolf:
+          role: "Protector and employer-friend"
+          outcome: "Gains institution-builder; inherits Oswald’s distant liability"
+          knowledge: "Knows sheltering Adalmar is mutually beneficial and risky"
+      - char_oswald:
+          role: "Implicit accepter of exit"
+          outcome: "Adalmar removed from valley without scandal; not neutralized"
+          knowledge: "Knows the knowledge is copied/distributed; aims for containment, not elimination"
+
+    organizations:
+      - org_fae_court_rudolf:
+          role: "Sanctuary and new power base"
+          outcome: "Court coherence improved via paperwork and invented pedigrees"
+      - org_graf_administration:
+          role: "Loses close control over Adalmar; gains distance from scandal"
+          outcome: "Containment over elimination becomes default"
+
+    consequences:
+      immediate:
+        - "Adalmar becomes harder to silence, easier to ignore."
+        - "Valley channels continue via one or two careful couriers."
+      long_term:
+        - "Adalmar becomes an institution-builder for Rudolf (1031–1039)."
+        - "By 1055 he is a ‘dangerous archive in human form’ who trades papers, names, absolution."
+      unintended:
+        - "Distance increases myth-making: people treat Adalmar as rumor, then as necessity."
+
+    related_events:
+      preceded_by:
+        - evt_1030_03_adalmar_risk_report_leopold_parentage
+      followed_by: []
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Clerical excuse letter (retreat/scholarship/penance wording)"
+        - "Courier patterns noticed by a few watchers"
+        - "Pineclad Ridge visitors’ accounts (bargaining for papers)"
+      out_of_world:
+        - "Campaign Bible (Adalmar joins Rudolf by late 1030)"
+        - "GM notes (triangle stability 1030–1055)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Identity of any sympathetic valley clerk used as a quiet channel (if any)."
+
+    tags:
+      category:
+        - political
+        - social
+      archetype:
+        - gnostic
+      scale: regional
+      turning_point: true
+      themes:
+        - exile_as_containment
+        - archive_as_person
+        - mutual_pretense
+        - triangle_stability
