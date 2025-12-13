@@ -453,3 +453,97 @@ characters:
       - nobility
       - parent
       - unresolved
+
+      characters:
+  - id: char_otto
+
+    name:
+      full: "Otto"
+      common: "Otto"
+      nickname: null
+      titles: []
+
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: loc_falkenau_grafschaft
+        activity: inactive
+        canonical_resolution: pending
+
+      age_in_1025: 0
+
+    family:
+      parents:
+        father: char_oswald
+        mother: char_sibilla
+
+      spouse: []
+
+      children:
+        legitimate: []
+        illegitimate: []
+
+    knowledge_state:
+      knows: []
+      believed_to_know: []
+      actually_ignorant_of: []
+
+    affiliations: []
+
+    biography:
+      summary: |
+        Otto is the regime’s legitimacy anchor in miniature: too young for agency, but central to how the
+        household experiences threat. Because succession is a story people must believe before it becomes a
+        fact they obey, Otto’s line cannot be allowed to feel provisional.
+
+        The Breach (spring 1030) functions partly as Otto-protection: by abolishing “maybe illegitimate” as a
+        permissible category, Oswald prevents adjacent doubt from splashing onto Otto’s future oaths and charters.
+      key_traits:
+        - "N/A (child)"
+      motivations:
+        - "N/A"
+      contradictions:
+        - "A future authority whose stability depends on present-day suppression of doubt."
+
+    relationships:
+      - character: char_oswald
+        type: familial
+        nature: "Father; treats Otto’s legitimacy as regime-critical."
+        period: [null, null]
+        notes: null
+
+      - character: char_sibilla
+        type: familial
+        nature: "Mother; Otto’s legitimacy is bound to Sibilla’s public standing."
+        period: [null, null]
+        notes: null
+
+      - character: char_leopold
+        type: familial
+        nature: "Sibling relation exists in practice; politically dangerous to frame publicly depending on the narrative in force."
+        period: [1030, null]
+        notes: "Adjacency is the threat vector Oswald tries to erase."
+
+    timeline:
+      - year: 1030
+        event: evt_1030_spring_breach
+        role: "Indirect stake-holder; the line whose protection motivates the prohibition."
+
+    status: unresolved
+
+    tags:
+      - child
+      - heir_line
+      - legitimacy_anchor
+
