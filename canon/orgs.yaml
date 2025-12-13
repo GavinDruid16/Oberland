@@ -85,7 +85,7 @@ organizations:
       - legitimacy_leverage
 
 
-      organizations:
+organizations:
   - id: org_arnulf_cell_network
     name: "Arnulf’s cell network (Second Devil’s Circle)"
     abbreviation: "2DC (network)"
@@ -192,5 +192,37 @@ organizations:
           leader_title: null
           current_holder: null
         - name: "Village whisperers"
-          function: "Doorstep drops and sermon deli
-
+          function: "Doorstep drops and sermon delivery in multiple settlements, same night."
+          leader_title: null
+          current_holder: null
+        - name: "Barn interfaces"
+          function: "Exploit counting rhythms; anticipate who notices and how fast."
+          leader_title: null
+          current_holder: null
+      hierarchy: "distributed"
+    methods:
+      - "Breakdown-cover interception and staged transfers."
+      - "Choice-based neutralization of guards (join/leave/be tied)."
+      - "Overnight doorstep distribution."
+      - "One-night sermon saturation to erase origin."
+    key_figures: []
+    geography:
+      primary: null
+      influence: []
+      reach: local
+    evolution:
+      - year: 1029
+        phase: "Walpurghausen Incident Execution"
+        description: "Runs the tithe interception + redistribution play; establishes a template for future operations."
+    related_organizations:
+      derivative: []
+      allied: []
+      opposed: []
+      syncretized: []
+    status: active
+    tags:
+      - local_cell
+      - walpurghausen
+      - tithe_interception
+      - grain_redistribution
+      - nonviolent_restraint
