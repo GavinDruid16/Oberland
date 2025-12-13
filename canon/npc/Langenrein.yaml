@@ -1,0 +1,300 @@
+characters:
+  - id: char_oswald
+
+    name:
+      full: "Oswald von Langenrein"
+      common: "Oswald"
+      nickname: null
+      titles:
+        - title: "Ritter von Langenrein"
+          from: 1020
+          to: null
+          notes: "Holds this title continuously, but after 1026 its precedence is lower than his Graf title."
+        - title: "Graf von Falkenau-Langenrein"
+          from: 1026
+          to: null
+          notes: "Stylized form; supersedes 'Ritter von Langenrein' in precedence once he holds Falkenau in practice."
+
+    vitals:
+      born:
+        year: 995
+        precision: year
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: loc_falkenau_grafschaft
+        activity: active
+        canonical_resolution: pending
+
+      age_in_1025: 30
+
+    family:
+      parents:
+        father: char_dietrich_langenrein
+        mother: null
+
+      spouse:
+        - character: char_sibilla
+          married: 1024
+          status: current
+
+      children:
+        legitimate:
+          - character: char_otto
+            notes: "Treated as heir-line; legitimacy must remain unquestionable for regime stability."
+        illegitimate:
+          - character: char_leopold
+            notes: "Status and parentage politically sensitive; the regime suppresses the category of doubt."
+
+    knowledge_state:
+      knows:
+        - evt_1030_spring_breach: "Receives Adalmar’s risk report; responds with the sovereign line: 'There will be no talk.'"
+      believed_to_know:
+        - evt_1030_spring_breach: "Household believes he has settled the matter by force of will and discipline."
+      actually_ignorant_of: []
+
+    affiliations:
+      - organization: org_church_of_saints
+        role: "Political co-operator and occasional antagonist (relationship mediated through priests and legitimacy needs)"
+        from: null
+        to: null
+        status: complicated
+
+      - organization: org_first_devils_circle
+        role: "Beneficiary of 1DC infrastructure during revolt; later an uneasy overlord to its autonomy"
+        from: 1025
+        to: null
+        status: complicated
+
+    biography:
+      summary: |
+        Oswald is defined by an insistence that political reality is not negotiated but imposed. In moments
+        where evidence could fracture authority, he refuses argument and instead abolishes the category of
+        permissible doubt. His governance style treats rumor, speculation, and “maybe” as actionable threats.
+
+        In spring 1030, when Brother Adalmar warns that Leopold’s birth creates a legitimacy vulnerability,
+        Oswald’s response—“There will be no talk.”—exemplifies his core method: not refutation, but social
+        criminalization of the premise. For Oswald, legitimacy is an enforced condition that must remain
+        absolute to keep oaths, charters, and succession from becoming provisional.
+      key_traits:
+        - "Sovereign certainty (asserts reality rather than arguing it)"
+        - "Low tolerance for ambiguity; treats doubt as subversion"
+        - "Strategic about legitimacy and institutional leverage"
+        - "Capable of pragmatic alliance when it serves power"
+      motivations:
+        - "Preserve the unbroken legitimacy of his house and heirs"
+        - "Prevent Church leverage and rival-lord narratives from reopening civil war"
+        - "Make future governance instruments (oaths/charters) feel final"
+      contradictions:
+        - "Requires institutions (Church, scribes, oaths) while fearing their leverage"
+        - "Benefits from revolutionary infrastructure while policing destabilizing speech"
+
+    relationships:
+      - character: char_sibilla
+        type: familial
+        nature: "Spouse; political union with shared legitimacy interests and potential internal tensions."
+        period: [1024, null]
+        notes: "Marriage is both alliance and anchor; public unity is strategically necessary."
+
+      - character: char_adalmar
+        type: collaborator
+        nature: "Household chaplain and clerk; provides counsel, paperwork, and administrative intelligence."
+        period: [1024, 1030]
+        notes: "Adalmar’s chaplaincy spans fall 1024 through spring 1030; culminates in the Breach risk report."
+
+      - character: char_adalmar
+        type: enemy
+        nature: "Non-speaking terms; cooperation effectively ends."
+        period: [1030, null]
+        notes: "After spring 1030, they avoid direct contact; messages (if any) route through intermediaries."
+
+      - character: char_otto
+        type: familial
+        nature: "Heir-line proximity; Otto’s legitimacy must be protected from any adjacent doubt."
+        period: [null, null]
+        notes: "Otto’s position is strengthened by making 'maybe illegitimate' socially impossible."
+
+    timeline:
+      - year: 1030
+        event: evt_1030_spring_breach
+        role: "Receives legitimacy risk report; imposes total prohibition on rumor."
+
+    status: active
+
+    tags:
+      - nobility
+      - ruler
+      - legitimacy_enforcer
+      - establishment
+
+  - id: char_dietrich_langenrein
+
+    name:
+      full: "Dietrich von Langenrein"
+      common: "Dietrich von Langenrein"
+      nickname: null
+      titles: []
+
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: unknown
+        location: null
+        activity: unknown
+        canonical_resolution: pending
+
+      age_in_1025: null
+
+    family:
+      parents:
+        father: null
+        mother: null
+
+      spouse: []
+
+      children:
+        legitimate:
+          - character: char_oswald
+            notes: "Father of Oswald."
+        illegitimate: []
+
+    knowledge_state:
+      knows: []
+      believed_to_know: []
+      actually_ignorant_of: []
+
+    affiliations: []
+
+    biography:
+      summary: |
+        Dietrich von Langenrein is established in canon as Oswald’s father. Further details—rank, holdings,
+        relationship to Falkenau politics, and life dates—are not yet fixed in this registry.
+      key_traits: []
+      motivations: []
+      contradictions: []
+
+    relationships:
+      - character: char_oswald
+        type: familial
+        nature: "Father."
+        period: [null, null]
+        notes: null
+
+    timeline: []
+
+    status: unresolved
+
+    tags:
+      - nobility
+      - parent
+      - unresolved
+
+      characters:
+  - id: char_otto
+
+    name:
+      full: "Otto"
+      common: "Otto"
+      nickname: null
+      titles: []
+
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+
+      status:
+        vital: alive
+        location: loc_falkenau_grafschaft
+        activity: inactive
+        canonical_resolution: pending
+
+      age_in_1025: 0
+
+    family:
+      parents:
+        father: char_oswald
+        mother: char_sibilla
+
+      spouse: []
+
+      children:
+        legitimate: []
+        illegitimate: []
+
+    knowledge_state:
+      knows: []
+      believed_to_know: []
+      actually_ignorant_of: []
+
+    affiliations: []
+
+    biography:
+      summary: |
+        Otto is the regime’s legitimacy anchor in miniature: too young for agency, but central to how the
+        household experiences threat. Because succession is a story people must believe before it becomes a
+        fact they obey, Otto’s line cannot be allowed to feel provisional.
+
+        The Breach (spring 1030) functions partly as Otto-protection: by abolishing “maybe illegitimate” as a
+        permissible category, Oswald prevents adjacent doubt from splashing onto Otto’s future oaths and charters.
+      key_traits:
+        - "N/A (child)"
+      motivations:
+        - "N/A"
+      contradictions:
+        - "A future authority whose stability depends on present-day suppression of doubt."
+
+    relationships:
+      - character: char_oswald
+        type: familial
+        nature: "Father; treats Otto’s legitimacy as regime-critical."
+        period: [null, null]
+        notes: null
+
+      - character: char_sibilla
+        type: familial
+        nature: "Mother; Otto’s legitimacy is bound to Sibilla’s public standing."
+        period: [null, null]
+        notes: null
+
+      - character: char_leopold
+        type: familial
+        nature: "Sibling relation exists in practice; politically dangerous to frame publicly depending on the narrative in force."
+        period: [1030, null]
+        notes: "Adjacency is the threat vector Oswald tries to erase."
+
+    timeline:
+      - year: 1030
+        event: evt_1030_spring_breach
+        role: "Indirect stake-holder; the line whose protection motivates the prohibition."
+
+    status: unresolved
+
+    tags:
+      - child
+      - heir_line
+      - legitimacy_anchor
