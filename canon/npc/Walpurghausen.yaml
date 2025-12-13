@@ -126,3 +126,434 @@ characters:
       - errand_runner
       - witness
       - secret_affiliation
+      
+  - id: char_father_ruodprecht
+    name:
+      full: "Father Ruodprecht"
+      common: "Father Ruodprecht"
+      nickname: null
+      titles:
+        - title: "Parish Priest"
+          from: null
+          to: null
+          notes: "Serves as confessor in the Walpurghausen area (exact parish boundaries unresolved)."
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+      status:
+        vital: alive
+        location: null
+        activity: active
+        canonical_resolution: pending
+      age_in_1025: null
+    family:
+      parents:
+        father: null
+        mother: null
+      spouse: []
+      children:
+        legitimate: []
+        illegitimate: []
+    knowledge_state:
+      knows:
+        - evt_1029_spring_walpurghausen_incident: "Hears confessions of recipients; recognizes the sermon’s orthodox surface and its subversive implication."
+      believed_to_know:
+        - evt_1029_spring_walpurghausen_incident: "Some assume he can identify culprits; in truth he avoids naming anyone to prevent escalation."
+      actually_ignorant_of:
+        - org_2dc_cell_walpurghausen: "Does not know the cell’s membership or structure; only sees aftermath through confession."
+    affiliations:
+      - org_church_of_saints:
+          role: "Ordained priest; local confessor"
+          from: null
+          to: null
+          status: current
+    biography:
+      summary: |
+        A working parish priest whose authority is sacramental and social rather than political. In spring 1029,
+        he becomes the unintended moral hinge of the Walpurghausen Incident: peasants confess receiving grain that
+        ‘must have been stolen,’ and they repeat a sermon that sounds charitable while undermining tithe legitimacy.
+        
+        Ruodprecht does not reach for heresy charges. He chooses a compromise—penance, partial restitution where
+        possible, and careful language—because naming the thing risks turning hunger into open defiance.
+      key_traits:
+        - "Pastoral"
+        - "Conflict-avoidant under pressure"
+        - "Sensitive to doctrinal inversion"
+        - "Pragmatic about hunger"
+      motivations:
+        - "Keep his flock from spiritual and legal ruin"
+        - "Prevent violence and reprisals"
+        - "Preserve orthodox language while managing an unorthodox situation"
+      contradictions:
+        - "Defends the sacrament of confession while it becomes a shield for organized dissent"
+        - "Knows something is wrong, but avoids the word that would make it actionable"
+    relationships:
+      - char_konrad:
+          type: complicated
+          nature: "Needs Konrad’s order to prevent crackdowns; fears Konrad’s investigation will demand names."
+          period: [1029, null]
+          notes: null
+      - char_bruder_anshelm:
+          type: complicated
+          nature: "Respects abbey authority but fears Anshelm’s ‘full investigation’ will punish the hungry first."
+          period: [1029, null]
+          notes: null
+    timeline:
+      - year: 1029
+        event: evt_1029_spring_walpurghausen_incident
+        role: "Confessor confronted by recipients; frames matter as misguided charity, not heresy."
+    status: active
+    tags:
+      - clergy
+      - confessor
+      - local_authority
+  - id: char_bruder_anshelm
+    name:
+      full: "Bruder Anshelm"
+      common: "Bruder Anshelm"
+      nickname: null
+      titles:
+        - title: "Abbey Brother (charter negotiator)"
+          from: null
+          to: null
+          notes: "Handles charter renewal negotiations and abbey property interests."
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+      status:
+        vital: alive
+        location: null
+        activity: active
+        canonical_resolution: pending
+      age_in_1025: null
+    family:
+      parents:
+        father: null
+        mother: null
+      spouse: []
+      children:
+        legitimate: []
+        illegitimate: []
+    knowledge_state:
+      knows:
+        - evt_1029_spring_walpurghausen_incident: "Treats it as an economic crime and a security failure affecting abbey grain."
+      believed_to_know:
+        - evt_1029_spring_walpurghausen_incident: "Others think he understands the sermon’s implication; he largely ignores that dimension."
+      actually_ignorant_of:
+        - org_arnulf_cell_network: "Does not grasp the distributed cell logic; assumes ‘bandits’ or a small ring."
+    affiliations:
+      - org_church_of_saints:
+          role: "Monastic/abbey agent (property and charter matters)"
+          from: null
+          to: null
+          status: current
+    biography:
+      summary: |
+        An abbey man who sees the world in charters, obligations, and precedent. During spring 1029 he is occupied
+        with renewal negotiations and a dispute mediation involving Konrad and the Graf’s reeve. When the tithe wagon
+        arrives light, Anshelm presses for investigation and restitution, using the incident to argue that secular power
+        cannot be trusted to protect church property.
+        
+        He focuses on grain and jurisdiction; the sermon’s theological inversion reads to him as peasants repeating
+        pious-sounding nonsense rather than a deliberate weapon.
+      key_traits:
+        - "Legal-minded"
+        - "Institutionally loyal"
+        - "Confrontational in negotiation"
+        - "Blind to memetic/folk mechanics"
+      motivations:
+        - "Protect abbey property and precedents"
+        - "Win leverage in charter renewal"
+        - "Shift blame onto secular road security"
+      contradictions:
+        - "Invokes charity as church virtue while prioritizing restitution and authority optics"
+    relationships:
+      - char_konrad:
+          type: adversarial
+          nature: "Pressures Konrad for results and paper certainty; treats ambiguity as incompetence."
+          period: [1029, null]
+          notes: null
+      - char_father_ruodprecht:
+          type: complicated
+          nature: "Shares church allegiance but differs on whether to escalate doctrinal framing."
+          period: [1029, null]
+          notes: null
+    timeline:
+      - year: 1029
+        event: evt_1029_spring_walpurghausen_incident
+        role: "Demands investigation; weaponizes the incident in charter talks."
+    status: active
+    tags:
+      - clergy
+      - administrator
+      - negotiator
+  - id: char_hasso
+    name:
+      full: "Hasso"
+      common: "Hasso"
+      nickname: null
+      titles:
+        - title: "Patrolman"
+          from: null
+          to: null
+          notes: "Graf-side enforcement; routine patrol duties in the broader area."
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+      status:
+        vital: alive
+        location: null
+        activity: active
+        canonical_resolution: pending
+      age_in_1025: null
+    family:
+      parents:
+        father: null
+        mother: null
+      spouse: []
+      children:
+        legitimate: []
+        illegitimate: []
+    knowledge_state:
+      knows:
+        - evt_1029_spring_walpurghausen_incident: "Finds the guard story inconsistent; judges it too organized for random banditry."
+      believed_to_know:
+        - evt_1029_spring_walpurghausen_incident: "Some assume he can ‘solve’ it; he knows solving it cleanly may worsen unrest."
+      actually_ignorant_of:
+        - org_2dc_cell_walpurghausen: "Does not know membership; cannot distinguish cell from opportunistic locals."
+    affiliations:
+      - org_graf_administration:
+          role: "Patrol/enforcement"
+          from: null
+          to: null
+          status: current
+    biography:
+      summary: |
+        A professional watcher of roads and stories. When the Walpurghausen tithe wagon arrives light, Hasso does not
+        accept the neat ‘bandits’ framing; the restraint-only handling and the timing suggest planning. His value is not
+        in brilliance but in discipline: he follows the contradictions, notes what is missing (blood, panic, looting),
+        and reports that the matter needs careful handling.
+        
+        He is privately relieved that no one died. That relief is practical: blood makes martyrs, martyrs make movements.
+      key_traits:
+        - "Methodical"
+        - "Suspicious of convenient explanations"
+        - "Risk-aware"
+        - "Not needlessly cruel"
+      motivations:
+        - "Keep order without provoking revolt"
+        - "Protect his own standing by giving accurate reports"
+        - "Prevent the road from becoming a political battleground"
+      contradictions:
+        - "Sees the shape of conspiracy but prefers containment to exposure"
+    relationships:
+      - char_konrad:
+          type: ally
+          nature: "Reports candidly; advises caution; expects Konrad to manage politics above his pay."
+          period: [1029, null]
+          notes: null
+    timeline:
+      - year: 1029
+        event: evt_1029_spring_walpurghausen_incident
+        role: "Investigates discrepancies; warns it is not random crime."
+    status: active
+    tags:
+      - military
+      - enforcer
+      - investigator
+  - id: char_gerhild
+    name:
+      full: "Gerhild"
+      common: "Gerhild"
+      nickname: null
+      titles:
+        - title: "Barn warden / counter"
+          from: null
+          to: null
+          notes: "Responsible for counting, recording, and reporting shortfalls at the barns."
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+      status:
+        vital: alive
+        location: null
+        activity: active
+        canonical_resolution: pending
+      age_in_1025: null
+    family:
+      parents:
+        father: null
+        mother: null
+      spouse: []
+      children:
+        legitimate: []
+        illegitimate: []
+    knowledge_state:
+      knows:
+        - evt_1029_spring_walpurghausen_incident: "The count is short by fourteen sacks; the ledger makes it undeniable."
+      believed_to_know:
+        - evt_1029_spring_walpurghausen_incident: "Others treat her as purely loyal to the system; she notices the villages look better-fed."
+      actually_ignorant_of:
+        - org_2dc_cell_walpurghausen: "Does not know who did it; only how it presents in numbers and downstream effects."
+    affiliations:
+      - org_graf_administration:
+          role: "Collection/barn administration (records and accountability)"
+          from: null
+          to: null
+          status: current
+    biography:
+      summary: |
+        Gerhild is the kind of person power relies on: she can count, she can write, and she refuses to let losses vanish
+        into story. Her tally triggers the entire response chain. Yet she also sees what the paper cannot deny: hunger has
+        a look, and the villages look less hungry after the missing grain.
+        
+        This makes her dangerous to both sides. To authorities, because she will not let matters be waved away; to rebels,
+        because she watches patterns and remembers.
+      key_traits:
+        - "Precise"
+        - "Stubborn"
+        - "Observant"
+        - "Quietly judgmental"
+      motivations:
+        - "Keep the barn system coherent (records must mean something)"
+        - "Avoid being scapegoated for losses"
+        - "Understand the real pattern behind ‘irregularities’"
+      contradictions:
+        - "Serves a system that produces hunger, while recognizing hunger as the true emergency"
+    relationships:
+      - char_konrad:
+          type: collaborator
+          nature: "Forces him to act by making the discrepancy formal and documented."
+          period: [1029, null]
+          notes: null
+    timeline:
+      - year: 1029
+        event: evt_1029_spring_walpurghausen_incident
+        role: "Counts shortfall; records discrepancy; reports to Konrad."
+    status: active
+    tags:
+      - administrator
+      - record_keeper
+      - economic
+  - id: char_konrad
+    name:
+      full: "Konrad"
+      common: "Konrad"
+      nickname: null
+      titles:
+        - title: "Vogt (vogtei authority)"
+          from: null
+          to: null
+          notes: "Handles jurisdictional disputes and law-enforcement coordination in his vogtei."
+    vitals:
+      born:
+        year: null
+        precision: unknown
+        location: null
+      died:
+        year: null
+        precision: unknown
+        location: null
+        cause: null
+      status:
+        vital: alive
+        location: null
+        activity: active
+        canonical_resolution: pending
+      age_in_1025: null
+    family:
+      parents:
+        father: null
+        mother: null
+      spouse: []
+      children:
+        legitimate: []
+        illegitimate: []
+    knowledge_state:
+      knows:
+        - evt_1029_spring_walpurghausen_incident: "The story is inconsistent; the jurisdiction is ambiguous; he must produce ‘action’ regardless."
+      believed_to_know:
+        - evt_1029_spring_walpurghausen_incident: "Graf expects him to ‘solve banditry’; abbey expects him to ‘protect church property.’"
+      actually_ignorant_of:
+        - org_arnulf_cell_network: "Suspects coordination but lacks proof and avoids digging deep enough to ignite wider unrest."
+    affiliations:
+      - org_graf_administration:
+          role: "Vogtei authority / mediator / local jurisdiction handler"
+          from: null
+          to: null
+          status: current
+    biography:
+      summary: |
+        Konrad is the hinge between competing powers: abbey claims, Graf roads, reeve authority, and the reality that a hungry
+        spring makes every obligation brittle. In the Walpurghausen Incident he does what such men do: arrests that show motion,
+        documentation that shows diligence, and reports that commit him to a manageable frame (“banditry”) rather than an explosive one
+        (“organized tenant action with theological payload”).
+        
+        He likely suspects the deeper truth. He also understands that proving it would obligate responses that neither side truly wants:
+        mass punishment, escalating defiance, or open humiliation of authority.
+      key_traits:
+        - "Politically cautious"
+        - "Paper-trail minded"
+        - "Pragmatic"
+        - "Skilled at framing"
+      motivations:
+        - "Protect his office and avoid blame"
+        - "Keep conflict legible to superiors (crime, not revolt)"
+        - "Prevent jurisdictional chaos from becoming personal ruin"
+      contradictions:
+        - "Seeks truth in private while suppressing it in public"
+        - "Acts ‘for order’ by accepting a lie that preserves order"
+    relationships:
+      - char_hasso:
+          type: ally
+          nature: "Relies on Hasso’s competence; uses his findings without letting them force escalation."
+          period: [1029, null]
+          notes: null
+      - char_bruder_anshelm:
+          type: adversarial
+          nature: "Negotiates under pressure; resents abbey leverage but cannot ignore it."
+          period: [1029, null]
+          notes: null
+      - char_father_ruodprecht:
+          type: complicated
+          nature: "Needs Ruodprecht’s restraint to prevent panic; fears confession will become a political fuse."
+          period: [1029, null]
+          notes: null
+    timeline:
+      - year: 1029
+        event: evt_1029_spring_walpurghausen_incident
+        role: "Arrests scapegoats; documents; reports ‘banditry’ while privately suspecting coordination."
+    status: active
+    tags:
+      - administrator
+      - law
+      - mediator
+      - vogt
