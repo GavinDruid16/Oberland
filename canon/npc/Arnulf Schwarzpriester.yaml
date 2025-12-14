@@ -1,0 +1,126 @@
+characters:
+  - id: char_arnulf
+
+    name:
+      full: "Arnulf"
+      common: "Father Arnulf"
+      nickname: "Schwarzpriester"
+      titles:
+        - title: "Parish Priest of Tiefenbrunn"
+          from: 1012
+          to: 1027
+        - title: "Penitent Priest on Pilgrimage (in practice: exile)"
+          from: 1027
+          to: null
+
+    affiliations:
+      - org_church:
+          role: "Ordained priest; parish service in Tiefenbrunn until exile"
+          from: 1012
+          to: null
+          status: "complicated (under clerical scrutiny; publicly 'penitent')"
+
+      - org_first_devils_circle:
+          role: "Founder; theologian; organizer-in-chief; de facto ruler of Tiefenbrunn (private)"
+          from: 1010
+          to: 1027
+          status: "former (founder exiled; movement persists under Sibilla)"
+
+      - org_second_devils_circle:
+          role: "Founder; distributed leader; doctrinal source"
+          from: 1027
+          to: null
+          status: "secret (decentralized network; avoids beheading)"
+
+    biography:
+      summary: |
+        Arnulf served publicly as the parish priest of Tiefenbrunn, but from the early 1010s onward
+        he held Herr Albrecht von Tiefenbrunn at an effective checkmate: outsiders saw a lord ruling
+        a village, while villagers quietly oriented their obedience around the priest who controlled
+        confession, mutual aid, and the moral calendar. Albrecht remained politically necessary as a
+        mask, yet privately fragile so long as Arnulf’s influence endured.
+
+        Between 1010 and 1027 Arnulf founded and led the united Devil’s Circle (1DC, pre-schism),
+        building it first as survivable infrastructure (stores, labor-rotation, burial and care duties)
+        and only then as theology. From a young age, Sibilla—Albrecht’s daughter—became his pupil.
+        Arnulf cultivated her intelligence deliberately, teaching methods of governance, persuasion,
+        and “double speech” that could pass as piety on the surface while carrying inverted meanings
+        for initiates. This apprenticeship produced a movement capable of operating in daylight.
+
+        In November 1027 Oswald engineered Arnulf’s removal via a “penitential pilgrimage” that functioned
+        as exile, avoiding a public heresy proceeding that would have forced the Church’s hand. Arnulf
+        overwintered in Wiesenwang (winter 1027–1028) and relocated to Krähenburg in spring 1028, where
+        he began shaping a decentralized Second Circle (2DC): small cells, minimal cross-knowledge,
+        slow routing, and discipline designed to survive interrogation and selective purges.
+
+        The Night of Ash (July 1028) was perpetrated by a purist 1DC branch whose ideology was consistent
+        with Arnulf’s original theology. This sharpened the schism in practice: Sibilla’s 1DC tightened
+        into sanitized survivability, while Arnulf’s 2DC embraced decentralization and long-horizon
+        delegitimization rather than open revolt.
+      key_traits:
+        - "Charismatic teacher and recruiter"
+        - "Ritual and language engineer (double meanings, survivable signals)"
+        - "Strategic thinker who prefers systems over heroic gestures"
+        - "Controls through care, counsel, and obligation rather than overt force"
+        - "Ideologically rigorous, yet tactically patient"
+      motivations:
+        - "Establish consent-based legitimacy (anti-lord moral framework)"
+        - "Preserve his followers by making the movement survivable under pressure"
+        - "Prove theology can become governance (not merely belief)"
+        - "Prevent domestication of revolt into a new, sanctified lordship"
+      contradictions:
+        - "Uses priestly authority to preach against illegitimate authority"
+        - "Preaches consent while building dependency through mutual aid systems"
+        - "Denies hierarchy while remaining the doctrinal source others orbit"
+        - "Requires secrecy to survive, but secrecy produces its own power imbalances"
+
+    relationships:
+      - char_albrecht_von_tiefenbrunn:
+          type: "enemy"
+          nature: "Public partnership masking private domination; Arnulf keeps Albrecht as a necessary figurehead while holding him in checkmate."
+          period: [1011, 1027]
+          notes: "Albrecht cannot openly countermand him without risking legitimacy and control in Tiefenbrunn."
+
+      - char_sibilla:
+          type: "complicated"
+          nature: "Teacher–pupil bond; he sculpted her competence and methods, later reading her 'sanitized' Circle as domestication of the revolt."
+          period: [1015, 1027]
+          notes: "Pupilage begins young; later political divergence becomes the defining wound."
+
+      - char_oswald:
+          type: "enemy"
+          nature: "Mutual strategic respect at distance; Oswald removes him without trial to avoid martyrdom and clerical escalation."
+          period: [1026, null]
+          notes: "Oswald’s exile move makes Arnulf harder to target in the future."
+
+      - char_kunigunde:
+          type: "complicated"
+          nature: "Institutional friction: Arnulf’s heterodoxy vs. her convent as a vault of orthodoxy and custody."
+          period: [1027, null]
+          notes: "No open animosity required; both operate through structures rather than spectacle."
+
+    timeline:
+      - year: 1027
+        event: evt_1027_11_arnulf_penitential_pilgrimage_exile
+        role: "Removed from Tiefenbrunn under clerical framing; exile begins."
+      - year: 1027
+        event: evt_1027_12_arnulf_overwinters_wiesenwang
+        role: "Overwinters quietly; begins laying 2DC methods and contacts."
+      - year: 1028
+        event: evt_1028_03_arnulf_relocates_kraehenburg
+        role: "Relocates to a freer hub; expands 2DC routing and recruitment."
+      - year: 1028
+        event: evt_1028_07_night_of_ash
+        role: "His ideology is reflected by a purist 1DC branch; he is not publicly linked but the event shapes 2DC discipline."
+
+    status: unresolved
+
+    tags:
+      - clergy
+      - founder
+      - theologian
+      - heretic_suspected
+      - organizer
+      - exile
+      - double_sermon
+      - resistance_infrastructure
