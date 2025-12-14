@@ -1,0 +1,1821 @@
+# FILE: events_1027_1028.yaml
+events:
+  - name: "The Peace of Falkenau (proclaimed, not yet real)"
+    id: evt_1027_05_peace_of_falkenau
+
+    date:
+      year: 1027
+      month: 5
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary:
+        - loc_rotbach_bridge
+        - loc_falkenau_market
+      region: "Falkenau valley and its administrative choke points"
+
+    summary:
+      public: |
+        Oswald proclaims a peace settlement and orders a realm oath-swearing among the castle household,
+        market men, bridge-keepers, millers, and reeves. Keys and captains are replaced at Rotbach Bridge,
+        granaries, and outer gatehouses. A limited amnesty pardons most of Eberhard’s footmen while excluding
+        ringleaders; private vengeance killings are explicitly outlawed. Eberhard remains under comfortable
+        guard, allowed books, hawking, and a small household.
+      actual: |
+        The settlement is designed to make every surviving faction legible. The oaths, key replacements,
+        and amnesty function as a sorting mechanism: those willing to re-enter the system do so publicly,
+        while holdouts reveal themselves by hesitation, absence, or coded defiance. Eberhard’s comfort is
+        also instrumental—proof of restraint that discourages martyr narratives while flushing loyalist
+        networks into view.
+      hidden: |
+        No confirmed hidden layer beyond routine surveillance and deliberate narrative control. Some observers
+        suspect select “pardons” were granted to keep informants close, but specific names remain unconfirmed.
+
+    participants:
+      - char_oswald:
+          role: "Proclaimer; administrator of oaths; architect of the peace narrative"
+          outcome: "Begins consolidating rule through procedure rather than spectacle"
+          knowledge: "Understands this as sorting and control; presents it as mercy and order"
+      - char_eberhard:
+          role: "Defeated Graf kept alive as proof of restraint"
+          outcome: "Remains under house arrest with controlled privileges"
+          knowledge: "Recognizes his comfort is instrumental; tests the boundaries quietly"
+      - char_sibilla:
+          role: "Public face of stability; supports settlement framing"
+          outcome: "Emerges as visible faction-operator without formal office"
+          knowledge: "Understands the performative value of mercy and normalcy"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Regime apparatus under Oswald’s control"
+          outcome: "Secures keys/captains; begins predictable administration"
+      - org_first_devils_circle:
+          role: "Background social infrastructure in Tiefenbrunn (not named publicly)"
+          outcome: "Learns to hide in daylight as attention rises"
+
+    consequences:
+      immediate:
+        - "Oath rolls and key replacements consolidate control at choke points"
+        - "Amnesty draws many former Eberhard-men into the open"
+        - "Vengeance killings are delegitimized and prosecuted as disorder"
+      long_term:
+        - "Creates paper trails that later justify selective purges and appointments"
+        - "Eberhard’s continued life becomes a managed political asset"
+      unintended:
+        - "Holdouts and exiles harden into external threats rather than internal ones"
+
+    related_events:
+      preceded_by:
+        - evt_1026_11_eberhard_house_arrest_begins
+      followed_by:
+        - evt_1027_06_accounting_of_the_war
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Oath rolls and reeve registers"
+        - "Gatehouse and granary appointment lists"
+        - "Public proclamations posted at market and bridge"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact wording of the oath formula and penalties for refusal"
+      - "Specific captains replaced at Rotbach Bridge and outer gatehouses"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment, rebel]
+      scale: grafschaft-wide
+      turning_point: true
+      themes: [mercy_as_control, legitimacy_engineering, sorting_mechanism]
+
+  - name: "The accounting of the war (Compensation Court)"
+    id: evt_1027_06_accounting_of_the_war
+
+    date:
+      year: 1027
+      month: 6
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary:
+        - loc_falkenau_market
+        - loc_falkenau_manors
+      region: "Falkenau administrative district"
+
+    summary:
+      public: |
+        Oswald convenes a compensation court to record burnt barns, stolen cattle, and wartime seizures.
+        Restitution is promised primarily in grain rather than coin. He begins quiet demobilization to
+        prevent summer arms from becoming autumn banditry. Sibilla publicly presses for a liberation-style
+        settlement for Tiefenbrunn: rent relief, fixed dues, and written rights.
+      actual: |
+        The court is both restitution and intelligence work: a census of grievance, allegiance, and capacity.
+        Grain restitution is chosen because it is visible, controllable, and can be distributed in ways that
+        build compliance. Demobilization is paced to avoid creating a free-floating armed labor market.
+      hidden: |
+        Some claims are quietly prioritized or delayed to reward cooperation and starve hostile networks of
+        resources. The pattern is suspected but not fully documented.
+
+    participants:
+      - char_oswald:
+          role: "Convener of the court; controller of restitution flows"
+          outcome: "Builds legitimacy through administered relief"
+          knowledge: "Uses claims as a map of loyalties and liabilities"
+      - char_sibilla:
+          role: "Advocate for Tiefenbrunn settlement terms"
+          outcome: "Strengthens her role as a faction leader in daylight"
+          knowledge: "Frames mutual aid as lawful order to keep it survivable"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Court and reeve apparatus"
+          outcome: "Begins routinized adjudication and record-keeping"
+      - org_first_devils_circle:
+          role: "Tiefenbrunn’s social backbone"
+          outcome: "Gains written cover (in prospect) for practices that already exist"
+
+    consequences:
+      immediate:
+        - "Grievances are formalized and become administratively legible"
+        - "Arms are quietly drawn down through service rotations and confiscations"
+      long_term:
+        - "Restitution becomes a lever for compliance and punishment"
+        - "Sets conditions for a written Tiefenbrunn settlement in 1028"
+      unintended:
+        - "Those excluded from restitution become prime recruits for outlaw spheres"
+
+    related_events:
+      preceded_by: [evt_1027_05_peace_of_falkenau]
+      followed_by: [evt_1027_07_rudolf_lene_retreat]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Compensation ledgers"
+        - "Manorial tallies and livestock counts"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Which ringleaders are formally excluded and by what criteria"
+      - "Exact grain conversion rates used for restitution promises"
+
+    tags:
+      category: [political, economic, social]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [paper_over_blood, grain_as_control, demobilization]
+
+  - name: "Rudolf and Lene retreat to the high foothills (Frontier arrangement)"
+    id: evt_1027_07_rudolf_lene_retreat
+
+    date:
+      year: 1027
+      month: 7
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_high_foothills
+      secondary:
+        - loc_pineclad_ridge
+        - loc_falkenau_valley_roads
+      region: "High foothills above Falkenau"
+
+    summary:
+      public: |
+        Rudolf and Lene die Listige withdraw with followers, framing it as a self-made court in the high country.
+        Oswald does not stop them but draws a line: no raiding the valley and no taking tolls. In exchange, he
+        tacitly allows them to “keep the wilds quiet,” creating a deniable frontier arrangement.
+      actual: |
+        Oswald chooses containment over pursuit: a known outlaw domain is less dangerous than desperate raiders
+        distributed throughout the valley. Rudolf and Lene accept limits because a stable frontier increases
+        their autonomy and reduces direct confrontation.
+      hidden: |
+        The enforcement of “no tolls, no raids” is uneven and often mediated through rumor, intermediaries,
+        and selective retaliation rather than open campaigns.
+
+    participants:
+      - char_oswald:
+          role: "Boundary-setter; chooses containment"
+          outcome: "Creates an externalized pressure zone"
+          knowledge: "Treats the foothills as a managed badlands"
+      - char_rudolf:
+          role: "Outlaw court founder; charismatic rival"
+          outcome: "Gains space to rule his own domain under constraints"
+          knowledge: "Understands Oswald prefers predictable threats"
+      - char_lene_die_listige:
+          role: "Organizer and tactician within the foothill court"
+          outcome: "Helps enforce internal order and deniable bargains"
+          knowledge: "Uses ambiguity and tribute customs to stabilize the court"
+
+    organizations:
+      - org_foothill_court:
+          role: "Outlaw polity"
+          outcome: "Becomes a recognized (if unofficial) frontier fact"
+
+    consequences:
+      immediate:
+        - "Valley bandit pressure is displaced upward and outward"
+        - "Travel advisories become informal but widely understood"
+      long_term:
+        - "Foothills become a narrative dumping ground for blame and fear"
+        - "Oswald gains deniability for violence beyond the valley’s courts"
+      unintended:
+        - "A stable outlaw domain attracts the disaffected and the ambitious"
+
+    related_events:
+      preceded_by: [evt_1027_06_accounting_of_the_war]
+      followed_by: [evt_1027_08_church_notices_smoke]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Roadside warnings and market gossip"
+        - "Reeve reports of missing livestock and boundary disputes"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Exact boundary markers used in Oswald’s informal edict"
+      - "Whether tribute-taking continues under other names"
+
+    tags:
+      category: [political, social]
+      archetype: [rebel]
+      scale: regional
+      turning_point: false
+      themes: [containment, deniable_frontier, outlaw_court]
+
+  - name: "The Church notices the smoke (Visitation pressure begins)"
+    id: evt_1027_08_church_notices_smoke
+
+    date:
+      year: 1027
+      month: 8
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary:
+        - loc_falkenau_castle
+      region: "Tiefenbrunn and wider Falkenau"
+
+    summary:
+      public: |
+        Rumors of Devil’s Circle spread beyond Tiefenbrunn: not proof, but patterned gossip about odd fast-days,
+        inverted sayings, and suspicious communal stores. Oswald requests (or accepts) a clerical visitation and
+        begins public acts of orthodoxy: chapel repair, endowments, proper burials. Tiefenbrunn complies outwardly:
+        Mass attendance spikes and confession becomes performative.
+      actual: |
+        Oswald manages two audiences: he must appear orthodox enough to avoid ecclesiastical escalation while
+        preventing a valley-wide witch hunt that would destabilize his rule. Tiefenbrunn adapts by moving its
+        real cohesion into domestic camouflage and daylight-normal behaviors.
+      hidden: |
+        Devil’s Circle practices are intentionally laundered into “charity” and “emergency stores” to remain
+        survivable under scrutiny. Specific internal rites remain unknown to outsiders.
+
+    participants:
+      - char_oswald:
+          role: "Legitimacy manager; invites or accepts visitation"
+          outcome: "Buys time and narrows the scope of inquiry"
+          knowledge: "Frames enforcement as discipline and order, not doctrinal war"
+      - char_sibilla:
+          role: "Local stabilizer and translator between village and court"
+          outcome: "Helps shift practices into survivable forms"
+          knowledge: "Understands daylight camouflage as the survival doctrine"
+      - char_arnulf:
+          role: "Public parish priest; private founder of 1DC"
+          outcome: "Becomes an eventual target for removal without trial"
+          knowledge: "Knows exposure forces the Church’s hand; prioritizes survivability"
+
+    organizations:
+      - org_church:
+          role: "Visitation pressure and moral scrutiny"
+          outcome: "Begins slow squeeze rather than immediate purge"
+      - org_first_devils_circle:
+          role: "Suspected heterodox movement"
+          outcome: "Adapts to scrutiny; hides in plain sight"
+
+    consequences:
+      immediate:
+        - "Spike in public orthodoxy performances"
+        - "Increased clerical attention and rumor circulation"
+      long_term:
+        - "Sets conditions for banditry-framed arrests in 1028"
+      unintended:
+        - "Teaches the commune how to survive investigations by being boring"
+
+    related_events:
+      preceded_by: [evt_1027_07_rudolf_lene_retreat]
+      followed_by: [evt_1027_09_wards_pages_policy]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Sermon notes and confession logs (where kept)"
+        - "Repair accounts for chapels and burials"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which clerical officials or agents lead the visitation pressure"
+      - "What specific rumors become most actionable"
+
+    tags:
+      category: [religious, political, social]
+      archetype: [establishment, rebel]
+      scale: regional
+      turning_point: false
+      themes: [orthodoxy_as_theater, daylight_camouflage, clerical_pressure]
+
+  - name: "Hostages and wards, politely named (Wards/pages policy)"
+    id: evt_1027_09_wards_pages_policy
+
+    date:
+      year: 1027
+      month: 9
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: []
+      region: "Oswald’s court and household"
+
+    summary:
+      public: |
+        Oswald draws key surviving Eberhard-men into his household as wards and pages. The policy is framed as
+        mercy and reconciliation, but functions as control and surveillance.
+      actual: |
+        The policy removes future leadership from rival networks and makes remaining loyalists cautious.
+        It also allows Oswald to cultivate a new administrative class loyal to him by habit and opportunity.
+      hidden: |
+        Some placements are chosen to isolate specific families from one another and prevent the formation of
+        an alternative “old guard” within the castle.
+
+    participants:
+      - char_oswald:
+          role: "Architect of the wards/pages policy"
+          outcome: "Secures leverage over rival lineages"
+          knowledge: "Uses fostering language to make coercion socially acceptable"
+      - char_sibilla:
+          role: "Household political operator"
+          outcome: "Gains informational access and influence through court routine"
+          knowledge: "Tracks which wards are convertible vs. dangerous"
+      - char_eberhard:
+          role: "Symbolic rival whose former men are harvested"
+          outcome: "Loses future network coherence"
+          knowledge: "Understands the long-term purpose but cannot counter it"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Court structure implementing the policy"
+          outcome: "Strengthens administrative stability and surveillance capacity"
+
+    consequences:
+      immediate:
+        - "Former Eberhard-men become legible and controllable"
+      long_term:
+        - "Rival lineages’ next generation is socialized under Oswald’s court norms"
+      unintended:
+        - "Creates resentments that later feed exile and outlaw spheres"
+
+    related_events:
+      preceded_by: [evt_1027_08_church_notices_smoke]
+      followed_by: [evt_1027_10_river_anniversary_edict]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Household rosters and training lists"
+        - "Court gossip and patronage correspondence"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Which specific families and youths are drawn in"
+      - "Whether any wards become covert informants for rival networks"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment]
+      scale: personal
+      turning_point: false
+      themes: [polite_hostages, future_harvest, court_as_net]
+
+  - name: "The river anniversary edict (First anniversary of Almut’s taking)"
+    id: evt_1027_10_river_anniversary_edict
+
+    date:
+      year: 1027
+      month: 10
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_river
+      secondary: []
+      region: "River sites and valley communities"
+
+    summary:
+      public: |
+        On the first anniversary of Almut’s taking, the valley is tense. Oswald issues an edict:
+        no armed gatherings at the river; funerary offerings permitted only in church-acceptable forms.
+        The stated goal is public safety and proper rites.
+      actual: |
+        The edict prevents the river from becoming a rally point and monopolizes public ritual under
+        acceptable orthodoxy. It converts potentially destabilizing folklore into administrable mourning.
+      hidden: |
+        Authorities monitor known river sites for gatherings and identify local agitators through who appears,
+        who speaks, and who refuses the acceptable forms.
+
+    participants:
+      - char_oswald:
+          role: "Issuer of the edict; crowd-control strategist"
+          outcome: "Prevents a mass gathering from becoming political theater"
+          knowledge: "Understands ritual is a governance tool"
+      - char_sibilla:
+          role: "Local translator and enforcer-by-soft-power"
+          outcome: "Channels grief into survivable forms"
+          knowledge: "Manages folklore pressure without letting it ignite"
+
+    organizations:
+      - org_church:
+          role: "Defines 'acceptable' forms of offering and mourning"
+          outcome: "Gains visible role in regulating public grief"
+      - org_house_falkenau:
+          role: "Enforcement arm (reeves, patrols)"
+          outcome: "Uses mourning season for intelligence gathering"
+
+    consequences:
+      immediate:
+        - "Armed gatherings are suppressed or deterred"
+        - "Offerings shift toward sanctioned forms"
+      long_term:
+        - "Public ritual becomes increasingly monopolized by Oswald + Church"
+      unintended:
+        - "Folkloric grief is pushed into private, harder-to-observe spaces"
+
+    related_events:
+      preceded_by: [evt_1027_09_wards_pages_policy]
+      followed_by: [evt_1027_11_arnulf_penitential_pilgrimage_exile]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Edict postings and reeve patrol notes"
+        - "Sermons on proper offerings"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which river sites are explicitly named in the edict (if any)"
+      - "How strictly 'acceptable forms' are defined by clergy"
+
+    tags:
+      category: [political, religious, folkloric]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [ritual_control, river_fear, grief_as_politics]
+
+  - name: "Arnulf is cut loose (Penitential pilgrimage that functions as exile)"
+    id: evt_1027_11_arnulf_penitential_pilgrimage_exile
+
+    date:
+      year: 1027
+      month: 11
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary:
+        - loc_falkenau_castle
+      region: "Tiefenbrunn and the authority structures around it"
+
+    summary:
+      public: |
+        Oswald moves against Father Arnulf indirectly by arranging a forced penitential pilgrimage under escort.
+        Rather than a public trial, Arnulf is allowed to “vanish” into penance, which functions as exile.
+        The stated purpose is correction without scandal.
+      actual: |
+        Oswald avoids a public heresy proceeding that would force the Church into a hard choice and drag
+        Tiefenbrunn’s peasantry into direct questioning. Exile removes a dangerous organizer while reducing
+        martyr potential and keeping the conflict local.
+      hidden: |
+        The exile has a strategic side effect: once Arnulf is outside Oswald’s territory, future action against
+        him becomes politically and practically harder. Oswald accepts this cost for immediate stability.
+
+    participants:
+      - char_oswald:
+          role: "Architect of the exile-by-penance solution"
+          outcome: "Removes a destabilizing node without spectacle"
+          knowledge: "Understands the trade: stability now, harder targeting later"
+      - char_arnulf:
+          role: "Exiled priest; founder of 1DC"
+          outcome: "Loses local authority; begins 2DC development in exile"
+          knowledge: "Understands exile is both defeat and immunity"
+
+    organizations:
+      - org_church:
+          role: "Provides the penitential framing that makes exile defensible"
+          outcome: "Avoids immediate scandal while retaining leverage over Oswald"
+      - org_first_devils_circle:
+          role: "Founder removed from local space"
+          outcome: "Movement persists; leadership shifts to survivable operators"
+
+    consequences:
+      immediate:
+        - "Arnulf removed without public trial"
+        - "Tiefenbrunn avoids a forced doctrinal confrontation"
+      long_term:
+        - "Second Circle (2DC) becomes possible as an externalized threat"
+      unintended:
+        - "Arnulf becomes harder to seize or silence later"
+
+    related_events:
+      preceded_by: [evt_1027_10_river_anniversary_edict]
+      followed_by:
+        - evt_1027_12_eberhard_transferred_convent_custody
+        - evt_1027_12_arnulf_overwinters_wiesenwang
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Pilgrimage letters and escort notes (if preserved)"
+        - "Parish vacancy rumors and replacement arrangements"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Arnulf character timeline notes (project canon)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact escort route and supervising clerical authority"
+      - "Whether any formal accusations are written but never read publicly"
+
+    tags:
+      category: [political, religious]
+      archetype: [establishment, rebel]
+      scale: local
+      turning_point: true
+      themes: [no_martyrs_policy, exile_as_immunity, heresy_without_trial]
+
+  - name: "Eberhard is removed as a living banner (Transfer to Convent of Saints Walburga and Emmerich)"
+    id: evt_1027_12_eberhard_transferred_convent_custody
+
+    date:
+      year: 1027
+      month: 12
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_convent_walburga_emmerich
+      secondary:
+        - loc_falkenau_castle
+      region: "Falkenau; clerical custody at Kunigunde’s convent"
+
+    summary:
+      public: |
+        Oswald transfers Eberhard from castle custody to clerical custody at the reconstituted Convent of Saints
+        Walburga and Emmerich under Abbess Kunigunde. Officially it is for contemplation and health: mercy and
+        piety. Guards appear as servants.
+      actual: |
+        Functionally, Eberhard is moved from visible political space to a vault. The convent provides moral
+        cover and controlled access, reducing the chance that Eberhard serves as a rally point or a rescue target
+        within the castle’s daily imagination. The choice is deeply ironic: the convent was funded by Eberhard in
+        1013, and Kunigunde’s long forced silence now becomes custody over the man who imposed it.
+      hidden: |
+        Kunigunde’s custody is cathartic but rule-bound: she denies Eberhard the ability to turn the convent into
+        propaganda. Oswald benefits from her strictness without needing to pressure the convent.
+
+    participants:
+      - char_oswald:
+          role: "Transfers custody; uses Church as a vault"
+          outcome: "Eberhard becomes harder to access and rescue"
+          knowledge: "Understands this removes the banner from daily politics"
+      - char_eberhard:
+          role: "Living symbol moved into clerical vault"
+          outcome: "Privileges become rule-bound and access-controlled"
+          knowledge: "Recognizes the shift from bait to sealed asset"
+      - char_kunigunde:
+          role: "Abbess; custodian with moral authority"
+          outcome: "Gains institutional control over Eberhard’s access and narrative"
+          knowledge: "Understands the irony; enforces custody 'properly'"
+
+    organizations:
+      - org_church:
+          role: "Provides moral cover and custody framework"
+          outcome: "Becomes the visible guardian of mercy and order"
+      - org_convent_walburga_emmerich:
+          role: "Custody site and institutional vault"
+          outcome: "Becomes entangled in high politics while claiming pious purpose"
+
+    consequences:
+      immediate:
+        - "Eberhard removed from castle proximity and casual contact"
+        - "Correspondence and visitors become more strictly controlled"
+      long_term:
+        - "Rescue attempts become harder, higher-risk, and more symbolically costly"
+      unintended:
+        - "Eberhard’s presence in a holy setting risks reframing him as a sanctified captive"
+
+    related_events:
+      preceded_by: [evt_1027_11_arnulf_penitential_pilgrimage_exile]
+      followed_by: [evt_1028_01_winter_order_ration_rules]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Transfer orders and household account reallocations"
+        - "Convent guest log (if kept) and correspondence controls"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Kunigunde/Eberhard custody notes (project canon)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact custody protocol negotiated between Oswald and the convent"
+      - "Whether Eberhard retains any outdoor privileges (hawking, gardens) after transfer"
+
+    tags:
+      category: [political, religious]
+      archetype: [establishment]
+      scale: regional
+      turning_point: true
+      themes: [vault_custody, irony_of_foundation, mercy_as_removal]
+
+  - name: "Arnulf overwinters in Wiesenwang (first winter of exile)"
+    id: evt_1027_12_arnulf_overwinters_wiesenwang
+
+    date:
+      year: 1027
+      month: 12
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_wiesenwang
+      secondary: []
+      region: "Wiesenwang (proto-freistadt) and its winter traffic"
+
+    summary:
+      public: |
+        Father Arnulf, now officially on penitential pilgrimage, spends the winter in Wiesenwang as a quiet,
+        unremarkable priest seeking shelter and alms.
+      actual: |
+        Wiesenwang provides cover for survival and for the first practical scaffolding of 2DC: a few disciplined
+        contacts, slow routing habits, and methods designed to outlive the founder’s direct oversight.
+      hidden: |
+        No public proof links Arnulf to any organized network during this winter. The operational reality is
+        intentionally low-signature: counsel, small favors, and temperament screening.
+
+    participants:
+      - char_arnulf:
+          role: "Exiled priest embedding in a new community"
+          outcome: "Survives winter; begins 2DC pattern development"
+          knowledge: "Designs networks to resist decapitation"
+
+    organizations:
+      - org_second_devils_circle:
+          role: "Incipient network pattern (not visible as an organization)"
+          outcome: "Begins as method rather than hierarchy"
+
+    consequences:
+      immediate:
+        - "Arnulf becomes geographically harder for Oswald to seize"
+      long_term:
+        - "Creates the first survivable 2DC routing habits"
+      unintended:
+        - "Local rumors may later retroactively connect him to unrelated disorders"
+
+    related_events:
+      preceded_by: [evt_1027_11_arnulf_penitential_pilgrimage_exile]
+      followed_by: [evt_1028_03_arnulf_relocates_kraehenburg]
+      concurrent: [evt_1027_12_eberhard_transferred_convent_custody]
+
+    sources:
+      in_world:
+        - "Host-house gossip and alms lists"
+        - "Winter sermon circuit memory (informal)"
+      out_of_world:
+        - "Arnulf location canon note (winter 1027–1028: Wiesenwang)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which households host him, and under what stated pretext"
+      - "Whether any early 2DC contacts originate here or merely pass through"
+
+    tags:
+      category: [social, religious, political]
+      archetype: [rebel]
+      scale: personal
+      turning_point: false
+      themes: [exile_survival, low_signature_networking, winter_cover]
+
+  - name: "Winter order (ration rules and controlled prices)"
+    id: evt_1028_01_winter_order_ration_rules
+
+    date:
+      year: 1028
+      month: 1
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_market
+      secondary:
+        - loc_falkenau_granaries
+      region: "Falkenau markets and grain controls"
+
+    summary:
+      public: |
+        Oswald institutes ration rules: controlled grain release, controlled prices, penalties for hoarding.
+        Presented as humanitarian winter policy.
+      actual: |
+        The policy is also political: it binds survival to administered order and reduces the market chaos that
+        breeds banditry and revolt.
+      hidden: |
+        Grain flows and exemptions function as quiet patronage: cooperation is rewarded, suspicion is starved.
+
+    participants:
+      - char_oswald:
+          role: "Issuer of ration and price controls"
+          outcome: "Builds legitimacy through administered relief"
+          knowledge: "Treats grain as both food and political instrument"
+      - char_sibilla:
+          role: "Public stabilizer and soft-power enforcer"
+          outcome: "Helps make rationing socially acceptable"
+          knowledge: "Understands that fair-seeming rules prevent unrest"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Enforcement via reeves, granary keepers, market officers"
+          outcome: "Strengthens control over scarcity"
+
+    consequences:
+      immediate:
+        - "Reduces visible hoarding and price spikes"
+      long_term:
+        - "Normalizes administrative intrusion into daily survival"
+      unintended:
+        - "Creates black-market incentives and new smuggling routes"
+
+    related_events:
+      preceded_by: [evt_1027_12_eberhard_transferred_convent_custody]
+      followed_by: [evt_1028_02_tiefenbrunn_charter]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Market ordinances and reeve fines"
+        - "Granary issuance logs"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact ration scales by household status"
+      - "Which penalties are actually enforced vs. threatened"
+
+    tags:
+      category: [economic, political, social]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [mercy_as_policy, scarcity_governance, legitimacy_through_relief]
+
+  - name: "The Tiefenbrunn settlement (written charter; papered over)"
+    id: evt_1028_02_tiefenbrunn_charter
+
+    date:
+      year: 1028
+      month: 2
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: []
+      region: "Tiefenbrunn and its manorial obligations"
+
+    summary:
+      public: |
+        Oswald grants a written Tiefenbrunn Charter: fixed dues, limits on arbitrary levies, and protections for
+        common stores. It is framed as Oswald’s generosity. Albrecht remains the public lord, but the settlement
+        is sealed under Oswald’s authority.
+      actual: |
+        The charter legalizes the minimum necessary to make relapse into open revolt irrational while preserving
+        the appearance of traditional lordship through Albrecht’s continued figurehead role.
+      hidden: |
+        The charter also provides cover for existing mutual-aid systems by giving them lawful language and limits,
+        reducing what can be labeled suspicious or “heretical” in practice.
+
+    participants:
+      - char_oswald:
+          role: "Grantor and narrator of the charter"
+          outcome: "Stabilizes Tiefenbrunn without acknowledging peasant sovereignty"
+          knowledge: "Understands this as domestication into paperwork"
+      - char_albrecht_von_tiefenbrunn:
+          role: "Public lord-mask"
+          outcome: "Remains outward ruler while privately constrained"
+          knowledge: "Relieved by stability but still politically hollow"
+      - char_sibilla:
+          role: "Architect/advocate of survivable settlement terms"
+          outcome: "Strengthens her moral authority among Tiefenbrunn households"
+          knowledge: "Uses legal language to keep the commune alive"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Seal and enforcement apparatus"
+          outcome: "Extends administrative reach into Tiefenbrunn in lawful form"
+      - org_first_devils_circle:
+          role: "Background infrastructure re-described as lawful practice"
+          outcome: "Survives by adopting charter language"
+
+    consequences:
+      immediate:
+        - "Dues become predictable and easier to defend in court"
+      long_term:
+        - "Revolt energy shifts from open politics to hidden doctrine and culture"
+      unintended:
+        - "Purists interpret the charter as proof of domestication and betrayal"
+
+    related_events:
+      preceded_by: [evt_1028_01_winter_order_ration_rules]
+      followed_by: [evt_1028_03_spring_test_neighbor_probe]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Charter text and seal impressions"
+        - "Village store and dues accounts"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact enumerated rights and store protections"
+      - "Which disputes are reserved to Oswald’s courts vs. Albrecht’s nominal authority"
+
+    tags:
+      category: [political, economic, social]
+      archetype: [establishment, rebel]
+      scale: local
+      turning_point: true
+      themes: [papered_revolution, figurehead_lord, survivable_rights]
+
+  - name: "First spring test from outside (neighboring probe)"
+    id: evt_1028_03_spring_test_neighbor_probe
+
+    date:
+      year: 1028
+      month: 3
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_borderlands
+      secondary: []
+      region: "Border disputes with neighboring powers (e.g., Hochmark)"
+
+    summary:
+      public: |
+        Neighboring Hochmark’s men probe disputes over tolls, grazing rights, forest use, and fugitives.
+        Oswald responds with letters and a show of force rather than launching a new campaign.
+      actual: |
+        Oswald chooses low-cost deterrence to signal governability: he must demonstrate the revolt did not
+        leave Falkenau weak, while avoiding another war that would re-militarize the valley.
+      hidden: |
+        Border probes also become a pretext to tighten control over roads and messaging under the guise of
+        “security,” indirectly affecting outlaw and heresy investigations.
+
+    participants:
+      - char_oswald:
+          role: "Responder; deterrence manager"
+          outcome: "Signals stability without escalation"
+          knowledge: "Understands that restraint is a strategic posture"
+      - char_sibilla:
+          role: "Soft-power diplomat and rumor manager"
+          outcome: "Helps prevent panic and internal recrimination"
+          knowledge: "Knows external threat can become internal purge fuel if mishandled"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Letters, reeves, patrols"
+          outcome: "Strengthens border routines and messaging controls"
+
+    consequences:
+      immediate:
+        - "Disputes contained without major mobilization"
+      long_term:
+        - "Border security rationalizes broader surveillance and checkpointing"
+      unintended:
+        - "Outlaws and dissidents use border churn as cover for movement"
+
+    related_events:
+      preceded_by: [evt_1028_02_tiefenbrunn_charter]
+      followed_by: [evt_1028_04_sibilla_influence_grows]
+      concurrent: [evt_1028_03_arnulf_relocates_kraehenburg]
+
+    sources:
+      in_world:
+        - "Border letters and toll dispute records"
+        - "Patrol notes and grazing complaints"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which specific border points and toll lines are contested"
+      - "Whether fugitives are a genuine concern or a diplomatic pretext"
+
+    tags:
+      category: [political, military]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [deterrence_without_war, border_pressure, governability_signal]
+
+  - name: "Arnulf relocates to Krähenburg (spring move from Wiesenwang)"
+    id: evt_1028_03_arnulf_relocates_kraehenburg
+
+    date:
+      year: 1028
+      month: 3
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_kraehenburg
+      secondary: [loc_wiesenwang]
+      region: "Proto-Freistadt network and river trade corridors"
+
+    summary:
+      public: |
+        Father Arnulf continues his penitential pilgrimage and relocates from Wiesenwang to Krähenburg as the
+        season turns, seeking work, shelter, and religious hospitality.
+      actual: |
+        Krähenburg’s social tolerance and traffic make it a better hub for distributed networking. The move
+        supports the growth of 2DC as a routing pattern that can outlive direct leadership.
+      hidden: |
+        Recruitment remains low-signature: counsel, confession, favors, and temperament screening rather than
+        overt organizing.
+
+    participants:
+      - char_arnulf:
+          role: "Exiled priest shifting to a freer hub"
+          outcome: "Expands 2DC reach and survivability"
+          knowledge: "Treats hubs as routing nodes, not bases"
+
+    organizations:
+      - org_second_devils_circle:
+          role: "Distributed network pattern"
+          outcome: "Gains reach through a more connected locale"
+
+    consequences:
+      immediate:
+        - "Arnulf becomes harder to track through Falkenau-centered intelligence nets"
+      long_term:
+        - "Krähenburg becomes a plausible external staging/relay point for 2DC"
+      unintended:
+        - "Local disputes in Krähenburg may later be blamed on 'foreign heresy'"
+
+    related_events:
+      preceded_by: [evt_1027_12_arnulf_overwinters_wiesenwang]
+      followed_by: [evt_1028_06_clerical_squeeze_selective_purges]
+      concurrent: [evt_1028_03_spring_test_neighbor_probe]
+
+    sources:
+      in_world:
+        - "Host-house gossip and alms records"
+        - "Travelers’ tales of a severe penitent priest"
+      out_of_world:
+        - "Arnulf location canon note (spring 1028: Krähenburg)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which patrons or hosts facilitate the move"
+      - "Whether any named 2DC cells can be traced to Krähenburg at this date"
+
+    tags:
+      category: [social, religious, political]
+      archetype: [rebel]
+      scale: personal
+      turning_point: false
+      themes: [hub_selection, routing_over_basing, exile_mobility]
+
+  - name: "Sibilla’s influence grows (Oswald curates and restricts, then eases)"
+    id: evt_1028_04_sibilla_influence_grows
+
+    date:
+      year: 1028
+      month: 4
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: [loc_tiefenbrunn]
+      region: "Court politics and Tiefenbrunn’s public face"
+
+    summary:
+      public: |
+        Sibilla becomes the visible face of a survivable Devil’s Circle: publicly orthodox, administratively competent,
+        and politically useful. Oswald responds by narrowing her power through appointments, travel restrictions, and
+        household curation while praising her publicly; this posture is not permanent.
+      actual: |
+        Oswald’s restriction is a short-lived control reflex: he cannot justify holding his own consort hostage indefinitely
+        without harming legitimacy. He curates her influence rather than openly confronting it.
+      hidden: |
+        Sibilla continues to operate through soft-power channels (household placements, marriages, obligation webs) even when
+        formal motion is constrained.
+
+    participants:
+      - char_oswald:
+          role: "Curator of consort power; legitimacy manager"
+          outcome: "Avoids a visible internal rivalry while preserving dynasty optics"
+          knowledge: "Sees and corrects the overreach when it harms his narrative"
+      - char_sibilla:
+          role: "Faction-operator; consort; survival architect of 1DC"
+          outcome: "Maintains influence through curated channels"
+          knowledge: "Understands constraint and works around it without open rupture"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Appointment and household control machine"
+          outcome: "Centralizes soft-power routing at court"
+
+    consequences:
+      immediate:
+        - "Sibilla’s travel and appointments are curated"
+      long_term:
+        - "Court learns to treat her as a power center regardless of formal limitation"
+      unintended:
+        - "Perceived constraint feeds whispers about tyranny if mishandled"
+
+    related_events:
+      preceded_by: [evt_1028_03_spring_test_neighbor_probe]
+      followed_by: [evt_1028_05_rudolf_frontier_ban]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Appointment lists and household staffing changes"
+        - "Court correspondence and rumor"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which specific offices Sibilla is denied or granted during the curtailment"
+      - "Exact trigger for Oswald easing the tight leash"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment, rebel]
+      scale: personal
+      turning_point: false
+      themes: [consort_power, curated_influence, legitimacy_vs_control]
+
+  - name: "Rudolf’s foothill court becomes a frontier ban (formalized boundary)"
+    id: evt_1028_05_rudolf_frontier_ban
+
+    date:
+      year: 1028
+      month: 5
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_high_foothills
+      secondary: [loc_falkenau_valley_roads]
+      region: "Foothills and valley approach routes"
+
+    summary:
+      public: |
+        Reports of strange court customs, missing livestock, and theft framed as tribute reach the lowlands.
+        Oswald declares Rudolf’s domain a frontier ban: not fully lawful, not fully outlaw—an administrable warning
+        and a denial of responsibility.
+      actual: |
+        The frontier ban is a governance compromise: it tells valley folk where not to go, legitimizes selective retaliation,
+        and preserves Oswald’s deniability for whatever happens beyond the boundary.
+      hidden: |
+        In practice, enforcement remains irregular and mediated through rumor, intermediaries, and occasional punitive displays.
+
+    participants:
+      - char_oswald:
+          role: "Declares the frontier ban; sets the boundary narrative"
+          outcome: "Clarifies where law does not fully reach"
+          knowledge: "Uses ambiguity to retain flexibility"
+      - char_rudolf:
+          role: "Outlaw ruler within the ban"
+          outcome: "Gains de facto recognition as a frontier fact"
+          knowledge: "Exploits the ban’s ambiguity for tribute framing"
+
+    organizations:
+      - org_foothill_court:
+          role: "Outlaw polity under ban"
+          outcome: "Hardens into a recognized threat-space"
+
+    consequences:
+      immediate:
+        - "Valley travel patterns shift; warnings become explicit"
+      long_term:
+        - "Foothills become the realm’s blame-reservoir and pressure valve"
+      unintended:
+        - "People with nowhere else to go drift toward the ban zone"
+
+    related_events:
+      preceded_by: [evt_1028_04_sibilla_influence_grows]
+      followed_by: [evt_1028_06_clerical_squeeze_selective_purges]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Reeve advisories and market postings"
+        - "Reports of livestock loss and tribute rumors"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Whether the frontier ban is written or remains customary"
+      - "How often Oswald’s forces cross the boundary in practice"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment, rebel]
+      scale: regional
+      turning_point: false
+      themes: [managed_badlands, boundary_story, deniable_violence]
+
+  - name: "The clerical squeeze tightens (Selective purges framed as crime)"
+    id: evt_1028_06_clerical_squeeze_selective_purges
+
+    date:
+      year: 1028
+      month: 6
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: [loc_falkenau_castle]
+      region: "Tiefenbrunn under visitation pressure"
+
+    summary:
+      public: |
+        Visiting clergy and their agents press for action: rooting out heresy cannot be postponed indefinitely.
+        Oswald responds with selective arrests of mid-level organizers framed as banditry, oath-breaking, or disorder
+        rather than heresy.
+      actual: |
+        Oswald refuses to let the conflict become a valley-wide doctrinal hunt. By framing enforcement as crime, he
+        satisfies pressure while keeping the scope local and administrable.
+      hidden: |
+        Arrest selections are shaped by intelligence: targets are those who can be removed without implicating the wider
+        village fabric. The goal is decapitation without martyr-making.
+
+    participants:
+      - char_oswald:
+          role: "Selects targets; sets the framing"
+          outcome: "Reduces organizing capacity without doctrinal war"
+          knowledge: "Treats heresy attention as a crisis-management problem"
+      - char_sibilla:
+          role: "Survival operator within Tiefenbrunn’s public face"
+          outcome: "Keeps wider community deniable by sacrificing selected nodes"
+          knowledge: "Understands the cost of visibility"
+      - char_arnulf:
+          role: "Externalized founder of the ideology (in exile)"
+          outcome: "Becomes harder to target directly; his legacy becomes a suspicion lens"
+          knowledge: "Anticipates such framing and trains 2DC around it"
+
+    organizations:
+      - org_church:
+          role: "Pressure and legitimacy constraint"
+          outcome: "Receives action without forcing a doctrinal purge"
+      - org_house_falkenau:
+          role: "Arrest and court apparatus"
+          outcome: "Strengthens ‘crime’ framing as a governance tool"
+      - org_first_devils_circle:
+          role: "Movement under pressure"
+          outcome: "Survives by tightening daylight camouflage"
+
+    consequences:
+      immediate:
+        - "Mid-level organizers are removed or scattered"
+      long_term:
+        - "Sets the stage for Oswald’s broad mercy offer after a flashpoint"
+      unintended:
+        - "Purists interpret selective purges as proof of betrayal and compromise"
+
+    related_events:
+      preceded_by: [evt_1028_05_rudolf_frontier_ban]
+      followed_by: [evt_1028_07_night_of_ash]
+      concurrent: [evt_1028_03_arnulf_relocates_kraehenburg]
+
+    sources:
+      in_world:
+        - "Arrest warrants and court dockets"
+        - "Visitation notes and clerical correspondence"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which specific individuals are arrested and what charges are used"
+      - "How direct the clerical pressure is (formal visitation vs. unofficial agents)"
+
+    tags:
+      category: [religious, political]
+      archetype: [establishment, rebel]
+      scale: local
+      turning_point: false
+      themes: [bandits_not_heretics, selective_purge, pressure_management]
+
+  - name: "The Night of Ash (purist 1DC action; flashpoint)"
+    id: evt_1028_07_night_of_ash
+
+    date:
+      year: 1028
+      month: 7
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: []
+      region: "Tiefenbrunn and nearby tithe/clerical routes"
+
+    summary:
+      public: |
+        A radical cell commits an incendiary act intended to ignite a wider rising: arson at a tithe barn, an ambush of a priest,
+        or a public inversion rite. The act fails quickly and is used to justify local crackdowns, while Oswald refuses to allow a
+        valley-wide witch hunt.
+      actual: |
+        The perpetrators are a purist 1DC branch acting in ideological consistency with Arnulf’s original theology. The action is
+        doctrinally coherent but strategically catastrophic: it hands Oswald justification to clean house while maintaining the
+        banditry/disorder framing.
+      hidden: |
+        Publicly, responsibility is blurred to avoid implicating the broader commune. Privately, the schism hardens: Sibilla’s 1DC
+        tightens into survivable sanitization, while Arnulf’s 2DC formalizes anti-spectacle discipline and decentralization.
+
+    participants:
+      - char_oswald:
+          role: "Crisis manager; uses the flashpoint to justify localized cleanup"
+          outcome: "Gains mandate to act without opening a doctrinal war"
+          knowledge: "Knows fear consolidates rule if kept contained"
+      - char_sibilla:
+          role: "Damage-control operator"
+          outcome: "Protects the wider community by narrowing blame and visibility"
+          knowledge: "Treats purist spectacle as an existential threat to survivability"
+      - char_arnulf:
+          role: "Doctrinal source at distance (in exile)"
+          outcome: "His ideology is reflected in the purist branch; 2DC discipline hardens"
+          knowledge: "Separates moral conviction from strategic method in 2DC teaching"
+
+    organizations:
+      - org_first_devils_circle:
+          role: "Movement under internal fracture"
+          outcome: "Sanitized survivability tightens under Sibilla"
+      - org_second_devils_circle:
+          role: "Emergent decentralized resistance culture"
+          outcome: "Adopts stricter anti-spectacle and security practice"
+      - org_church:
+          role: "Receives confirmation of danger"
+          outcome: "Pressure continues, but Oswald contains scope"
+
+    consequences:
+      immediate:
+        - "Localized crackdown becomes publicly justifiable"
+        - "Rumor of heresy/disorder spikes"
+      long_term:
+        - "Schism logic accelerates (sanitized 1DC vs. decentralized 2DC)"
+      unintended:
+        - "Purist actions make future conflation of all Circles more likely by outsiders"
+
+    related_events:
+      preceded_by: [evt_1028_06_clerical_squeeze_selective_purges]
+      followed_by: [evt_1028_08_mercy_as_policy]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Burn reports, tithe ledgers, and patrol testimony"
+        - "Sermons condemning inversion and violence"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Purist 1DC canon clarification (project note)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Exact form of the act (arson vs. ambush vs. rite) and which site is targeted"
+      - "Whether any purist leaders escape into exile or the foothills"
+
+    tags:
+      category: [religious, political, social]
+      archetype: [rebel]
+      scale: local
+      turning_point: true
+      themes: [flashpoint, purist_spectacle, crackdown_pretext, schism_pressure]
+
+  - name: "Mercy as policy, terror as rumor (absolution-and-return deal)"
+    id: evt_1028_08_mercy_as_policy
+
+    date:
+      year: 1028
+      month: 8
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: [loc_falkenau_castle]
+      region: "Tiefenbrunn and its surrounding villages"
+
+    summary:
+      public: |
+        Oswald offers a broad absolution-and-return deal: swear, confess in a vague survivable way, and be spared.
+        A few leaders “vanish” into exile or pilgrimage. Rumors claim drowning or secret executions, but no bodies appear.
+      actual: |
+        The deal is designed to create a compliance cascade and end mass participation without producing martyrs. Ambiguity
+        about vanished leaders is intentional deterrence: fear without a single grievance focal point.
+      hidden: |
+        Sibilla’s survival machine helps translate the deal into behavior that protects the wider community, while purists and
+        externalized networks interpret it as domestication and betrayal.
+
+    participants:
+      - char_oswald:
+          role: "Issuer of the mercy deal; deterrence designer"
+          outcome: "Reduces open resistance and stabilizes administration"
+          knowledge: "Uses ambiguity as a tool"
+      - char_sibilla:
+          role: "Translator and soft-power enforcer"
+          outcome: "Guides survivable compliance while preserving private cohesion"
+          knowledge: "Understands which confessions are survivable and which are lethal"
+      - char_arnulf:
+          role: "External doctrinal rival (in exile)"
+          outcome: "Adjusts 2DC recruitment away from martyr language"
+          knowledge: "Sees mercy as administrative absorption"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Receives oaths and processes confessions into compliance"
+          outcome: "Stabilizes the valley without mass trials"
+      - org_church:
+          role: "Confessional framework and moral cover"
+          outcome: "Avoids open heresy war while tightening oversight"
+
+    consequences:
+      immediate:
+        - "Open participation in suspicious practices declines"
+      long_term:
+        - "Resistance shifts toward hidden culture and externalized networks"
+      unintended:
+        - "Rumor ecology becomes a governance instrument and a paranoia engine"
+
+    related_events:
+      preceded_by: [evt_1028_07_night_of_ash]
+      followed_by: [evt_1028_09_otto_public_health_celebration]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Oath records and confession patterns"
+        - "Rumors of vanishings and pilgrimage tales"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "How many leaders vanish and what their actual fates are"
+      - "Whether any vanishings are coordinated with external authorities"
+
+    tags:
+      category: [political, religious, social]
+      archetype: [establishment]
+      scale: local
+      turning_point: false
+      themes: [mercy_cascade, deterrence_ambiguity, reintegration]
+
+  - name: "Otto survives his second summer (dynasty hardens)"
+    id: evt_1028_09_otto_public_health_celebration
+
+    date:
+      year: 1028
+      month: 9
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: [loc_falkenau_market]
+      region: "Court and public ritual spaces"
+
+    summary:
+      public: |
+        A public celebration of Otto’s health becomes a political event: the new rule is not a transient usurpation,
+        but a dynasty beginning.
+      actual: |
+        The event converts private survival into public legitimacy. It invites gifts and attendance that double as
+        a loyalty audit and a normalization ritual.
+      hidden: |
+        Attendance, gifts, and absences are quietly recorded and interpreted as signals of factional alignment.
+
+    participants:
+      - char_oswald:
+          role: "Dynastic founder; orchestrates the public ritual"
+          outcome: "Strengthens legitimacy through succession visibility"
+          knowledge: "Uses celebration as a loyalty audit"
+      - char_sibilla:
+          role: "Consort and stabilizer"
+          outcome: "Reinforces inevitability narrative through controlled pageantry"
+          knowledge: "Tracks who shows and why"
+      - char_otto:
+          role: "Infant banner"
+          outcome: "Becomes a symbol of the regime’s future"
+          knowledge: "Not applicable"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Dynastic apparatus and patronage network"
+          outcome: "Consolidates the founding myth of the reign"
+
+    consequences:
+      immediate:
+        - "Loyalty signals are harvested through gifts and attendance"
+      long_term:
+        - "Succession myth reduces appetite for restoration fantasies"
+      unintended:
+        - "Opponents become more likely to externalize rather than contest openly"
+
+    related_events:
+      preceded_by: [evt_1028_08_mercy_as_policy]
+      followed_by: [evt_1028_10_eberhard_rescue_attempt_thwarted]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Gift lists, attendance notes, and household chronicles"
+        - "Songs and prayers celebrating the child’s survival"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Specific ritual forms used (blessing, procession, feast customs)"
+      - "Who conspicuously refuses attendance or gifts"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment]
+      scale: personal
+      turning_point: false
+      themes: [dynasty_theater, loyalty_audit, founding_myth]
+
+  - name: "Eberhard’s attempted escape (or rescue) is thwarted"
+    id: evt_1028_10_eberhard_rescue_attempt_thwarted
+
+    date:
+      year: 1028
+      month: 10
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_convent_walburga_emmerich
+      secondary: []
+      region: "Kunigunde’s custody grounds and approach routes"
+
+    summary:
+      public: |
+        Loyalists attempt to retrieve Eberhard from clerical custody. The attempt fails quickly; Eberhard is recaptured
+        or never leaves the abbey grounds. Custody becomes stricter: fewer visitors and tighter correspondence.
+      actual: |
+        The failed attempt marks the end of Eberhard-as-bait and the beginning of Eberhard-as-sealed-relic. Oswald gains
+        a clean justification to tighten the vault without appearing cruel.
+      hidden: |
+        Kunigunde enforces strict custody to prevent the convent becoming an engine for rumor or martyrdom. The event also
+        helps Oswald identify remaining loyalist threads.
+
+    participants:
+      - char_oswald:
+          role: "Indirect beneficiary; tightens custody via justification"
+          outcome: "Removes remaining restoration leverage"
+          knowledge: "Treats this as the moment to seal the asset"
+      - char_eberhard:
+          role: "Target of rescue attempt; symbolic banner"
+          outcome: "Privileges reduced; access throttled"
+          knowledge: "Realizes his role has shifted to sealed relic"
+      - char_kunigunde:
+          role: "Custodian; enforces vault protocols"
+          outcome: "Strengthens custody regime and limits visitors"
+          knowledge: "Understands the martyr-risk of mismanagement"
+
+    organizations:
+      - org_convent_walburga_emmerich:
+          role: "Custody institution and physical vault"
+          outcome: "Becomes more securitized and politically sensitive"
+      - org_house_falkenau:
+          role: "Intelligence and enforcement beneficiaries"
+          outcome: "Harvests loyalist identifiers; tightens correspondence controls"
+
+    consequences:
+      immediate:
+        - "Custody tightens; access and letters curtailed"
+      long_term:
+        - "Restoration attempts lose their only living banner"
+      unintended:
+        - "Remaining loyalists externalize or radicalize rather than persist locally"
+
+    related_events:
+      preceded_by: [evt_1028_09_otto_public_health_celebration]
+      followed_by: [evt_1028_11_realm_governable_again]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Custody logs and guest restrictions"
+        - "Rumors of attempted rescue and punitive measures"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which loyalist leadership coordinates the attempt"
+      - "Whether Eberhard actively cooperates or is a passive object"
+
+    tags:
+      category: [political, military, religious]
+      archetype: [rebel, establishment]
+      scale: local
+      turning_point: true
+      themes: [sealed_relic, failed_restoration, vault_hardening]
+
+  - name: "The realm becomes governable again (administrative pattern hardens)"
+    id: evt_1028_11_realm_governable_again
+
+    date:
+      year: 1028
+      month: 11
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_market
+      secondary: [loc_falkenau_castle]
+      region: "Falkenau courts, markets, and toll lines"
+
+    summary:
+      public: |
+        Markets normalize. Banditry is pushed outward toward Rudolf’s hills and border regions. Oswald installs a durable
+        administrative pattern: reeves answer to him directly, courts run on predictable days, and tolls are standardized.
+      actual: |
+        Normalization is deliberate: predictable procedures reduce the emotional oxygen for revolt. Standardized tolls and
+        court rhythms shift grievances from political crises to administrable complaints.
+      hidden: |
+        Administrative normalization also tightens surveillance: predictable court days and reeve hierarchies create regular
+        reporting flows that can be mined for dissent.
+
+    participants:
+      - char_oswald:
+          role: "System builder; standardizes rule"
+          outcome: "Converts victory into durable governance"
+          knowledge: "Understands predictability as anti-revolt technology"
+      - char_sibilla:
+          role: "Stability operator"
+          outcome: "Benefits from routinization that makes survival strategies easier"
+          knowledge: "Uses routine to keep exceptional practices unremarkable"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Courts, reeves, toll administration"
+          outcome: "Becomes durable and self-reinforcing"
+
+    consequences:
+      immediate:
+        - "Reduced internal chaos; increased procedural control"
+      long_term:
+        - "Revolt becomes history and myth rather than daily politics"
+      unintended:
+        - "Outlaw and 2DC activity becomes more externalized and harder to police by direct means"
+
+    related_events:
+      preceded_by: [evt_1028_10_eberhard_rescue_attempt_thwarted]
+      followed_by: [evt_1028_12_consolidation_complete]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Court calendars and reeve reporting chains"
+        - "Toll schedules and market ordinances"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact standardized toll schedule and which crossings are prioritized"
+      - "Which reeves are replaced vs. retained"
+
+    tags:
+      category: [political, economic]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [predictability_as_control, routinized_rule, normalization]
+
+  - name: "Oswald’s consolidation is complete (for now)"
+    id: evt_1028_12_consolidation_complete
+
+    date:
+      year: 1028
+      month: 12
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: []
+      region: "Falkenau as a stabilized polity"
+
+    summary:
+      public: |
+        By year’s end, the revolt is no longer the present tense of politics—it becomes the founding myth of Oswald’s reign.
+        Tiefenbrunn remains quietly revolutionary but deniable. Rudolf remains a frontier wild-card but useful. Eberhard
+        remains alive but contained.
+      actual: |
+        The regime has shifted from crisis management to normal governance. The core threats are now long-tail:
+        ideological persistence (1DC/2DC), externalized outlaw spaces, and the possibility of future clerical escalation.
+      hidden: |
+        The setting’s tension persists beneath routine: sanitized survivability in Tiefenbrunn, decentralized resistance
+        forming beyond Oswald’s reach, and a sealed relic in clerical custody whose story can still be weaponized.
+
+    participants:
+      - char_oswald:
+          role: "Consolidator; author of the founding myth"
+          outcome: "Ends the revolt as an active political condition"
+          knowledge: "Understands the remaining threats are slow and structural"
+      - char_sibilla:
+          role: "Stability machine and ideological pivot point"
+          outcome: "Keeps the commune survivable while serving the regime"
+          knowledge: "Lives the contradiction of revolution domesticated into rule"
+      - char_eberhard:
+          role: "Sealed relic"
+          outcome: "Continues custody until death (TBD, likely ~1031)"
+          knowledge: "Understands he is no longer present tense, only symbol"
+      - char_arnulf:
+          role: "Externalized founder"
+          outcome: "Leads 2DC as a pattern; outside direct reach"
+          knowledge: "Treats normalization as the enemy of revolt"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Stabilized governance apparatus"
+          outcome: "Durable rule and routinized control"
+      - org_first_devils_circle:
+          role: "Sanitized survivability doctrine in Tiefenbrunn"
+          outcome: "Survives by hiding in daylight"
+      - org_second_devils_circle:
+          role: "Decentralized resistance culture (externalized)"
+          outcome: "Grows slowly under exile conditions"
+      - org_convent_walburga_emmerich:
+          role: "Custody vault for Eberhard"
+          outcome: "Remains entangled in politics by necessity"
+
+    consequences:
+      immediate:
+        - "Revolt becomes memory and myth, not daily crisis"
+      long_term:
+        - "Schism dynamics (sanitized 1DC vs. decentralized 2DC) become the main ideological engine"
+        - "Externalized threat spaces replace internal battle lines"
+      unintended:
+        - "Outsiders increasingly conflate all Circle activity as one phenomenon"
+
+    related_events:
+      preceded_by: [evt_1028_11_realm_governable_again]
+      followed_by: []
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Household chronicles and winter sermons"
+        - "Court procedures as lived routine"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Character timeline notes (Oswald, Sibilla, Eberhard, Arnulf)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Which long-tail threat manifests first (clerical escalation, 2DC action, outlaw spillover)"
+      - "How Oswald’s public myth is formalized (chronicle, feast-day, legal pronouncement)"
+
+    tags:
+      category: [political, social, religious]
+      archetype: [establishment, rebel]
+      scale: grafschaft-wide
+      turning_point: true
+      themes: [founding_myth, domesticated_revolution, long_tail_threats]
