@@ -1,0 +1,76 @@
+events:
+  - name: "The realm becomes governable again (administrative pattern hardens)"
+    id: evt_1028_11_realm_governable_again
+
+    date:
+      year: 1028
+      month: 11
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_market
+      secondary: [loc_falkenau_castle]
+      region: "Falkenau courts, markets, and toll lines"
+
+    summary:
+      public: |
+        Markets normalize. Banditry is pushed outward toward Rudolf’s hills and border regions. Oswald installs a durable
+        administrative pattern: reeves answer to him directly, courts run on predictable days, and tolls are standardized.
+      actual: |
+        Normalization is deliberate: predictable procedures reduce the emotional oxygen for revolt. Standardized tolls and
+        court rhythms shift grievances from political crises to administrable complaints.
+      hidden: |
+        Administrative normalization also tightens surveillance: predictable court days and reeve hierarchies create regular
+        reporting flows that can be mined for dissent.
+
+    participants:
+      - char_oswald:
+          role: "System builder; standardizes rule"
+          outcome: "Converts victory into durable governance"
+          knowledge: "Understands predictability as anti-revolt technology"
+      - char_sibilla:
+          role: "Stability operator"
+          outcome: "Benefits from routinization that makes survival strategies easier"
+          knowledge: "Uses routine to keep exceptional practices unremarkable"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Courts, reeves, toll administration"
+          outcome: "Becomes durable and self-reinforcing"
+
+    consequences:
+      immediate:
+        - "Reduced internal chaos; increased procedural control"
+      long_term:
+        - "Revolt becomes history and myth rather than daily politics"
+      unintended:
+        - "Outlaw and 2DC activity becomes more externalized and harder to police by direct means"
+
+    related_events:
+      preceded_by: [evt_1028_10_eberhard_rescue_attempt_thwarted]
+      followed_by: [evt_1028_12_consolidation_complete]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Court calendars and reeve reporting chains"
+        - "Toll schedules and market ordinances"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact standardized toll schedule and which crossings are prioritized"
+      - "Which reeves are replaced vs. retained"
+
+    tags:
+      category: [political, economic]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [predictability_as_control, routinized_rule, normalization]

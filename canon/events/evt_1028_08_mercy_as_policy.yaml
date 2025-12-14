@@ -1,0 +1,83 @@
+events:
+  - name: "Mercy as policy, terror as rumor (absolution-and-return deal)"
+    id: evt_1028_08_mercy_as_policy
+
+    date:
+      year: 1028
+      month: 8
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: [loc_falkenau_castle]
+      region: "Tiefenbrunn and its surrounding villages"
+
+    summary:
+      public: |
+        Oswald offers a broad absolution-and-return deal: swear, confess in a vague survivable way, and be spared.
+        A few leaders “vanish” into exile or pilgrimage. Rumors claim drowning or secret executions, but no bodies appear.
+      actual: |
+        The deal is designed to create a compliance cascade and end mass participation without producing martyrs. Ambiguity
+        about vanished leaders is intentional deterrence: fear without a single grievance focal point.
+      hidden: |
+        Sibilla’s survival machine helps translate the deal into behavior that protects the wider community, while purists and
+        externalized networks interpret it as domestication and betrayal.
+
+    participants:
+      - char_oswald:
+          role: "Issuer of the mercy deal; deterrence designer"
+          outcome: "Reduces open resistance and stabilizes administration"
+          knowledge: "Uses ambiguity as a tool"
+      - char_sibilla:
+          role: "Translator and soft-power enforcer"
+          outcome: "Guides survivable compliance while preserving private cohesion"
+          knowledge: "Understands which confessions are survivable and which are lethal"
+      - char_arnulf:
+          role: "External doctrinal rival (in exile)"
+          outcome: "Adjusts 2DC recruitment away from martyr language"
+          knowledge: "Sees mercy as administrative absorption"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Receives oaths and processes confessions into compliance"
+          outcome: "Stabilizes the valley without mass trials"
+      - org_church:
+          role: "Confessional framework and moral cover"
+          outcome: "Avoids open heresy war while tightening oversight"
+
+    consequences:
+      immediate:
+        - "Open participation in suspicious practices declines"
+      long_term:
+        - "Resistance shifts toward hidden culture and externalized networks"
+      unintended:
+        - "Rumor ecology becomes a governance instrument and a paranoia engine"
+
+    related_events:
+      preceded_by: [evt_1028_07_night_of_ash]
+      followed_by: [evt_1028_09_otto_public_health_celebration]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Oath records and confession patterns"
+        - "Rumors of vanishings and pilgrimage tales"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "How many leaders vanish and what their actual fates are"
+      - "Whether any vanishings are coordinated with external authorities"
+
+    tags:
+      category: [political, religious, social]
+      archetype: [establishment]
+      scale: local
+      turning_point: false
+      themes: [mercy_cascade, deterrence_ambiguity, reintegration]

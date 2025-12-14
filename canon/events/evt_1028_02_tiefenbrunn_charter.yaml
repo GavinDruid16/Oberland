@@ -1,0 +1,84 @@
+events:
+  - name: "The Tiefenbrunn settlement (written charter; papered over)"
+    id: evt_1028_02_tiefenbrunn_charter
+
+    date:
+      year: 1028
+      month: 2
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: []
+      region: "Tiefenbrunn and its manorial obligations"
+
+    summary:
+      public: |
+        Oswald grants a written Tiefenbrunn Charter: fixed dues, limits on arbitrary levies, and protections for
+        common stores. It is framed as Oswald’s generosity. Albrecht remains the public lord, but the settlement
+        is sealed under Oswald’s authority.
+      actual: |
+        The charter legalizes the minimum necessary to make relapse into open revolt irrational while preserving
+        the appearance of traditional lordship through Albrecht’s continued figurehead role.
+      hidden: |
+        The charter also provides cover for existing mutual-aid systems by giving them lawful language and limits,
+        reducing what can be labeled suspicious or “heretical” in practice.
+
+    participants:
+      - char_oswald:
+          role: "Grantor and narrator of the charter"
+          outcome: "Stabilizes Tiefenbrunn without acknowledging peasant sovereignty"
+          knowledge: "Understands this as domestication into paperwork"
+      - char_albrecht_von_tiefenbrunn:
+          role: "Public lord-mask"
+          outcome: "Remains outward ruler while privately constrained"
+          knowledge: "Relieved by stability but still politically hollow"
+      - char_sibilla:
+          role: "Architect/advocate of survivable settlement terms"
+          outcome: "Strengthens her moral authority among Tiefenbrunn households"
+          knowledge: "Uses legal language to keep the commune alive"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Seal and enforcement apparatus"
+          outcome: "Extends administrative reach into Tiefenbrunn in lawful form"
+      - org_first_devils_circle:
+          role: "Background infrastructure re-described as lawful practice"
+          outcome: "Survives by adopting charter language"
+
+    consequences:
+      immediate:
+        - "Dues become predictable and easier to defend in court"
+      long_term:
+        - "Revolt energy shifts from open politics to hidden doctrine and culture"
+      unintended:
+        - "Purists interpret the charter as proof of domestication and betrayal"
+
+    related_events:
+      preceded_by: [evt_1028_01_winter_order_ration_rules]
+      followed_by: [evt_1028_03_spring_test_neighbor_probe]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Charter text and seal impressions"
+        - "Village store and dues accounts"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact enumerated rights and store protections"
+      - "Which disputes are reserved to Oswald’s courts vs. Albrecht’s nominal authority"
+
+    tags:
+      category: [political, economic, social]
+      archetype: [establishment, rebel]
+      scale: local
+      turning_point: true
+      themes: [papered_revolution, figurehead_lord, survivable_rights]

@@ -1,0 +1,72 @@
+events:
+  - name: "Arnulf relocates to Krähenburg (spring move from Wiesenwang)"
+    id: evt_1028_03_arnulf_relocates_kraehenburg
+
+    date:
+      year: 1028
+      month: 3
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_kraehenburg
+      secondary: [loc_wiesenwang]
+      region: "Proto-Freistadt network and river trade corridors"
+
+    summary:
+      public: |
+        Father Arnulf continues his penitential pilgrimage and relocates from Wiesenwang to Krähenburg as the
+        season turns, seeking work, shelter, and religious hospitality.
+      actual: |
+        Krähenburg’s social tolerance and traffic make it a better hub for distributed networking. The move
+        supports the growth of 2DC as a routing pattern that can outlive direct leadership.
+      hidden: |
+        Recruitment remains low-signature: counsel, confession, favors, and temperament screening rather than
+        overt organizing.
+
+    participants:
+      - char_arnulf:
+          role: "Exiled priest shifting to a freer hub"
+          outcome: "Expands 2DC reach and survivability"
+          knowledge: "Treats hubs as routing nodes, not bases"
+
+    organizations:
+      - org_second_devils_circle:
+          role: "Distributed network pattern"
+          outcome: "Gains reach through a more connected locale"
+
+    consequences:
+      immediate:
+        - "Arnulf becomes harder to track through Falkenau-centered intelligence nets"
+      long_term:
+        - "Krähenburg becomes a plausible external staging/relay point for 2DC"
+      unintended:
+        - "Local disputes in Krähenburg may later be blamed on 'foreign heresy'"
+
+    related_events:
+      preceded_by: [evt_1027_12_arnulf_overwinters_wiesenwang]
+      followed_by: [evt_1028_06_clerical_squeeze_selective_purges]
+      concurrent: [evt_1028_03_spring_test_neighbor_probe]
+
+    sources:
+      in_world:
+        - "Host-house gossip and alms records"
+        - "Travelers’ tales of a severe penitent priest"
+      out_of_world:
+        - "Arnulf location canon note (spring 1028: Krähenburg)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which patrons or hosts facilitate the move"
+      - "Whether any named 2DC cells can be traced to Krähenburg at this date"
+
+    tags:
+      category: [social, religious, political]
+      archetype: [rebel]
+      scale: personal
+      turning_point: false
+      themes: [hub_selection, routing_over_basing, exile_mobility]

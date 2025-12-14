@@ -1,0 +1,81 @@
+events:
+  - name: "The river anniversary edict (First anniversary of Almut’s taking)"
+    id: evt_1027_10_river_anniversary_edict
+
+    date:
+      year: 1027
+      month: 10
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_river
+      secondary: []
+      region: "River sites and valley communities"
+
+    summary:
+      public: |
+        On the first anniversary of Almut’s taking, the valley is tense. Oswald issues an edict:
+        no armed gatherings at the river; funerary offerings permitted only in church-acceptable forms.
+        The stated goal is public safety and proper rites.
+      actual: |
+        The edict prevents the river from becoming a rally point and monopolizes public ritual under
+        acceptable orthodoxy. It converts potentially destabilizing folklore into administrable mourning.
+      hidden: |
+        Authorities monitor known river sites for gatherings and identify local agitators through who appears,
+        who speaks, and who refuses the acceptable forms.
+
+    participants:
+      - char_oswald:
+          role: "Issuer of the edict; crowd-control strategist"
+          outcome: "Prevents a mass gathering from becoming political theater"
+          knowledge: "Understands ritual is a governance tool"
+      - char_sibilla:
+          role: "Local translator and enforcer-by-soft-power"
+          outcome: "Channels grief into survivable forms"
+          knowledge: "Manages folklore pressure without letting it ignite"
+
+    organizations:
+      - org_church:
+          role: "Defines 'acceptable' forms of offering and mourning"
+          outcome: "Gains visible role in regulating public grief"
+      - org_house_falkenau:
+          role: "Enforcement arm (reeves, patrols)"
+          outcome: "Uses mourning season for intelligence gathering"
+
+    consequences:
+      immediate:
+        - "Armed gatherings are suppressed or deterred"
+        - "Offerings shift toward sanctioned forms"
+      long_term:
+        - "Public ritual becomes increasingly monopolized by Oswald + Church"
+      unintended:
+        - "Folkloric grief is pushed into private, harder-to-observe spaces"
+
+    related_events:
+      preceded_by: [evt_1027_09_wards_pages_policy]
+      followed_by: [evt_1027_11_arnulf_penitential_pilgrimage_exile]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Edict postings and reeve patrol notes"
+        - "Sermons on proper offerings"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which river sites are explicitly named in the edict (if any)"
+      - "How strictly 'acceptable forms' are defined by clergy"
+
+    tags:
+      category: [political, religious, folkloric]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [ritual_control, river_fear, grief_as_politics]

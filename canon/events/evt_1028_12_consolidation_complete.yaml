@@ -1,0 +1,96 @@
+events:
+  - name: "Oswald’s consolidation is complete (for now)"
+    id: evt_1028_12_consolidation_complete
+
+    date:
+      year: 1028
+      month: 12
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: []
+      region: "Falkenau as a stabilized polity"
+
+    summary:
+      public: |
+        By year’s end, the revolt is no longer the present tense of politics—it becomes the founding myth of Oswald’s reign.
+        Tiefenbrunn remains quietly revolutionary but deniable. Rudolf remains a frontier wild-card but useful. Eberhard
+        remains alive but contained.
+      actual: |
+        The regime has shifted from crisis management to normal governance. The core threats are now long-tail:
+        ideological persistence (1DC/2DC), externalized outlaw spaces, and the possibility of future clerical escalation.
+      hidden: |
+        The setting’s tension persists beneath routine: sanitized survivability in Tiefenbrunn, decentralized resistance
+        forming beyond Oswald’s reach, and a sealed relic in clerical custody whose story can still be weaponized.
+
+    participants:
+      - char_oswald:
+          role: "Consolidator; author of the founding myth"
+          outcome: "Ends the revolt as an active political condition"
+          knowledge: "Understands the remaining threats are slow and structural"
+      - char_sibilla:
+          role: "Stability machine and ideological pivot point"
+          outcome: "Keeps the commune survivable while serving the regime"
+          knowledge: "Lives the contradiction of revolution domesticated into rule"
+      - char_eberhard:
+          role: "Sealed relic"
+          outcome: "Continues custody until death (TBD, likely ~1031)"
+          knowledge: "Understands he is no longer present tense, only symbol"
+      - char_arnulf:
+          role: "Externalized founder"
+          outcome: "Leads 2DC as a pattern; outside direct reach"
+          knowledge: "Treats normalization as the enemy of revolt"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Stabilized governance apparatus"
+          outcome: "Durable rule and routinized control"
+      - org_first_devils_circle:
+          role: "Sanitized survivability doctrine in Tiefenbrunn"
+          outcome: "Survives by hiding in daylight"
+      - org_second_devils_circle:
+          role: "Decentralized resistance culture (externalized)"
+          outcome: "Grows slowly under exile conditions"
+      - org_convent_walburga_emmerich:
+          role: "Custody vault for Eberhard"
+          outcome: "Remains entangled in politics by necessity"
+
+    consequences:
+      immediate:
+        - "Revolt becomes memory and myth, not daily crisis"
+      long_term:
+        - "Schism dynamics (sanitized 1DC vs. decentralized 2DC) become the main ideological engine"
+        - "Externalized threat spaces replace internal battle lines"
+      unintended:
+        - "Outsiders increasingly conflate all Circle activity as one phenomenon"
+
+    related_events:
+      preceded_by: [evt_1028_11_realm_governable_again]
+      followed_by: []
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Household chronicles and winter sermons"
+        - "Court procedures as lived routine"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Character timeline notes (Oswald, Sibilla, Eberhard, Arnulf)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Which long-tail threat manifests first (clerical escalation, 2DC action, outlaw spillover)"
+      - "How Oswald’s public myth is formalized (chronicle, feast-day, legal pronouncement)"
+
+    tags:
+      category: [political, social, religious]
+      archetype: [establishment, rebel]
+      scale: grafschaft-wide
+      turning_point: true
+      themes: [founding_myth, domesticated_revolution, long_tail_threats]

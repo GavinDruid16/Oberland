@@ -1,0 +1,89 @@
+events:
+  - name: "Eberhard is removed as a living banner (Transfer to Convent of Saints Walburga and Emmerich)"
+    id: evt_1027_12_eberhard_transferred_convent_custody
+
+    date:
+      year: 1027
+      month: 12
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_convent_walburga_emmerich
+      secondary:
+        - loc_falkenau_castle
+      region: "Falkenau; clerical custody at Kunigunde’s convent"
+
+    summary:
+      public: |
+        Oswald transfers Eberhard from castle custody to clerical custody at the reconstituted Convent of Saints
+        Walburga and Emmerich under Abbess Kunigunde. Officially it is for contemplation and health: mercy and
+        piety. Guards appear as servants.
+      actual: |
+        Functionally, Eberhard is moved from visible political space to a vault. The convent provides moral
+        cover and controlled access, reducing the chance that Eberhard serves as a rally point or a rescue target
+        within the castle’s daily imagination. The choice is deeply ironic: the convent was funded by Eberhard in
+        1013, and Kunigunde’s long forced silence now becomes custody over the man who imposed it.
+      hidden: |
+        Kunigunde’s custody is cathartic but rule-bound: she denies Eberhard the ability to turn the convent into
+        propaganda. Oswald benefits from her strictness without needing to pressure the convent.
+
+    participants:
+      - char_oswald:
+          role: "Transfers custody; uses Church as a vault"
+          outcome: "Eberhard becomes harder to access and rescue"
+          knowledge: "Understands this removes the banner from daily politics"
+      - char_eberhard:
+          role: "Living symbol moved into clerical vault"
+          outcome: "Privileges become rule-bound and access-controlled"
+          knowledge: "Recognizes the shift from bait to sealed asset"
+      - char_kunigunde:
+          role: "Abbess; custodian with moral authority"
+          outcome: "Gains institutional control over Eberhard’s access and narrative"
+          knowledge: "Understands the irony; enforces custody 'properly'"
+
+    organizations:
+      - org_church:
+          role: "Provides moral cover and custody framework"
+          outcome: "Becomes the visible guardian of mercy and order"
+      - org_convent_walburga_emmerich:
+          role: "Custody site and institutional vault"
+          outcome: "Becomes entangled in high politics while claiming pious purpose"
+
+    consequences:
+      immediate:
+        - "Eberhard removed from castle proximity and casual contact"
+        - "Correspondence and visitors become more strictly controlled"
+      long_term:
+        - "Rescue attempts become harder, higher-risk, and more symbolically costly"
+      unintended:
+        - "Eberhard’s presence in a holy setting risks reframing him as a sanctified captive"
+
+    related_events:
+      preceded_by: [evt_1027_11_arnulf_penitential_pilgrimage_exile]
+      followed_by: [evt_1028_01_winter_order_ration_rules]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Transfer orders and household account reallocations"
+        - "Convent guest log (if kept) and correspondence controls"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Kunigunde/Eberhard custody notes (project canon)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact custody protocol negotiated between Oswald and the convent"
+      - "Whether Eberhard retains any outdoor privileges (hawking, gardens) after transfer"
+
+    tags:
+      category: [political, religious]
+      archetype: [establishment]
+      scale: regional
+      turning_point: true
+      themes: [vault_custody, irony_of_foundation, mercy_as_removal]

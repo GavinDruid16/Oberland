@@ -1,0 +1,76 @@
+events:
+  - name: "Rudolf’s foothill court becomes a frontier ban (formalized boundary)"
+    id: evt_1028_05_rudolf_frontier_ban
+
+    date:
+      year: 1028
+      month: 5
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_high_foothills
+      secondary: [loc_falkenau_valley_roads]
+      region: "Foothills and valley approach routes"
+
+    summary:
+      public: |
+        Reports of strange court customs, missing livestock, and theft framed as tribute reach the lowlands.
+        Oswald declares Rudolf’s domain a frontier ban: not fully lawful, not fully outlaw—an administrable warning
+        and a denial of responsibility.
+      actual: |
+        The frontier ban is a governance compromise: it tells valley folk where not to go, legitimizes selective retaliation,
+        and preserves Oswald’s deniability for whatever happens beyond the boundary.
+      hidden: |
+        In practice, enforcement remains irregular and mediated through rumor, intermediaries, and occasional punitive displays.
+
+    participants:
+      - char_oswald:
+          role: "Declares the frontier ban; sets the boundary narrative"
+          outcome: "Clarifies where law does not fully reach"
+          knowledge: "Uses ambiguity to retain flexibility"
+      - char_rudolf:
+          role: "Outlaw ruler within the ban"
+          outcome: "Gains de facto recognition as a frontier fact"
+          knowledge: "Exploits the ban’s ambiguity for tribute framing"
+
+    organizations:
+      - org_foothill_court:
+          role: "Outlaw polity under ban"
+          outcome: "Hardens into a recognized threat-space"
+
+    consequences:
+      immediate:
+        - "Valley travel patterns shift; warnings become explicit"
+      long_term:
+        - "Foothills become the realm’s blame-reservoir and pressure valve"
+      unintended:
+        - "People with nowhere else to go drift toward the ban zone"
+
+    related_events:
+      preceded_by: [evt_1028_04_sibilla_influence_grows]
+      followed_by: [evt_1028_06_clerical_squeeze_selective_purges]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Reeve advisories and market postings"
+        - "Reports of livestock loss and tribute rumors"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Whether the frontier ban is written or remains customary"
+      - "How often Oswald’s forces cross the boundary in practice"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment, rebel]
+      scale: regional
+      turning_point: false
+      themes: [managed_badlands, boundary_story, deniable_violence]

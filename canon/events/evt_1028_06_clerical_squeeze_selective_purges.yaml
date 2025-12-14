@@ -1,0 +1,87 @@
+events:
+  - name: "The clerical squeeze tightens (Selective purges framed as crime)"
+    id: evt_1028_06_clerical_squeeze_selective_purges
+
+    date:
+      year: 1028
+      month: 6
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: [loc_falkenau_castle]
+      region: "Tiefenbrunn under visitation pressure"
+
+    summary:
+      public: |
+        Visiting clergy and their agents press for action: rooting out heresy cannot be postponed indefinitely.
+        Oswald responds with selective arrests of mid-level organizers framed as banditry, oath-breaking, or disorder
+        rather than heresy.
+      actual: |
+        Oswald refuses to let the conflict become a valley-wide doctrinal hunt. By framing enforcement as crime, he
+        satisfies pressure while keeping the scope local and administrable.
+      hidden: |
+        Arrest selections are shaped by intelligence: targets are those who can be removed without implicating the wider
+        village fabric. The goal is decapitation without martyr-making.
+
+    participants:
+      - char_oswald:
+          role: "Selects targets; sets the framing"
+          outcome: "Reduces organizing capacity without doctrinal war"
+          knowledge: "Treats heresy attention as a crisis-management problem"
+      - char_sibilla:
+          role: "Survival operator within Tiefenbrunn’s public face"
+          outcome: "Keeps wider community deniable by sacrificing selected nodes"
+          knowledge: "Understands the cost of visibility"
+      - char_arnulf:
+          role: "Externalized founder of the ideology (in exile)"
+          outcome: "Becomes harder to target directly; his legacy becomes a suspicion lens"
+          knowledge: "Anticipates such framing and trains 2DC around it"
+
+    organizations:
+      - org_church:
+          role: "Pressure and legitimacy constraint"
+          outcome: "Receives action without forcing a doctrinal purge"
+      - org_house_falkenau:
+          role: "Arrest and court apparatus"
+          outcome: "Strengthens ‘crime’ framing as a governance tool"
+      - org_first_devils_circle:
+          role: "Movement under pressure"
+          outcome: "Survives by tightening daylight camouflage"
+
+    consequences:
+      immediate:
+        - "Mid-level organizers are removed or scattered"
+      long_term:
+        - "Sets the stage for Oswald’s broad mercy offer after a flashpoint"
+      unintended:
+        - "Purists interpret selective purges as proof of betrayal and compromise"
+
+    related_events:
+      preceded_by: [evt_1028_05_rudolf_frontier_ban]
+      followed_by: [evt_1028_07_night_of_ash]
+      concurrent: [evt_1028_03_arnulf_relocates_kraehenburg]
+
+    sources:
+      in_world:
+        - "Arrest warrants and court dockets"
+        - "Visitation notes and clerical correspondence"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which specific individuals are arrested and what charges are used"
+      - "How direct the clerical pressure is (formal visitation vs. unofficial agents)"
+
+    tags:
+      category: [religious, political]
+      archetype: [establishment, rebel]
+      scale: local
+      turning_point: false
+      themes: [bandits_not_heretics, selective_purge, pressure_management]

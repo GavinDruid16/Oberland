@@ -1,0 +1,80 @@
+events:
+  - name: "Hostages and wards, politely named (Wards/pages policy)"
+    id: evt_1027_09_wards_pages_policy
+
+    date:
+      year: 1027
+      month: 9
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: []
+      region: "Oswald’s court and household"
+
+    summary:
+      public: |
+        Oswald draws key surviving Eberhard-men into his household as wards and pages. The policy is framed as
+        mercy and reconciliation, but functions as control and surveillance.
+      actual: |
+        The policy removes future leadership from rival networks and makes remaining loyalists cautious.
+        It also allows Oswald to cultivate a new administrative class loyal to him by habit and opportunity.
+      hidden: |
+        Some placements are chosen to isolate specific families from one another and prevent the formation of
+        an alternative “old guard” within the castle.
+
+    participants:
+      - char_oswald:
+          role: "Architect of the wards/pages policy"
+          outcome: "Secures leverage over rival lineages"
+          knowledge: "Uses fostering language to make coercion socially acceptable"
+      - char_sibilla:
+          role: "Household political operator"
+          outcome: "Gains informational access and influence through court routine"
+          knowledge: "Tracks which wards are convertible vs. dangerous"
+      - char_eberhard:
+          role: "Symbolic rival whose former men are harvested"
+          outcome: "Loses future network coherence"
+          knowledge: "Understands the long-term purpose but cannot counter it"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Court structure implementing the policy"
+          outcome: "Strengthens administrative stability and surveillance capacity"
+
+    consequences:
+      immediate:
+        - "Former Eberhard-men become legible and controllable"
+      long_term:
+        - "Rival lineages’ next generation is socialized under Oswald’s court norms"
+      unintended:
+        - "Creates resentments that later feed exile and outlaw spheres"
+
+    related_events:
+      preceded_by: [evt_1027_08_church_notices_smoke]
+      followed_by: [evt_1027_10_river_anniversary_edict]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Household rosters and training lists"
+        - "Court gossip and patronage correspondence"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Which specific families and youths are drawn in"
+      - "Whether any wards become covert informants for rival networks"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment]
+      scale: personal
+      turning_point: false
+      themes: [polite_hostages, future_harvest, court_as_net]

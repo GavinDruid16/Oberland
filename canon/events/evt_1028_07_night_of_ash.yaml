@@ -1,0 +1,90 @@
+events:
+  - name: "The Night of Ash (purist 1DC action; flashpoint)"
+    id: evt_1028_07_night_of_ash
+
+    date:
+      year: 1028
+      month: 7
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary: []
+      region: "Tiefenbrunn and nearby tithe/clerical routes"
+
+    summary:
+      public: |
+        A radical cell commits an incendiary act intended to ignite a wider rising: arson at a tithe barn, an ambush of a priest,
+        or a public inversion rite. The act fails quickly and is used to justify local crackdowns, while Oswald refuses to allow a
+        valley-wide witch hunt.
+      actual: |
+        The perpetrators are a purist 1DC branch acting in ideological consistency with Arnulf’s original theology. The action is
+        doctrinally coherent but strategically catastrophic: it hands Oswald justification to clean house while maintaining the
+        banditry/disorder framing.
+      hidden: |
+        Publicly, responsibility is blurred to avoid implicating the broader commune. Privately, the schism hardens: Sibilla’s 1DC
+        tightens into survivable sanitization, while Arnulf’s 2DC formalizes anti-spectacle discipline and decentralization.
+
+    participants:
+      - char_oswald:
+          role: "Crisis manager; uses the flashpoint to justify localized cleanup"
+          outcome: "Gains mandate to act without opening a doctrinal war"
+          knowledge: "Knows fear consolidates rule if kept contained"
+      - char_sibilla:
+          role: "Damage-control operator"
+          outcome: "Protects the wider community by narrowing blame and visibility"
+          knowledge: "Treats purist spectacle as an existential threat to survivability"
+      - char_arnulf:
+          role: "Doctrinal source at distance (in exile)"
+          outcome: "His ideology is reflected in the purist branch; 2DC discipline hardens"
+          knowledge: "Separates moral conviction from strategic method in 2DC teaching"
+
+    organizations:
+      - org_first_devils_circle:
+          role: "Movement under internal fracture"
+          outcome: "Sanitized survivability tightens under Sibilla"
+      - org_second_devils_circle:
+          role: "Emergent decentralized resistance culture"
+          outcome: "Adopts stricter anti-spectacle and security practice"
+      - org_church:
+          role: "Receives confirmation of danger"
+          outcome: "Pressure continues, but Oswald contains scope"
+
+    consequences:
+      immediate:
+        - "Localized crackdown becomes publicly justifiable"
+        - "Rumor of heresy/disorder spikes"
+      long_term:
+        - "Schism logic accelerates (sanitized 1DC vs. decentralized 2DC)"
+      unintended:
+        - "Purist actions make future conflation of all Circles more likely by outsiders"
+
+    related_events:
+      preceded_by: [evt_1028_06_clerical_squeeze_selective_purges]
+      followed_by: [evt_1028_08_mercy_as_policy]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Burn reports, tithe ledgers, and patrol testimony"
+        - "Sermons condemning inversion and violence"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Purist 1DC canon clarification (project note)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Exact form of the act (arson vs. ambush vs. rite) and which site is targeted"
+      - "Whether any purist leaders escape into exile or the foothills"
+
+    tags:
+      category: [religious, political, social]
+      archetype: [rebel]
+      scale: local
+      turning_point: true
+      themes: [flashpoint, purist_spectacle, crackdown_pretext, schism_pressure]

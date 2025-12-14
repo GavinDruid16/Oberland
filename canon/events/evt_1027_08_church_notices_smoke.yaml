@@ -1,0 +1,88 @@
+events:
+  - name: "The Church notices the smoke (Visitation pressure begins)"
+    id: evt_1027_08_church_notices_smoke
+
+    date:
+      year: 1027
+      month: 8
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary:
+        - loc_falkenau_castle
+      region: "Tiefenbrunn and wider Falkenau"
+
+    summary:
+      public: |
+        Rumors of Devil’s Circle spread beyond Tiefenbrunn: not proof, but patterned gossip about odd fast-days,
+        inverted sayings, and suspicious communal stores. Oswald requests (or accepts) a clerical visitation and
+        begins public acts of orthodoxy: chapel repair, endowments, proper burials. Tiefenbrunn complies outwardly:
+        Mass attendance spikes and confession becomes performative.
+      actual: |
+        Oswald manages two audiences: he must appear orthodox enough to avoid ecclesiastical escalation while
+        preventing a valley-wide witch hunt that would destabilize his rule. Tiefenbrunn adapts by moving its
+        real cohesion into domestic camouflage and daylight-normal behaviors.
+      hidden: |
+        Devil’s Circle practices are intentionally laundered into “charity” and “emergency stores” to remain
+        survivable under scrutiny. Specific internal rites remain unknown to outsiders.
+
+    participants:
+      - char_oswald:
+          role: "Legitimacy manager; invites or accepts visitation"
+          outcome: "Buys time and narrows the scope of inquiry"
+          knowledge: "Frames enforcement as discipline and order, not doctrinal war"
+      - char_sibilla:
+          role: "Local stabilizer and translator between village and court"
+          outcome: "Helps shift practices into survivable forms"
+          knowledge: "Understands daylight camouflage as the survival doctrine"
+      - char_arnulf:
+          role: "Public parish priest; private founder of 1DC"
+          outcome: "Becomes an eventual target for removal without trial"
+          knowledge: "Knows exposure forces the Church’s hand; prioritizes survivability"
+
+    organizations:
+      - org_church:
+          role: "Visitation pressure and moral scrutiny"
+          outcome: "Begins slow squeeze rather than immediate purge"
+      - org_first_devils_circle:
+          role: "Suspected heterodox movement"
+          outcome: "Adapts to scrutiny; hides in plain sight"
+
+    consequences:
+      immediate:
+        - "Spike in public orthodoxy performances"
+        - "Increased clerical attention and rumor circulation"
+      long_term:
+        - "Sets conditions for banditry-framed arrests in 1028"
+      unintended:
+        - "Teaches the commune how to survive investigations by being boring"
+
+    related_events:
+      preceded_by: [evt_1027_07_rudolf_lene_retreat]
+      followed_by: [evt_1027_09_wards_pages_policy]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Sermon notes and confession logs (where kept)"
+        - "Repair accounts for chapels and burials"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which clerical officials or agents lead the visitation pressure"
+      - "What specific rumors become most actionable"
+
+    tags:
+      category: [religious, political, social]
+      archetype: [establishment, rebel]
+      scale: regional
+      turning_point: false
+      themes: [orthodoxy_as_theater, daylight_camouflage, clerical_pressure]

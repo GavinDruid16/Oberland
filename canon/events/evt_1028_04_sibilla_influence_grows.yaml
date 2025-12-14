@@ -1,0 +1,77 @@
+events:
+  - name: "Sibilla’s influence grows (Oswald curates and restricts, then eases)"
+    id: evt_1028_04_sibilla_influence_grows
+
+    date:
+      year: 1028
+      month: 4
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: [loc_tiefenbrunn]
+      region: "Court politics and Tiefenbrunn’s public face"
+
+    summary:
+      public: |
+        Sibilla becomes the visible face of a survivable Devil’s Circle: publicly orthodox, administratively competent,
+        and politically useful. Oswald responds by narrowing her power through appointments, travel restrictions, and
+        household curation while praising her publicly; this posture is not permanent.
+      actual: |
+        Oswald’s restriction is a short-lived control reflex: he cannot justify holding his own consort hostage indefinitely
+        without harming legitimacy. He curates her influence rather than openly confronting it.
+      hidden: |
+        Sibilla continues to operate through soft-power channels (household placements, marriages, obligation webs) even when
+        formal motion is constrained.
+
+    participants:
+      - char_oswald:
+          role: "Curator of consort power; legitimacy manager"
+          outcome: "Avoids a visible internal rivalry while preserving dynasty optics"
+          knowledge: "Sees and corrects the overreach when it harms his narrative"
+      - char_sibilla:
+          role: "Faction-operator; consort; survival architect of 1DC"
+          outcome: "Maintains influence through curated channels"
+          knowledge: "Understands constraint and works around it without open rupture"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Appointment and household control machine"
+          outcome: "Centralizes soft-power routing at court"
+
+    consequences:
+      immediate:
+        - "Sibilla’s travel and appointments are curated"
+      long_term:
+        - "Court learns to treat her as a power center regardless of formal limitation"
+      unintended:
+        - "Perceived constraint feeds whispers about tyranny if mishandled"
+
+    related_events:
+      preceded_by: [evt_1028_03_spring_test_neighbor_probe]
+      followed_by: [evt_1028_05_rudolf_frontier_ban]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Appointment lists and household staffing changes"
+        - "Court correspondence and rumor"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which specific offices Sibilla is denied or granted during the curtailment"
+      - "Exact trigger for Oswald easing the tight leash"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment, rebel]
+      scale: personal
+      turning_point: false
+      themes: [consort_power, curated_influence, legitimacy_vs_control]

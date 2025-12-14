@@ -1,0 +1,83 @@
+events:
+  - name: "Eberhard’s attempted escape (or rescue) is thwarted"
+    id: evt_1028_10_eberhard_rescue_attempt_thwarted
+
+    date:
+      year: 1028
+      month: 10
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_convent_walburga_emmerich
+      secondary: []
+      region: "Kunigunde’s custody grounds and approach routes"
+
+    summary:
+      public: |
+        Loyalists attempt to retrieve Eberhard from clerical custody. The attempt fails quickly; Eberhard is recaptured
+        or never leaves the abbey grounds. Custody becomes stricter: fewer visitors and tighter correspondence.
+      actual: |
+        The failed attempt marks the end of Eberhard-as-bait and the beginning of Eberhard-as-sealed-relic. Oswald gains
+        a clean justification to tighten the vault without appearing cruel.
+      hidden: |
+        Kunigunde enforces strict custody to prevent the convent becoming an engine for rumor or martyrdom. The event also
+        helps Oswald identify remaining loyalist threads.
+
+    participants:
+      - char_oswald:
+          role: "Indirect beneficiary; tightens custody via justification"
+          outcome: "Removes remaining restoration leverage"
+          knowledge: "Treats this as the moment to seal the asset"
+      - char_eberhard:
+          role: "Target of rescue attempt; symbolic banner"
+          outcome: "Privileges reduced; access throttled"
+          knowledge: "Realizes his role has shifted to sealed relic"
+      - char_kunigunde:
+          role: "Custodian; enforces vault protocols"
+          outcome: "Strengthens custody regime and limits visitors"
+          knowledge: "Understands the martyr-risk of mismanagement"
+
+    organizations:
+      - org_convent_walburga_emmerich:
+          role: "Custody institution and physical vault"
+          outcome: "Becomes more securitized and politically sensitive"
+      - org_house_falkenau:
+          role: "Intelligence and enforcement beneficiaries"
+          outcome: "Harvests loyalist identifiers; tightens correspondence controls"
+
+    consequences:
+      immediate:
+        - "Custody tightens; access and letters curtailed"
+      long_term:
+        - "Restoration attempts lose their only living banner"
+      unintended:
+        - "Remaining loyalists externalize or radicalize rather than persist locally"
+
+    related_events:
+      preceded_by: [evt_1028_09_otto_public_health_celebration]
+      followed_by: [evt_1028_11_realm_governable_again]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Custody logs and guest restrictions"
+        - "Rumors of attempted rescue and punitive measures"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which loyalist leadership coordinates the attempt"
+      - "Whether Eberhard actively cooperates or is a passive object"
+
+    tags:
+      category: [political, military, religious]
+      archetype: [rebel, establishment]
+      scale: local
+      turning_point: true
+      themes: [sealed_relic, failed_restoration, vault_hardening]

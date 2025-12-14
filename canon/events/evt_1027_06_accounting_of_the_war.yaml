@@ -1,0 +1,86 @@
+events:
+  - name: "The accounting of the war (Compensation Court)"
+    id: evt_1027_06_accounting_of_the_war
+
+    date:
+      year: 1027
+      month: 6
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary:
+        - loc_falkenau_market
+        - loc_falkenau_manors
+      region: "Falkenau administrative district"
+
+    summary:
+      public: |
+        Oswald convenes a compensation court to record burnt barns, stolen cattle, and wartime seizures.
+        Restitution is promised primarily in grain rather than coin. He begins quiet demobilization to
+        prevent summer arms from becoming autumn banditry. Sibilla publicly presses for a liberation-style
+        settlement for Tiefenbrunn: rent relief, fixed dues, and written rights.
+      actual: |
+        The court is both restitution and intelligence work: a census of grievance, allegiance, and capacity.
+        Grain restitution is chosen because it is visible, controllable, and can be distributed in ways that
+        build compliance. Demobilization is paced to avoid creating a free-floating armed labor market.
+      hidden: |
+        Some claims are quietly prioritized or delayed to reward cooperation and starve hostile networks of
+        resources. The pattern is suspected but not fully documented.
+
+    participants:
+      - char_oswald:
+          role: "Convener of the court; controller of restitution flows"
+          outcome: "Builds legitimacy through administered relief"
+          knowledge: "Uses claims as a map of loyalties and liabilities"
+      - char_sibilla:
+          role: "Advocate for Tiefenbrunn settlement terms"
+          outcome: "Strengthens her role as a faction leader in daylight"
+          knowledge: "Frames mutual aid as lawful order to keep it survivable"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Court and reeve apparatus"
+          outcome: "Begins routinized adjudication and record-keeping"
+      - org_first_devils_circle:
+          role: "Tiefenbrunn’s social backbone"
+          outcome: "Gains written cover (in prospect) for practices that already exist"
+
+    consequences:
+      immediate:
+        - "Grievances are formalized and become administratively legible"
+        - "Arms are quietly drawn down through service rotations and confiscations"
+      long_term:
+        - "Restitution becomes a lever for compliance and punishment"
+        - "Sets conditions for a written Tiefenbrunn settlement in 1028"
+      unintended:
+        - "Those excluded from restitution become prime recruits for outlaw spheres"
+
+    related_events:
+      preceded_by: [evt_1027_05_peace_of_falkenau]
+      followed_by: [evt_1027_07_rudolf_lene_retreat]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Compensation ledgers"
+        - "Manorial tallies and livestock counts"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Which ringleaders are formally excluded and by what criteria"
+      - "Exact grain conversion rates used for restitution promises"
+
+    tags:
+      category: [political, economic, social]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [paper_over_blood, grain_as_control, demobilization]

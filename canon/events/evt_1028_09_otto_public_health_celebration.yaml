@@ -1,0 +1,79 @@
+events:
+  - name: "Otto survives his second summer (dynasty hardens)"
+    id: evt_1028_09_otto_public_health_celebration
+
+    date:
+      year: 1028
+      month: 9
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary: [loc_falkenau_market]
+      region: "Court and public ritual spaces"
+
+    summary:
+      public: |
+        A public celebration of Otto’s health becomes a political event: the new rule is not a transient usurpation,
+        but a dynasty beginning.
+      actual: |
+        The event converts private survival into public legitimacy. It invites gifts and attendance that double as
+        a loyalty audit and a normalization ritual.
+      hidden: |
+        Attendance, gifts, and absences are quietly recorded and interpreted as signals of factional alignment.
+
+    participants:
+      - char_oswald:
+          role: "Dynastic founder; orchestrates the public ritual"
+          outcome: "Strengthens legitimacy through succession visibility"
+          knowledge: "Uses celebration as a loyalty audit"
+      - char_sibilla:
+          role: "Consort and stabilizer"
+          outcome: "Reinforces inevitability narrative through controlled pageantry"
+          knowledge: "Tracks who shows and why"
+      - char_otto:
+          role: "Infant banner"
+          outcome: "Becomes a symbol of the regime’s future"
+          knowledge: "Not applicable"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Dynastic apparatus and patronage network"
+          outcome: "Consolidates the founding myth of the reign"
+
+    consequences:
+      immediate:
+        - "Loyalty signals are harvested through gifts and attendance"
+      long_term:
+        - "Succession myth reduces appetite for restoration fantasies"
+      unintended:
+        - "Opponents become more likely to externalize rather than contest openly"
+
+    related_events:
+      preceded_by: [evt_1028_08_mercy_as_policy]
+      followed_by: [evt_1028_10_eberhard_rescue_attempt_thwarted]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Gift lists, attendance notes, and household chronicles"
+        - "Songs and prayers celebrating the child’s survival"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Specific ritual forms used (blessing, procession, feast customs)"
+      - "Who conspicuously refuses attendance or gifts"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment]
+      scale: personal
+      turning_point: false
+      themes: [dynasty_theater, loyalty_audit, founding_myth]

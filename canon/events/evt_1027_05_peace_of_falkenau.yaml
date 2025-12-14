@@ -1,0 +1,97 @@
+events:
+  - name: "The Peace of Falkenau (proclaimed, not yet real)"
+    id: evt_1027_05_peace_of_falkenau
+
+    date:
+      year: 1027
+      month: 5
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_castle
+      secondary:
+        - loc_rotbach_bridge
+        - loc_falkenau_market
+      region: "Falkenau valley and its administrative choke points"
+
+    summary:
+      public: |
+        Oswald proclaims a peace settlement and orders a realm oath-swearing among the castle household,
+        market men, bridge-keepers, millers, and reeves. Keys and captains are replaced at Rotbach Bridge,
+        granaries, and outer gatehouses. A limited amnesty pardons most of Eberhard’s footmen while excluding
+        ringleaders; private vengeance killings are explicitly outlawed. Eberhard remains under comfortable
+        guard, allowed books, hawking, and a small household.
+      actual: |
+        The settlement is designed to make every surviving faction legible. The oaths, key replacements,
+        and amnesty function as a sorting mechanism: those willing to re-enter the system do so publicly,
+        while holdouts reveal themselves by hesitation, absence, or coded defiance. Eberhard’s comfort is
+        also instrumental—proof of restraint that discourages martyr narratives while flushing loyalist
+        networks into view.
+      hidden: |
+        No confirmed hidden layer beyond routine surveillance and deliberate narrative control. Some observers
+        suspect select “pardons” were granted to keep informants close, but specific names remain unconfirmed.
+
+    participants:
+      - char_oswald:
+          role: "Proclaimer; administrator of oaths; architect of the peace narrative"
+          outcome: "Begins consolidating rule through procedure rather than spectacle"
+          knowledge: "Understands this as sorting and control; presents it as mercy and order"
+      - char_eberhard:
+          role: "Defeated Graf kept alive as proof of restraint"
+          outcome: "Remains under house arrest with controlled privileges"
+          knowledge: "Recognizes his comfort is instrumental; tests the boundaries quietly"
+      - char_sibilla:
+          role: "Public face of stability; supports settlement framing"
+          outcome: "Emerges as visible faction-operator without formal office"
+          knowledge: "Understands the performative value of mercy and normalcy"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Regime apparatus under Oswald’s control"
+          outcome: "Secures keys/captains; begins predictable administration"
+      - org_first_devils_circle:
+          role: "Background social infrastructure in Tiefenbrunn (not named publicly)"
+          outcome: "Learns to hide in daylight as attention rises"
+
+    consequences:
+      immediate:
+        - "Oath rolls and key replacements consolidate control at choke points"
+        - "Amnesty draws many former Eberhard-men into the open"
+        - "Vengeance killings are delegitimized and prosecuted as disorder"
+      long_term:
+        - "Creates paper trails that later justify selective purges and appointments"
+        - "Eberhard’s continued life becomes a managed political asset"
+      unintended:
+        - "Holdouts and exiles harden into external threats rather than internal ones"
+
+    related_events:
+      preceded_by:
+        - evt_1026_11_eberhard_house_arrest_begins
+      followed_by:
+        - evt_1027_06_accounting_of_the_war
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Oath rolls and reeve registers"
+        - "Gatehouse and granary appointment lists"
+        - "Public proclamations posted at market and bridge"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact wording of the oath formula and penalties for refusal"
+      - "Specific captains replaced at Rotbach Bridge and outer gatehouses"
+
+    tags:
+      category: [political, social]
+      archetype: [establishment, rebel]
+      scale: grafschaft-wide
+      turning_point: true
+      themes: [mercy_as_control, legitimacy_engineering, sorting_mechanism]

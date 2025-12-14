@@ -1,0 +1,72 @@
+events:
+  - name: "Arnulf overwinters in Wiesenwang (first winter of exile)"
+    id: evt_1027_12_arnulf_overwinters_wiesenwang
+
+    date:
+      year: 1027
+      month: 12
+      day: null
+      season: winter
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_wiesenwang
+      secondary: []
+      region: "Wiesenwang (proto-freistadt) and its winter traffic"
+
+    summary:
+      public: |
+        Father Arnulf, now officially on penitential pilgrimage, spends the winter in Wiesenwang as a quiet,
+        unremarkable priest seeking shelter and alms.
+      actual: |
+        Wiesenwang provides cover for survival and for the first practical scaffolding of 2DC: a few disciplined
+        contacts, slow routing habits, and methods designed to outlive the founder’s direct oversight.
+      hidden: |
+        No public proof links Arnulf to any organized network during this winter. The operational reality is
+        intentionally low-signature: counsel, small favors, and temperament screening.
+
+    participants:
+      - char_arnulf:
+          role: "Exiled priest embedding in a new community"
+          outcome: "Survives winter; begins 2DC pattern development"
+          knowledge: "Designs networks to resist decapitation"
+
+    organizations:
+      - org_second_devils_circle:
+          role: "Incipient network pattern (not visible as an organization)"
+          outcome: "Begins as method rather than hierarchy"
+
+    consequences:
+      immediate:
+        - "Arnulf becomes geographically harder for Oswald to seize"
+      long_term:
+        - "Creates the first survivable 2DC routing habits"
+      unintended:
+        - "Local rumors may later retroactively connect him to unrelated disorders"
+
+    related_events:
+      preceded_by: [evt_1027_11_arnulf_penitential_pilgrimage_exile]
+      followed_by: [evt_1028_03_arnulf_relocates_kraehenburg]
+      concurrent: [evt_1027_12_eberhard_transferred_convent_custody]
+
+    sources:
+      in_world:
+        - "Host-house gossip and alms lists"
+        - "Winter sermon circuit memory (informal)"
+      out_of_world:
+        - "Arnulf location canon note (winter 1027–1028: Wiesenwang)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which households host him, and under what stated pretext"
+      - "Whether any early 2DC contacts originate here or merely pass through"
+
+    tags:
+      category: [social, religious, political]
+      archetype: [rebel]
+      scale: personal
+      turning_point: false
+      themes: [exile_survival, low_signature_networking, winter_cover]

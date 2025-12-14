@@ -1,0 +1,86 @@
+events:
+  - name: "Rudolf and Lene retreat to the high foothills (Frontier arrangement)"
+    id: evt_1027_07_rudolf_lene_retreat
+
+    date:
+      year: 1027
+      month: 7
+      day: null
+      season: summer
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_high_foothills
+      secondary:
+        - loc_pineclad_ridge
+        - loc_falkenau_valley_roads
+      region: "High foothills above Falkenau"
+
+    summary:
+      public: |
+        Rudolf and Lene die Listige withdraw with followers, framing it as a self-made court in the high country.
+        Oswald does not stop them but draws a line: no raiding the valley and no taking tolls. In exchange, he
+        tacitly allows them to “keep the wilds quiet,” creating a deniable frontier arrangement.
+      actual: |
+        Oswald chooses containment over pursuit: a known outlaw domain is less dangerous than desperate raiders
+        distributed throughout the valley. Rudolf and Lene accept limits because a stable frontier increases
+        their autonomy and reduces direct confrontation.
+      hidden: |
+        The enforcement of “no tolls, no raids” is uneven and often mediated through rumor, intermediaries,
+        and selective retaliation rather than open campaigns.
+
+    participants:
+      - char_oswald:
+          role: "Boundary-setter; chooses containment"
+          outcome: "Creates an externalized pressure zone"
+          knowledge: "Treats the foothills as a managed badlands"
+      - char_rudolf:
+          role: "Outlaw court founder; charismatic rival"
+          outcome: "Gains space to rule his own domain under constraints"
+          knowledge: "Understands Oswald prefers predictable threats"
+      - char_lene_die_listige:
+          role: "Organizer and tactician within the foothill court"
+          outcome: "Helps enforce internal order and deniable bargains"
+          knowledge: "Uses ambiguity and tribute customs to stabilize the court"
+
+    organizations:
+      - org_foothill_court:
+          role: "Outlaw polity"
+          outcome: "Becomes a recognized (if unofficial) frontier fact"
+
+    consequences:
+      immediate:
+        - "Valley bandit pressure is displaced upward and outward"
+        - "Travel advisories become informal but widely understood"
+      long_term:
+        - "Foothills become a narrative dumping ground for blame and fear"
+        - "Oswald gains deniability for violence beyond the valley’s courts"
+      unintended:
+        - "A stable outlaw domain attracts the disaffected and the ambitious"
+
+    related_events:
+      preceded_by: [evt_1027_06_accounting_of_the_war]
+      followed_by: [evt_1027_08_church_notices_smoke]
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Roadside warnings and market gossip"
+        - "Reeve reports of missing livestock and boundary disputes"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Exact boundary markers used in Oswald’s informal edict"
+      - "Whether tribute-taking continues under other names"
+
+    tags:
+      category: [political, social]
+      archetype: [rebel]
+      scale: regional
+      turning_point: false
+      themes: [containment, deniable_frontier, outlaw_court]

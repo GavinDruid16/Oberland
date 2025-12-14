@@ -1,0 +1,76 @@
+events:
+  - name: "First spring test from outside (neighboring probe)"
+    id: evt_1028_03_spring_test_neighbor_probe
+
+    date:
+      year: 1028
+      month: 3
+      day: null
+      season: spring
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_falkenau_borderlands
+      secondary: []
+      region: "Border disputes with neighboring powers (e.g., Hochmark)"
+
+    summary:
+      public: |
+        Neighboring Hochmark’s men probe disputes over tolls, grazing rights, forest use, and fugitives.
+        Oswald responds with letters and a show of force rather than launching a new campaign.
+      actual: |
+        Oswald chooses low-cost deterrence to signal governability: he must demonstrate the revolt did not
+        leave Falkenau weak, while avoiding another war that would re-militarize the valley.
+      hidden: |
+        Border probes also become a pretext to tighten control over roads and messaging under the guise of
+        “security,” indirectly affecting outlaw and heresy investigations.
+
+    participants:
+      - char_oswald:
+          role: "Responder; deterrence manager"
+          outcome: "Signals stability without escalation"
+          knowledge: "Understands that restraint is a strategic posture"
+      - char_sibilla:
+          role: "Soft-power diplomat and rumor manager"
+          outcome: "Helps prevent panic and internal recrimination"
+          knowledge: "Knows external threat can become internal purge fuel if mishandled"
+
+    organizations:
+      - org_house_falkenau:
+          role: "Letters, reeves, patrols"
+          outcome: "Strengthens border routines and messaging controls"
+
+    consequences:
+      immediate:
+        - "Disputes contained without major mobilization"
+      long_term:
+        - "Border security rationalizes broader surveillance and checkpointing"
+      unintended:
+        - "Outlaws and dissidents use border churn as cover for movement"
+
+    related_events:
+      preceded_by: [evt_1028_02_tiefenbrunn_charter]
+      followed_by: [evt_1028_04_sibilla_influence_grows]
+      concurrent: [evt_1028_03_arnulf_relocates_kraehenburg]
+
+    sources:
+      in_world:
+        - "Border letters and toll dispute records"
+        - "Patrol notes and grazing complaints"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+
+    status: confirmed
+    certainty: medium
+
+    unresolved_aspects:
+      - "Which specific border points and toll lines are contested"
+      - "Whether fugitives are a genuine concern or a diplomatic pretext"
+
+    tags:
+      category: [political, military]
+      archetype: [establishment]
+      scale: regional
+      turning_point: false
+      themes: [deterrence_without_war, border_pressure, governability_signal]

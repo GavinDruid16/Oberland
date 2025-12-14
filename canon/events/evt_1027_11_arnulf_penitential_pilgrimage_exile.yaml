@@ -1,0 +1,86 @@
+events:
+  - name: "Arnulf is cut loose (Penitential pilgrimage that functions as exile)"
+    id: evt_1027_11_arnulf_penitential_pilgrimage_exile
+
+    date:
+      year: 1027
+      month: 11
+      day: null
+      season: autumn
+      liturgical: null
+      precision: month
+
+    location:
+      primary: loc_tiefenbrunn
+      secondary:
+        - loc_falkenau_castle
+      region: "Tiefenbrunn and the authority structures around it"
+
+    summary:
+      public: |
+        Oswald moves against Father Arnulf indirectly by arranging a forced penitential pilgrimage under escort.
+        Rather than a public trial, Arnulf is allowed to “vanish” into penance, which functions as exile.
+        The stated purpose is correction without scandal.
+      actual: |
+        Oswald avoids a public heresy proceeding that would force the Church into a hard choice and drag
+        Tiefenbrunn’s peasantry into direct questioning. Exile removes a dangerous organizer while reducing
+        martyr potential and keeping the conflict local.
+      hidden: |
+        The exile has a strategic side effect: once Arnulf is outside Oswald’s territory, future action against
+        him becomes politically and practically harder. Oswald accepts this cost for immediate stability.
+
+    participants:
+      - char_oswald:
+          role: "Architect of the exile-by-penance solution"
+          outcome: "Removes a destabilizing node without spectacle"
+          knowledge: "Understands the trade: stability now, harder targeting later"
+      - char_arnulf:
+          role: "Exiled priest; founder of 1DC"
+          outcome: "Loses local authority; begins 2DC development in exile"
+          knowledge: "Understands exile is both defeat and immunity"
+
+    organizations:
+      - org_church:
+          role: "Provides the penitential framing that makes exile defensible"
+          outcome: "Avoids immediate scandal while retaining leverage over Oswald"
+      - org_first_devils_circle:
+          role: "Founder removed from local space"
+          outcome: "Movement persists; leadership shifts to survivable operators"
+
+    consequences:
+      immediate:
+        - "Arnulf removed without public trial"
+        - "Tiefenbrunn avoids a forced doctrinal confrontation"
+      long_term:
+        - "Second Circle (2DC) becomes possible as an externalized threat"
+      unintended:
+        - "Arnulf becomes harder to seize or silence later"
+
+    related_events:
+      preceded_by: [evt_1027_10_river_anniversary_edict]
+      followed_by:
+        - evt_1027_12_eberhard_transferred_convent_custody
+        - evt_1027_12_arnulf_overwinters_wiesenwang
+      concurrent: []
+
+    sources:
+      in_world:
+        - "Pilgrimage letters and escort notes (if preserved)"
+        - "Parish vacancy rumors and replacement arrangements"
+      out_of_world:
+        - "Canon timeline excerpt (May 1027–Dec 1028)"
+        - "Arnulf character timeline notes (project canon)"
+
+    status: confirmed
+    certainty: high
+
+    unresolved_aspects:
+      - "Exact escort route and supervising clerical authority"
+      - "Whether any formal accusations are written but never read publicly"
+
+    tags:
+      category: [political, religious]
+      archetype: [establishment, rebel]
+      scale: local
+      turning_point: true
+      themes: [no_martyrs_policy, exile_as_immunity, heresy_without_trial]
