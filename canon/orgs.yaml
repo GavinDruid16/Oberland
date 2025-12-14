@@ -227,8 +227,8 @@ organizations:
 
 
   - id: org_tiefenbrunn_charitable_confraternity
-    name: "Tiefenbrunn Charitable Confraternity"
-    abbreviation: null
+    name: "Tiefenbrunn Charitable Confraternity (1st Devil's Circle)"
+    abbreviation: 1DC (post-schism)
 
     founding:
       year: 1028
