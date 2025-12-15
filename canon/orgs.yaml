@@ -3,6 +3,10 @@ organizations:
 
     name: "Church of Saints"
     abbreviation: null
+    aliases:
+      - org_church
+      - "the Church"
+      - "the Church (local)"
 
     founding:
       year: null
